@@ -1,0 +1,1833 @@
+======================================================================
+Running Check 24 - AR Number Verification
+======================================================================
+DEBUG: Starting script...
+DEBUG: Loading main JSON from /home/softsensor/Desktop/Amneal/challenge_bmr/05jan_AH250076_50Checks 1.json
+DEBUG: Main JSON loaded
+Loaded 142 pages from filled_master_json
+Attachment 2 (CoA): 12 pages
+DEBUG: Found Attachment 3 at /home/softsensor/Desktop/Amneal/challenge_bmr/Attachment 3.json
+DEBUG: Loaded 45 pages from Attachment 3
+All attachments flattened: 45 pages
+
+======================================================================
+Class A: Check24ARNoVerifyResults (Potency Calculation AR No)
+======================================================================
+
+Class A results (143 pages):
+  Pages with anomalies: 1
+    Page 20: anomaly_status=1
+
+======================================================================
+Class B: ARNumberValidator (Dispensing Table AR No)
+======================================================================
+DEBUG: Processing Page 23
+DEBUG: Material Col: Material Code, AR Col: A.R. No.
+DEBUG: First record keys: dict_keys(['Sr. No.', 'Ingredients', 'Material Code', 'A.R. No.', 'Balance ID', 'Qty. Required', 'Quantity Dispensed', 'Done By (SM/MM) (Sign/Date)', 'Checked by (SM) (Sign/Date)'])
+DEBUG: Row Material Code: 'RMI-0417'
+DEBUG: Found in attachment index: True
+DEBUG: Anomalies found: [{'parameter': 'A.R. No. Mismatch — RMI-0417', 'issue': 'A.R. number in BMR does not match attachment', 'bmr_value': '2460 4498', 'attachment_value': '24004938, 24008484'}]
+DEBUG: Row Material Code: 'RMI-0417'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0417'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0417'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0394'
+DEBUG: Found in attachment index: True
+DEBUG: Anomalies found: [{'parameter': 'A.R. No. Mismatch — RMI-0394', 'issue': 'A.R. number in BMR does not match attachment', 'bmr_value': 'ARM20000 41 ARM21000 41', 'attachment_value': 'ARM2000041, ARM2100047'}]
+DEBUG: Row Material Code: 'RMI-0378'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0341'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0391'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0389'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0394'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0378'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0341'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0391'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0389'
+DEBUG: Found in attachment index: True
+
+Class B results (1 pages):
+  Pages with anomalies: 1
+    Page 23: anomaly_status=1
+
+======================================================================
+Combined: CombinedARValidator (OR logic)
+======================================================================
+DEBUG: Processing Page 23
+DEBUG: Material Col: Material Code, AR Col: A.R. No.
+DEBUG: First record keys: dict_keys(['Sr. No.', 'Ingredients', 'Material Code', 'A.R. No.', 'Balance ID', 'Qty. Required', 'Quantity Dispensed', 'Done By (SM/MM) (Sign/Date)', 'Checked by (SM) (Sign/Date)'])
+DEBUG: Row Material Code: 'RMI-0417'
+DEBUG: Found in attachment index: True
+DEBUG: Anomalies found: [{'parameter': 'A.R. No. Mismatch — RMI-0417', 'issue': 'A.R. number in BMR does not match attachment', 'bmr_value': '2460 4498', 'attachment_value': '24004938, 24008484'}]
+DEBUG: Row Material Code: 'RMI-0417'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0417'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0417'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0394'
+DEBUG: Found in attachment index: True
+DEBUG: Anomalies found: [{'parameter': 'A.R. No. Mismatch — RMI-0394', 'issue': 'A.R. number in BMR does not match attachment', 'bmr_value': 'ARM20000 41 ARM21000 41', 'attachment_value': 'ARM2000041, ARM2100047'}]
+DEBUG: Row Material Code: 'RMI-0378'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0341'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0391'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0389'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0394'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0378'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0341'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0391'
+DEBUG: Found in attachment index: True
+DEBUG: Row Material Code: 'RMI-0389'
+DEBUG: Found in attachment index: True
+
+Combined results (142 pages):
+  Pages with anomalies: 1
+    Page 23: anomaly_status=1
+
+======================================================================
+Full Results (JSON)
+======================================================================
+
+--- Class A Results ---
+[
+  {
+    "page": 1,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 2,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 3,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 4,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 5,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 6,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 7,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 8,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 9,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 10,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 11,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 12,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 13,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 14,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 15,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 16,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 17,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 18,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 19,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 20,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 1
+  },
+  {
+    "page": 20,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 21,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 22,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 23,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 24,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 25,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 26,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 27,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 28,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 29,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 30,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 31,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 32,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 33,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 34,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 35,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 36,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 37,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 38,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 39,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 40,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 41,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 42,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 43,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 44,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 45,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 46,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 47,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 48,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 49,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 50,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 51,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 52,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 53,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 54,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 55,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 56,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 57,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 58,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 59,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 60,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 61,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 62,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 63,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 64,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 65,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 66,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 67,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 68,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 69,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 70,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 71,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 72,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 73,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 74,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 75,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 76,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 77,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 78,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 79,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 80,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 81,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 82,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 83,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 84,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 85,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 86,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 87,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 88,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 89,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 90,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 91,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 92,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 93,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 94,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 95,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 96,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 97,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 98,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 99,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 100,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 101,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 102,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 103,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 104,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 105,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 106,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 107,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 108,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 109,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 110,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 111,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 112,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 113,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 114,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 115,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 116,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 117,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 118,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 119,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 120,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 121,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 122,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 123,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 124,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 125,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 126,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 127,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 128,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 129,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 130,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 131,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 132,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 133,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 134,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 135,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 136,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 137,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 138,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 139,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 140,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 141,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  },
+  {
+    "page": 142,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Verify_Results",
+    "anomaly_status": 0
+  }
+]
+
+--- Class B Results ---
+[
+  {
+    "page": 23,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 1
+  }
+]
+
+--- Combined Results ---
+[
+  {
+    "page": 1,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 2,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 3,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 4,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 5,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 6,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 7,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 8,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 9,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 10,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 11,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 12,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 13,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 14,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 15,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 16,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 17,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 18,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 19,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 20,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 21,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 22,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 23,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 1
+  },
+  {
+    "page": 24,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 25,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 26,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 27,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 28,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 29,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 30,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 31,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 32,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 33,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 34,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 35,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 36,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 37,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 38,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 39,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 40,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 41,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 42,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 43,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 44,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 45,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 46,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 47,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 48,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 49,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 50,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 51,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 52,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 53,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 54,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 55,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 56,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 57,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 58,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 59,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 60,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 61,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 62,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 63,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 64,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 65,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 66,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 67,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 68,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 69,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 70,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 71,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 72,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 73,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 74,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 75,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 76,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 77,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 78,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 79,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 80,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 81,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 82,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 83,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 84,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 85,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 86,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 87,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 88,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 89,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 90,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 91,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 92,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 93,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 94,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 95,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 96,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 97,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 98,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 99,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 100,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 101,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 102,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 103,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 104,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 105,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 106,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 107,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 108,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 109,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 110,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 111,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 112,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 113,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 114,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 115,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 116,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 117,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 118,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 119,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 120,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 121,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 122,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 123,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 124,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 125,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 126,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 127,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 128,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 129,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 130,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 131,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 132,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 133,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 134,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 135,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 136,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 137,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 138,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 139,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 140,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 141,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  },
+  {
+    "page": 142,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Combined_Validation",
+    "anomaly_status": 0
+  }
+]

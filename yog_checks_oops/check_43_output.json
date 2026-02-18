@@ -1,0 +1,856 @@
+Running Check 43 - Sample Quantity Verification...
+Loaded 142 pages from filled_master_json
+[
+  {
+    "page_no": 1,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 2,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 3,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 4,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 5,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 6,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 7,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 8,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 9,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 10,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 11,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 12,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 13,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 14,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 15,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 16,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 17,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 18,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 19,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 20,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 21,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 22,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 23,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 24,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 25,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 26,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 27,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 28,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 29,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 30,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 31,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 32,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 33,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 34,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 35,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 36,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 37,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 38,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 39,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 40,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 41,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 42,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 43,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 44,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 45,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 46,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 47,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 48,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 49,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 50,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 51,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 52,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 53,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 54,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 55,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 56,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 57,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 58,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 59,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 60,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 61,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 62,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 63,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 1
+  },
+  {
+    "page_no": 64,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 65,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 66,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 67,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 68,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 69,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 70,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 71,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 72,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 73,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 74,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 75,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 76,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 77,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 1
+  },
+  {
+    "page_no": 78,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 79,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 80,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 81,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 82,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 83,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 84,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 85,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 86,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 87,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 88,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 89,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 90,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 91,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 92,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 93,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 94,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 95,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 96,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 97,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 98,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 99,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 100,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 101,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 102,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 103,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 104,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 105,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 106,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 107,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 108,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 109,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 110,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 111,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 112,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 113,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 114,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 115,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 116,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 117,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 118,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 119,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 120,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 121,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 122,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 123,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 124,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 125,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 126,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 127,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 128,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 129,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 130,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 131,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 132,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 133,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 134,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 135,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 136,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 137,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 138,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 139,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 140,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 141,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  },
+  {
+    "page_no": 142,
+    "section_name": "Document Compliance",
+    "check_name": "verified actual sample quantity with standard sample quantity and reconcile the sample quantity",
+    "anomaly_status": 0
+  }
+]

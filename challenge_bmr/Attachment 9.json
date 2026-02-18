@@ -1,0 +1,140 @@
+[
+    {
+        "page": 1,
+        "page_content": [
+            {
+                "WFI Distribution System ID. No.": "EQPIP. 1PRO1007",
+                "WFI Loop Return Sampling Point No.": "WFI-03",
+                "Analytical Reference No. (A. R. No.)": "WF2505051",
+                "WFI Sampling Date and Time": "05-may-25 , 10:45",
+                "WFI Usage allowed up to Date and Time": "06-may-25 10:45",
+                "Sign/Date": "A 05-may-25 Hani Patel"
+            }
+        ],
+        "markdown_page": "Attachment no: 09 <figure> Tamneal\u00ae </figure> 021 # Form IV Analytical Reference Number REFI <table> <tr> <th>WFI Distribution System ID. No.</th> <th>EQPIP. 1PRO1007</th> </tr> <tr> <td>WFI Loop Return Sampling Point No.</td> <td>WFI-03</td> </tr> <tr> <td>Analytical Reference No. (A. R. No.)</td> <td>WF2505051</td> </tr> <tr> <td>WFI Sampling Date and Time</td> <td>05-may-25 , 10:45</td> </tr> <tr> <td>WFI Usage allowed up to Date and Time</td> <td>06-may-25 10:45</td> </tr> <tr> <td>Sign/Date</td> <td>A 05-may-25 Hani Patel</td> </tr> </table> Note: 1\\. A. R. No. shall be considered from sampling and recording of online result of TOC and Conductivity of WFI return loop sampling point to till 24 hrs up to next sampling and recording of online result of TOC and Conductivity of WFI return loop sampling. 2\\. In case of any sanitization of water system, sampling shall be carried out after sanitization 3\\. In case of calibration of online TOC analyzer, Offline TOC sample to be analyzed if batch activity is planned. Reviewed by (Sign/Date): one 05-May-25 Harsh <!-- PageNumber=\"Page 1 of 1\" --> <!-- PageFooter=\"Form No .: PAP-QCM-008-F004 Revision No .: 001\" -->"
+    },
+    {
+        "page": 2,
+        "page_content": [
+            {
+                "section_title": "CERTIFICATE OF ANALYSIS (Water for Injection / PSC)",
+                "Name of Material": "Water for Injection USP/Ph. Eur./IP & Pure Steam Condensate USP/Ph.Eur./IP",
+                "A.R. No.": "AN06WF25001018",
+                "Sampling Point No.": "WFI-03",
+                "Material Code No.": "WIH-0004",
+                "Date of Release": "17-May-2025 14:54",
+                "Manufacturer Name": "Amneal Pharmaceuticals Private Limited (Parenteral Unit-5)",
+                "Specification No.": "WIH-0004-02",
+                "Batch No.": "WF2505051",
+                "Date of Analysis": "06-May-2025 08:44",
+                "records": [
+                    {
+                        "S. No.": "1",
+                        "TEST / METHOD No.": "Description/Appearance Current USP Current Ph.Eur. Current IP",
+                        "SPECIFICATION": "A Clear, colorless liquid.",
+                        "RESULT": "A Clear, colorless liquid."
+                    },
+                    {
+                        "S. No.": "2",
+                        "TEST / METHOD No.": "Total Organic Carbon Current USP <643> Current Ph. Eur. 2.2.44 IP",
+                        "SPECIFICATION": "Not more than 500 ppb (0.5 mg/L)",
+                        "RESULT": "20 ppb"
+                    },
+                    {
+                        "S. No.": "3",
+                        "TEST / METHOD No.": "Conductivity Current USP<645> Current Ph.Eur. Current IP",
+                        "SPECIFICATION": "Not more than 1.30uS/cm at 25\u00b0C \u00b1 1\u00baC",
+                        "RESULT": "0.30 us/cm"
+                    },
+                    {
+                        "S. No.": "4",
+                        "TEST / METHOD No.": "pH Current USP<791> Current Ph. Eur. In-house",
+                        "SPECIFICATION": "Between 5.00 to 7.00 at 25\u00b0C \u00b1 2\u00b0\u2103",
+                        "RESULT": "5.91"
+                    },
+                    {
+                        "S. No.": "5",
+                        "TEST / METHOD No.": "Acidity or Alkalinity Current IP",
+                        "SPECIFICATION": "No red or blue colour is produced",
+                        "RESULT": "No red or blue colour is produced"
+                    },
+                    {
+                        "S. No.": "6",
+                        "TEST / METHOD No.": "Nitrates Current Ph.Eur. Current IP",
+                        "SPECIFICATION": "",
+                        "RESULT": ""
+                    },
+                    {
+                        "S. No.": "6.1",
+                        "TEST / METHOD No.": "As per Ph. Eur.",
+                        "SPECIFICATION": "Not more than 0.2 ppm",
+                        "RESULT": "Less than 0.2 ppm"
+                    }
+                ],
+                "Remarks": "APPROVED (Sample Conforms to above Specification)",
+                "Comment(s)": "Approved",
+                "Reviewed By": "Harsh.Patel (Reviewer)",
+                "Approved By": "Kuriyan.Patel (Manager-QC)",
+                "Reviewed Date": "14-May-2025 14:52",
+                "Approved Date": "17-May-2025 14:54",
+                "Printed By": "Kuriyan.Patel",
+                "Printed On": "20-May-2025 15:23",
+                "Copy No.": "1",
+                "Page No.": "1 of 2",
+                "Note": "This document has been generated electronically and is valid without signature."
+            }
+        ],
+        "markdown_page": "<figure> 1 amneal </figure> Amneal Pharmaceuticals Pvt Ltd (Parenteral Unit-5) Pipan, Sanand Bavla Highway Road, Sanand, Ahmedabad - 382110 CERTIFICATE OF ANALYSIS (Water for Injection / PSC) <table> <tr> <td colspan=\"4\">Name of Material: Water for Injection USP/Ph. Eur./IP &amp; Pure Steam Condensate USP/Ph.Eur./IP</td> </tr> <tr> <td>A.R. No.</td> <td>AN06WF25001018</td> <td>Sampling Point No.</td> <td>WFI-03</td> </tr> <tr> <td>Material Code No.</td> <td>WIH-0004</td> <td>Date of Release</td> <td>17-May-2025 14:54</td> </tr> <tr> <td>Manufacturer Name</td> <td>Amneal Pharmaceuticals Private Limited (Parenteral Unit-5)</td> <td>Specification No.</td> <td>WIH-0004-02</td> </tr> <tr> <td>Batch No.</td> <td>WF2505051</td> <td>Date of Analysis</td> <td>06-May-2025 08:44</td> </tr> </table> <table> <tr> <th>S. No.</th> <th>TEST / METHOD No.</th> <th>SPECIFICATION</th> <th>RESULT</th> </tr> <tr> <td>1</td> <td>Description/Appearance Current USP Current Ph.Eur. Current IP</td> <td>A Clear, colorless liquid.</td> <td>A Clear, colorless liquid.</td> </tr> <tr> <td>2</td> <td>Total Organic Carbon Current USP &lt;643&gt; Current Ph. Eur. 2.2.44 IP</td> <td>Not more than 500 ppb (0.5 mg/L)</td> <td>20 ppb</td> </tr> <tr> <td>3</td> <td>Conductivity Current USP&lt;645&gt; Current Ph.Eur. Current IP</td> <td>Not more than 1.30uS/cm at 25\u00b0C \u00b1 1\u00baC</td> <td>0.30 us/cm</td> </tr> <tr> <td>4</td> <td>pH Current USP&lt;791&gt; Current Ph. Eur. In-house</td> <td>Between 5.00 to 7.00 at 25\u00b0C \u00b1 2\u00b0\u2103</td> <td>5.91</td> </tr> <tr> <td>5</td> <td>Acidity or Alkalinity Current IP</td> <td>No red or blue colour is produced</td> <td>No red or blue colour is produced</td> </tr> <tr> <td>6</td> <td>Nitrates Current Ph.Eur. Current IP</td> <td></td> <td></td> </tr> <tr> <td>6.1</td> <td>As per Ph. Eur.</td> <td>Not more than 0.2 ppm</td> <td>Less than 0.2 ppm</td> </tr> </table> Remarks: APPROVED (Sample Conforms to above Specification) <table> <tr> <th colspan=\"4\">Comment(s): Approved</th> </tr> <tr> <th>Reviewed By</th> <th>Harsh.Patel (Reviewer)</th> <th>Approved By</th> <th>Kuriyan.Patel (Manager-QC)</th> </tr> <tr> <td>Date</td> <td>14-May-2025 14:52</td> <td>Date</td> <td>17-May-2025 14:54</td> </tr> <tr> <td colspan=\"2\">Printed by: Kuriyan.Patel</td> <td colspan=\"2\">Printed on: 20-May-2025 15:23</td> </tr> <tr> <td>Copy No .: 1</td> <td></td> <td>Page No .: 1 of 2</td> <td></td> </tr> <tr> <td colspan=\"4\">Note : This document has been generated electronically and is valid without signature.</td> </tr> </table>"
+    },
+    {
+        "page": 3,
+        "page_content": [
+            {
+                "section_title": "CERTIFICATE OF ANALYSIS (Water for Injection / PSC)",
+                "records": [
+                    {
+                        "Name of Material": "Water for Injection USP/Ph. Eur./IP & Pure Steam Condensate USP/Ph.Eur./IP",
+                        "A.R. No.": "AN06WF25001018",
+                        "Sampling Point No.": "WFI-03",
+                        "Material Code No.": "WIH-0004",
+                        "Date of Release": "17-May-2025 14:54",
+                        "Manufacturer Name": "Amneal Pharmaceuticals Private Limited (Parenteral Unit-5)",
+                        "Specification No.": "WIH-0004-02",
+                        "Batch No.": "WF2505051",
+                        "Date of Analysis": "06-May-2025 08:44"
+                    },
+                    {
+                        "S. No.": "6.2",
+                        "TEST / METHOD No.": "As per IP",
+                        "SPECIFICATION": "Any blue colour in the sample solution is not more intense than that in a standard solution (0.2 ppm).",
+                        "RESULT": "Any blue colour in the sample solution is not more intense than that in a standard solution (0.2 ppm)."
+                    },
+                    {
+                        "S. No.": "7",
+                        "TEST / METHOD No.": "Bacterial Endotoxin Test (BET) Current USP 85 Ph.Eur. 2.6.14 IP (2.2.3)",
+                        "SPECIFICATION": "Less than 0.25 Endotoxin Unit/mL",
+                        "RESULT": "Less than 0.25 Endotoxin Unit/mL"
+                    },
+                    {
+                        "S. No.": "8",
+                        "TEST / METHOD No.": "Bioburden (Total Viable Aerobic Counts) Current USP<61><1231> Ph.Eur.2.6.12 IP 2.2.9",
+                        "SPECIFICATION": "Not More than 10 CFU/100 mL",
+                        "RESULT": "NIL CFU/100 mL"
+                    }
+                ],
+                "Remarks": "APPROVED (Sample Conforms to above Specification)",
+                "Comment(s)": "Approved",
+                "Reviewed By": "Harsh.Patel (Reviewer)",
+                "Approved By": "Kuriyan.Patel (Manager-QC)",
+                "Reviewed Date": "14-May-2025 14:52",
+                "Approved Date": "17-May-2025 14:54",
+                "Printed By": "Kuriyan.Patel",
+                "Printed On": "20-May-2025 15:23",
+                "Copy No.": "1",
+                "Page No.": "2 of 2",
+                "Note": "This document has been generated electronically and is valid without signature."
+            }
+        ],
+        "markdown_page": "<figure> amneal </figure> Amneal Pharmaceuticals Pvt Ltd (Parenteral Unit-5) Pipan, Sanand Bavla Highway Road, Sanand, Ahmedabad - 382110 CERTIFICATE OF ANALYSIS (Water for Injection / PSC) <table> <tr> <td colspan=\"4\">Name of Material: Water for Injection USP/Ph. Eur./IP &amp; Pure Steam Condensate USP/Ph.Eur./IP</td> </tr> <tr> <td>A.R. No.</td> <td>AN06WF25001018</td> <td>Sampling Point No.</td> <td>WFI-03</td> </tr> <tr> <td>Material Code No.</td> <td>WIH-0004</td> <td>Date of Release</td> <td>17-May-2025 14:54</td> </tr> <tr> <td>Manufacturer Name</td> <td>Amneal Pharmaceuticals Private Limited (Parenteral Unit-5)</td> <td>Specification No.</td> <td>WIH-0004-02</td> </tr> <tr> <td>Batch No.</td> <td>WF2505051</td> <td>Date of Analysis</td> <td>06-May-2025 08:44</td> </tr> </table> <table> <tr> <th>6.2</th> <th>As per IP</th> <th>Any blue colour in the sample solution is not more intense than that in a standard solution (0.2 ppm).</th> <th>Any blue colour in the sample solution is not more intense than that in a standard solution (0.2 ppm).</th> </tr> <tr> <td>7</td> <td>Bacterial Endotoxin Test (BET) Current USP 85 Ph.Eur. 2.6.14 IP (2.2.3)</td> <td>Less than 0.25 Endotoxin Unit/mL</td> <td>Less than 0.25 Endotoxin Unit/mL</td> </tr> <tr> <td>8</td> <td>Bioburden (Total Viable Aerobic Counts) Current USP&lt;61&gt;&lt;1231&gt; Ph.Eur.2.6.12 IP 2.2.9</td> <td>Not More than 10 CFU/100 mL</td> <td>NIL CFU/100 mL</td> </tr> </table> Remarks: APPROVED (Sample Conforms to above Specification) Comment(s): Approved <table> <tr> <th>Reviewed By</th> <th>Harsh.Patel (Reviewer)</th> <th>Approved By</th> <th>Kuriyan.Patel (Manager-QC)</th> </tr> <tr> <td>Date</td> <td>14-May-2025 14:52</td> <td>Date</td> <td>17-May-2025 14:54</td> </tr> </table> Printed by: Kuriyan.Patel Printed on: 20-May-2025 15:23 Copy No .: 1 Page No .: 2 of 2 Note : This document has been generated electronically and is valid without signature."
+    }
+]

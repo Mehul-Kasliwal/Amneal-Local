@@ -1,0 +1,1150 @@
+[
+  {
+    "page": 1,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 2,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No records found on page"
+  },
+  {
+    "page": 3,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 4,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 5,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No records found on page"
+  },
+  {
+    "page": 6,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No records found on page"
+  },
+  {
+    "page": 7,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 8,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 9,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 10,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 11,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No records found on page"
+  },
+  {
+    "page": 12,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 13,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 14,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 15,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 16,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 17,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 18,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 19,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 20,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 21,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 22,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 23,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 24,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 25,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 26,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 27,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 28,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 29,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 30,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 31,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 1,
+    "anomalies": [
+      {
+        "parameter": "Qty Required vs Dispensed \u2014 RMI-0370",
+        "issue": "Quantity required does not match quantity dispensed in BMR",
+        "required": 25.364,
+        "dispensed": 21.274
+      },
+      {
+        "parameter": "A.R. No. Mismatch \u2014 RMI-0445",
+        "issue": "A.R. number in BMR does not match attachment",
+        "bmr_value": "23004509",
+        "attachment_value": "2300450924016359"
+      },
+      {
+        "parameter": "Quantity Dispensed Mismatch \u2014 RMI-0391",
+        "issue": "Quantity dispensed in BMR differs from attachment",
+        "bmr_value": 14.72,
+        "attachment_value": 15.72
+      },
+      {
+        "parameter": "A.R. No. Mismatch \u2014 RMI-0369",
+        "issue": "A.R. number in BMR does not match attachment",
+        "bmr_value": "230004144",
+        "attachment_value": "23004124"
+      },
+      {
+        "parameter": "A.R. No. Mismatch \u2014 RMI-0373",
+        "issue": "A.R. number in BMR does not match attachment",
+        "bmr_value": "APM2100059",
+        "attachment_value": "ARM2100059"
+      },
+      {
+        "parameter": "A.R. No. Mismatch \u2014 RMI-0389",
+        "issue": "A.R. number in BMR does not match attachment",
+        "bmr_value": "12341234",
+        "attachment_value": "23009910"
+      }
+    ]
+  },
+  {
+    "page": 32,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No anomalies found"
+  },
+  {
+    "page": 33,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 34,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No anomalies found"
+  },
+  {
+    "page": 35,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 36,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 1,
+    "anomalies": [
+      {
+        "parameter": "Quantity Dispensed Mismatch \u2014 PMI-0981",
+        "issue": "Quantity dispensed in BMR differs from attachment",
+        "bmr_value": 95.92,
+        "attachment_value": 1284.274
+      },
+      {
+        "parameter": "Qty Required vs Dispensed \u2014 PMI-0981",
+        "issue": "Quantity required does not match quantity dispensed in BMR",
+        "required": 1218.191,
+        "dispensed": 95.92
+      },
+      {
+        "parameter": "A.R. No. Mismatch \u2014 PMI-0996",
+        "issue": "A.R. number in BMR does not match attachment",
+        "bmr_value": "2300 4243",
+        "attachment_value": "24004243"
+      },
+      {
+        "parameter": "Quantity Dispensed Mismatch \u2014 PMI-0996",
+        "issue": "Quantity dispensed in BMR differs from attachment",
+        "bmr_value": 14.21,
+        "attachment_value": 697.504
+      },
+      {
+        "parameter": "Qty Required vs Dispensed \u2014 PMI-0996",
+        "issue": "Quantity required does not match quantity dispensed in BMR",
+        "required": 410.442,
+        "dispensed": 14.21
+      },
+      {
+        "parameter": "A.R. No. Mismatch \u2014 MMI-0359",
+        "issue": "A.R. number in BMR does not match attachment",
+        "bmr_value": "2400 85710",
+        "attachment_value": "24008570"
+      },
+      {
+        "parameter": "Quantity Dispensed Mismatch \u2014 MMI-0359",
+        "issue": "Quantity dispensed in BMR differs from attachment",
+        "bmr_value": 4.295,
+        "attachment_value": 1569.916
+      },
+      {
+        "parameter": "Qty Required vs Dispensed \u2014 MMI-0359",
+        "issue": "Quantity required does not match quantity dispensed in BMR",
+        "required": 1422.0,
+        "dispensed": 4.295
+      }
+    ]
+  },
+  {
+    "page": 37,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 38,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 39,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 40,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 41,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 42,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 43,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 44,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 45,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No records found on page"
+  },
+  {
+    "page": 46,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 47,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 48,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 49,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 1,
+    "anomalies": [
+      {
+        "parameter": "A.R. No. Mismatch \u2014 PMI-0985",
+        "issue": "A.R. number in BMR does not match attachment",
+        "bmr_value": "24601593",
+        "attachment_value": "24001593"
+      },
+      {
+        "parameter": "Quantity Dispensed Mismatch \u2014 PMI-0985",
+        "issue": "Quantity dispensed in BMR differs from attachment",
+        "bmr_value": 8466.0,
+        "attachment_value": 8366.0
+      },
+      {
+        "parameter": "Qty Required vs Dispensed \u2014 PMI-0985",
+        "issue": "Quantity required does not match quantity dispensed in BMR",
+        "required": 8366.0,
+        "dispensed": 8466.0
+      }
+    ]
+  },
+  {
+    "page": 50,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 51,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 52,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 53,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 54,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 55,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 56,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 57,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 58,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 59,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 60,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 61,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 62,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 63,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 64,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 65,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 66,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 67,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 68,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 69,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No records found on page"
+  },
+  {
+    "page": 70,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 71,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 72,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 73,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 74,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 75,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 76,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 77,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 78,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 79,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 80,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 81,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 82,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 83,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No records found on page"
+  },
+  {
+    "page": 84,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 85,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 86,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 87,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 88,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 89,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 90,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 91,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 92,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No records found on page"
+  },
+  {
+    "page": 93,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 94,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 95,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 96,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 97,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 98,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 99,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 100,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 101,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 102,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 103,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 104,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 105,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 106,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No records found on page"
+  },
+  {
+    "page": 107,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 108,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 109,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 110,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 111,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 112,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 113,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 114,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 115,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 116,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 117,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 118,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 119,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 120,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 121,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 122,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 123,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 124,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 125,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 126,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 127,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 128,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 129,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 130,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 131,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 132,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 133,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 134,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No records found on page"
+  },
+  {
+    "page": 135,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 136,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "No records found on page"
+  },
+  {
+    "page": 137,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 138,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 139,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 140,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 141,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 142,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 143,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 144,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 145,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 146,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 147,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 148,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  },
+  {
+    "page": 149,
+    "section_name": "Quality Control",
+    "check_name": "AR_NO_Match_Structured",
+    "anomaly_status": 0,
+    "skip_reason": "Not a dispensing table (missing required columns)"
+  }
+]

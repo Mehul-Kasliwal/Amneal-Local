@@ -1,0 +1,46 @@
+Dispensing of Materials (No cleaning and steaming required)
+Pre Manufacturing Checks (Cleaning, Steaming, Pressure Hold and Autoclave)
+Actual Manufacturing
+
+Dispensing and Pre-manu can happen simul but should be done before actual manufactuing
+
+
+Time format flag
+
+Raw Material
+Pre dispensing (for raw materials)
+Dispensing (Raw Material Dispensing) (should be after pre dispensing)
+Multiple Dispensing will happen but can be in any order
+
+
+Primary Packing Material
+Issuance and cleaning date (pre packing)
+Issuance of primary packing material verify after cleaning and start time and end time
+
+Room pre checks
+
+Manufactuing
+Prep CIP, SIP, and PHT (cleaning, steaming, pressure)
+Runs in Loops verify loop 2 after loop 1
+cleaning, pressure hold, steaming (every process in sequence)
+Equipment Cleaning (still in sequence)
+Prestart up checks (individual sequence does not matter but should be after equipment cleaning)
+
+
+Verify if summary is correct or not
+
+Pre-Filtration (CIP, PHT, SIP) (Parallel to all the above processes[Clarification Required])
+Actual Filtration
+Take the start and end time of the long list time
+
+Filling Line (Parallel to other processes)
+Everything in sequence for pre checks
+Precommencement check before filling process
+Final Filtration start date and time
+Actual Filling Line should be after filtration
+Take the start and end time of the long list time
+Verify summary (after filtration start date and time)
+
+Terminal Sterilization Process after Filling
+Lots are in sequence
+

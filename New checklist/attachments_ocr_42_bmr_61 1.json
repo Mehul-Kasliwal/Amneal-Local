@@ -1,0 +1,372 @@
+[
+    {
+        "page": 1,
+        "page_content": [
+            {
+                "section_title": "Material Requisition Slip Form-II",
+                "Slip No.": "030",
+                "Date": "07-APR-25",
+                "Product name": "Multiple Electrolytes Injection Type I USP",
+                "Batch No.": "AH250061",
+                "Department": "sm",
+                "Reason": "For Batch Activity",
+                "records": [
+                    {
+                        "Sr. No.": "01",
+                        "Material Code": "RMI- 0370",
+                        "Material Name": "Sodium Chloride IP",
+                        "UOM": "kg",
+                        "Quantity Required": "21.04",
+                        "Quantity Issued": "21.274 kg",
+                        "A.R. No.": "23007409",
+                        "GRN No.": "23001488",
+                        "Balance ID No.": "ECOPIPHI PE0| 143",
+                        "Remark": "42:00"
+                    },
+                    {
+                        "Sr. No.": "02",
+                        "Material Code": "RMI-0445",
+                        "Material Name": "Sodium acincomate",
+                        "UOM": "kg.",
+                        "Quantity Required": "20.08",
+                        "Quantity Issued": "4.700 kg 15.426 kg",
+                        "A.R. No.": "23004509 24016359",
+                        "GRN No.": "23000825 24001006",
+                        "Balance ID No.": "ECEP IP1 POD1143",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "03",
+                        "Material Code": "RMI-0391",
+                        "Material Name": "Sodiyan Acetate Trihydrate IP",
+                        "UOM": "kg",
+                        "Quantity Required": "14.72",
+                        "Quantity Issued": "14.720 kg",
+                        "A.R. No.": "23004070",
+                        "GRN No.": "23 0004 33",
+                        "Balance ID No.": "EPI PH PRO1143",
+                        "Remark": "42:00"
+                    },
+                    {
+                        "Sr. No.": "04",
+                        "Material Code": "RMI-0369",
+                        "Material Name": "Potassium Chloride IP",
+                        "UOM": "kg.",
+                        "Quantity Required": "1.48",
+                        "Quantity Issued": "1.492 kg",
+                        "A.R. No.": "23004124",
+                        "GRN No.": "23000748",
+                        "Balance ID No.": "SCPIPH PEDI 143",
+                        "Remark": "42100"
+                    }
+                ],
+                "Requested by": "Jayesh Patel germany 07-APR-25",
+                "Authorized by": "Avinash Raval ASQ 07-AAS-25",
+                "Issued by": "Umash Dabli 08APR-25",
+                "Received by": "Mayor Rambhuile JA-08-Apr-25",
+                "Form No.": "PAP-MM-005-F002-002",
+                "Ref. SOP No.": "PAP-MM-005",
+                "Page No.": "01 of 01"
+            }
+        ],
+        "markdown_page": "amneal® # Material Requisition Slip Form-II Attachment NO: 42 REFERENCE COPY 030 <table> <tr> <th>Slip No.</th> <th colspan=\"2\">: 030</th> <th></th> <th></th> <th></th> </tr> <tr> <th>Product</th> <th>name: Multiple</th> <th colspan=\"2\">Electrolytes Injection Type I USP</th> <th></th> <th></th> </tr> <tr> <td colspan=\"2\">Department : sm</td> <td colspan=\"2\"></td> <td></td> <td></td> </tr> </table> <table> <tr> <td>Date</td> <td>: 07-APR-25</td> </tr> <tr> <td>Batch No</td> <td>.: AH250061</td> </tr> <tr> <td>Reason</td> <td>: For Batch Activity</td> </tr> </table> 0010-24012185 <table> <tr> <th>Sr. No.</th> <th>Material Code</th> <th>Material Name</th> <th>UOM</th> <th>Quantity Required</th> <th>Quantity Issued</th> <th>A.R. No.</th> <th>GRN No.</th> <th>Balance ID No.</th> <th>Remark</th> </tr> <tr> <td>01</td> <td>RML- 0910</td> <td>Sodium Chloride IP</td> <td>kg</td> <td>21.04</td> <td>21.274 kg</td> <td>23007409</td> <td>23001488</td> <td>ECOPIPHI PE0| 143</td> <td>42:00</td> </tr> <tr> <td>02</td> <td>RMI-0445</td> <td>Sodium acincomate</td> <td>kg.</td> <td>20.08</td> <td>4.700 kg 15.426 kg</td> <td>23004509 24016359</td> <td>23000825 24001006</td> <td>ECEP IP1 POD1143</td> <td>42100</td> </tr> <tr> <td>03</td> <td>PMI-0391</td> <td>Sodiyan Acetate Trihydrate IP</td> <td>kg</td> <td>14.72</td> <td>14.720 1kg</td> <td>23004070</td> <td>23 0004 33</td> <td>EPI PH PRO1143</td> <td>42:00</td> </tr> <tr> <td>04</td> <td colspan=\"2\">RMI-0369 Potassium Chloride IP</td> <td>kg.</td> <td>1.48</td> <td>1.492 19g</td> <td>23004124</td> <td>23000748</td> <td>SCPIPH PEDI 143</td> <td>42100</td> </tr> </table> Jayesh Patel Requested by: germany 07-APR-25 Issued by : Umash Dabli 08APR-25 Page No. 01 of 01 BLPS & JOS Entry done nou 88-APT-25 Authorized by: Avinash Raval ASQ 07-AAS-25 Received by : Mayor Rambhuile JA-08-Apr-25 Form No .: PAP-MM-005-F002-002 Ref. SOP No .: PAP-MM-005"
+    },
+    {
+        "page": 2,
+        "page_content": [
+            {
+                "section_title": "Tamneal Material Requisition Slip Form-II",
+                "Slip No.": "031",
+                "Date": "07-Apr-25",
+                "Product name": "Multiple electrolytes Injection Type I VSP",
+                "Batch No.": "AH250061",
+                "Reason": "For Batel Activity",
+                "Department": "sm",
+                "records": [
+                    {
+                        "Sr. No.": "05",
+                        "Material Code": "RMI-0373",
+                        "Material Name": "magnesium Chloride IP herahydrate",
+                        "UOM": "kg",
+                        "Quantity Required": "1.2",
+                        "Quantity Issued": "1.202 kg",
+                        "A.R. No.": "ARM 2100059",
+                        "GRN No.": "50000 17946",
+                        "Balance ID No.": "ECPIPIL PRO1 143",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "06",
+                        "Material Code": "RMI-0389",
+                        "Material Name": "Sodium Hydroxide IP",
+                        "UOM": "Sim.",
+                        "Quantity Required": "4.0",
+                        "Quantity Issued": "4.0000 gm",
+                        "A.R. No.": "23009910",
+                        "GRN No.": "23002161",
+                        "Balance ID No.": "Exp (pu PRO1149",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "07",
+                        "Material Code": "RMI-0388",
+                        "Material Name": "Hydrochloric Acid IP",
+                        "UOM": "gm.",
+                        "Quantity Required": "10.11",
+                        "Quantity Issued": "10.1100 gm",
+                        "A.R. No.": "23010857",
+                        "GRN No.": "23002364",
+                        "Balance ID No.": "CORPI PU PRD/154",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "",
+                        "Material Code": "",
+                        "Material Name": "",
+                        "UOM": "",
+                        "Quantity Required": "",
+                        "Quantity Issued": "",
+                        "A.R. No.": "N/A",
+                        "GRN No.": "",
+                        "Balance ID No.": "",
+                        "Remark": ""
+                    },
+                    {
+                        "Sr. No.": "",
+                        "Material Code": "",
+                        "Material Name": "",
+                        "UOM": "",
+                        "Quantity Required": "",
+                        "Quantity Issued": "81-APR-15",
+                        "A.R. No.": "",
+                        "GRN No.": "",
+                        "Balance ID No.": "",
+                        "Remark": ""
+                    }
+                ],
+                "Requested by": "Jens 07-APR-25",
+                "Issued by": "Umesh Dubbi",
+                "Authorized by": "Avinash Raval AS2 0-7-App-25",
+                "Received by": "mayor Pamblade y bs. Apr-25 Santos Kumar Yada 82 08-Apr-25",
+                "Form No.": "PAP-MM-005-F002-002",
+                "Ref. SOP No.": "PAP-MM-005",
+                "Page No.": "01 of 01"
+            }
+        ],
+        "markdown_page": "031 # Tamneal Material Requisition Slip Form-II Slip No. : 031 Product name: Multiple electrolytes Injection Type I VSP <table> <tr> <td>Date</td> <td>: 07-Apr-25</td> </tr> <tr> <td>Batch No .:</td> <td>AH250061</td> </tr> <tr> <td>Reason</td> <td>: For Batel Activity</td> </tr> </table> <table> <tr> <th colspan=\"3\">Department : sm</th> <th colspan=\"4\">010-24012185</th> <th colspan=\"3\"></th> </tr> <tr> <th>Sr. No.</th> <th>Material Code</th> <th>Material Name</th> <th>UOM</th> <th>Quantity Required</th> <th>Quantity Issued</th> <th>A.R. No.</th> <th>GRN No.</th> <th>Balance ID No.</th> <th>Remark</th> </tr> <tr> <td>05</td> <td>RMI-0375</td> <td>magnesium Chloride IP herahydrate</td> <td>kg</td> <td>1.2</td> <td>1.202 19</td> <td>AFM 2100059</td> <td>50000 17946</td> <td>ECPIPIL PRO1 143</td> <td>42100</td> </tr> <tr> <td>06</td> <td>RMI-0389</td> <td>Sodium Hydroxide IP</td> <td>Sim.</td> <td>4.0</td> <td>4.0000 gm</td> <td>23009910</td> <td>23002161</td> <td>Exp (pu PRO1149</td> <td>42100</td> </tr> <tr> <td>07</td> <td>RMI-0388</td> <td>Hydrochloric Acid IP</td> <td>gm.</td> <td>10.11</td> <td>10. 1100 9m</td> <td>23010857</td> <td>23002364</td> <td>CORPI PU PRD/154</td> <td>42100</td> </tr> <tr> <td rowspan=\"2\"></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>N/A</td> <td></td> <td></td> <td></td> </tr> <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td>81-APR-15</td> <td></td> <td></td> <td></td> </tr> </table> <table> <tr> <th colspan=\"3\">Janesh Patel</th> </tr> <tr> <th colspan=\"3\">Requested by: Jens 07-APR-25</th> </tr> <tr> <th>Issued by:</th> <th colspan=\"2\">Umesh Dubbi</th> </tr> <tr> <td></td> <td></td> <td>1988-18-25</td> </tr> </table> Page No. 01 of 01 BUDS & JDE Entry done pour 08-APR-25 Authorized by: Avinash Raval AS2 0-7-App-25 Received by : mayor Pamblade y bs. Apr-25 Santos Kumar Yada 82 08-Apr-25 Form No .: PAP-MM-005-F002-002 Ref. SOP No .: PAP-MM-005"
+    },
+    {
+        "page": 3,
+        "page_content": [
+            {
+                "section_title": "Material Requisition Slip Form-II",
+                "Slip No.": "034",
+                "Product name": "Multiple Electrolytes Injection Type 1 USP",
+                "Department": "sm",
+                "Date": "07-APR-25",
+                "Batch No.": "AM250061",
+                "Reason": "For Batch Activity",
+                "records": [
+                    {
+                        "Sr. No.": "01",
+                        "Material Code": "MMI-0447",
+                        "Material Name": "1-2 um clarisure HPA polypropylene 10\" Filer Cartridge",
+                        "UOM": "Nos.",
+                        "Quantity Required": "01",
+                        "Quantity Issued": ". 01",
+                        "A.R. No.": "23024082",
+                        "GRN No.": "23003602",
+                        "Balance ID No.": "NA",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "02",
+                        "Material Code": "MMI-0446",
+                        "Material Name": "0.45 um +0,2 am Aseptisure HS PES membrance 10'",
+                        "UOM": "NOS.",
+                        "Quantity Required": "01",
+                        "Quantity Issued": "01",
+                        "A.R. No.": "24007297",
+                        "GRN No.": "24001362",
+                        "Balance ID No.": "NA",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "03",
+                        "Material Code": "MMI-0366",
+                        "Material Name": "Silicon dube (8.0 MM ID X 12-8 MM OD) Imapure CATALOGUE NO.",
+                        "UOM": "Mez",
+                        "Quantity Required": "07",
+                        "Quantity Issued": "07",
+                        "A.R. No.": "23004869",
+                        "GRN No.": "23000921",
+                        "Balance ID No.": "NA",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "NIF",
+                        "Material Code": "NID",
+                        "Material Name": "901-1408-60",
+                        "UOM": "N/A",
+                        "Quantity Required": "N/A",
+                        "Quantity Issued": "NA",
+                        "A.R. No.": "NA",
+                        "GRN No.": "NA",
+                        "Balance ID No.": "Nih",
+                        "Remark": "NA"
+                    }
+                ],
+                "Requested by": "Jayesh Patel",
+                "Issued by": "Nilesh Thakkar",
+                "Authorized by": "Avinash Raval",
+                "Received by": "Avinash Raval",
+                "Form No.": "PAP-MM-005-F002-002",
+                "Ref. SOP No.": "PAP-MM-005"
+            }
+        ],
+        "markdown_page": "034 REFERENCE COPY amneal® # Material Requisition Slip Form-II <table> <tr> <td>Slip No. :</td> <td>034</td> <td></td> </tr> <tr> <td>Product name:</td> <td>Multiple Electrolytes</td> <td>Injection Type 1 USP</td> </tr> <tr> <td>Department:</td> <td colspan=\"2\">sm</td> </tr> </table> <table> <tr> <td>Date</td> <td>: 07-APR-25</td> </tr> <tr> <td>Batch No .:</td> <td>AM250061</td> </tr> <tr> <td>Reason</td> <td>: For Batch Activity</td> </tr> </table> W10-24012185 <table> <tr> <th>Sr. No.</th> <th>Material Code</th> <th>Material Name</th> <th>UOM</th> <th>Quantity Required</th> <th>Quantity Issued</th> <th>A.R. No.</th> <th>GRN No.</th> <th>Balance ID No.</th> <th>Remark</th> </tr> <tr> <td>ol</td> <td>MMI-0447</td> <td>1-2 um clarisure HPA polypropylene 10\" Filer Cartridge</td> <td>Nos.</td> <td>ol</td> <td>. 01</td> <td>23024088 + 23024082</td> <td>23003602</td> <td>NA</td> <td>42100</td> </tr> <tr> <td>02</td> <td>MMI-0446</td> <td>0.45 um +0,2 am Aseptisure HS PES membrance 10'</td> <td>NOS.</td> <td>01</td> <td>01</td> <td>24007297</td> <td>24001362</td> <td>NA</td> <td>42100</td> </tr> <tr> <td>03</td> <td>MMI-0366</td> <td>Silicon dube (8.0 MM ID X 12-8 MM OD) Imapure CATALOGUE NO.</td> <td>Mez</td> <td>07</td> <td>07</td> <td>23004869</td> <td>23000921</td> <td>NA</td> <td>42100</td> </tr> <tr> <td>NIF</td> <td>NID</td> <td>901-1408-60</td> <td>N/A</td> <td>N/A</td> <td>NA</td> <td>NA</td> <td>NA</td> <td>Nih</td> <td>NA</td> </tr> </table> Requested by: Jayesh Patel JDE & Blas Entry done @ 07-APR-25 Jens 07-AM-25 Nilesh Thakkar Issued by : B 07-APR-25 Page No. 01 of 01 \\* wrong AR corrected @ 07-APR-25 Authorized by: Avinash Raval #07-Aps-25 ABR Received by: Avinash Raval As0 07-A24-25 Form No .: PAP-MM-005-F002-002 Ref. SOP No .: PAP-MM-005"
+    },
+    {
+        "page": 4,
+        "page_content": [
+            {
+                "section_title": "Material Requisition Slip Form-II",
+                "Slip No.": "032",
+                "Product name": "Multiple Electrolytes Injection Type I USP",
+                "Department": "IM",
+                "Date": "07-APR-25",
+                "Batch No.": "AH250061",
+                "Reason": "For Batch Activity",
+                "records": [
+                    {
+                        "Sr. No.": "01",
+                        "Material Code": "PMI- 0981",
+                        "Material Name": "Polipropilene double wound flood titer APP 114-5 2:20 AM (width) - 200 um (Thickness)",
+                        "UOM": "Mtr. kg.",
+                        "Quantity Required": "1129 89.191",
+                        "Quantity Issued": "1188.354 Mtr 95.92 kg",
+                        "A.R. No.": "23010951",
+                        "GRN No.": "24000059",
+                        "Balance ID No.": "* NA 2 4pt@ll pij LES",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "NIA",
+                        "Material Code": "NIA",
+                        "Material Name": "- Cporicine APP 14-5-220- 200-F)",
+                        "UOM": "NIA",
+                        "Quantity Required": "N/A",
+                        "Quantity Issued": "NA",
+                        "A.R. No.": "NA",
+                        "GRN No.": "NA",
+                        "Balance ID No.": "NA",
+                        "Remark": "NA"
+                    },
+                    {
+                        "Sr. No.": "02",
+                        "Material Code": "PMI- 0996",
+                        "Material Name": "Ano Polypropylène tube APP 107 -$ 8.20 ×6.20",
+                        "UOM": "Mtr. Kg.",
+                        "Quantity Required": "402 8.442",
+                        "Quantity Issued": "683.304 Mtr 14.2kg",
+                        "A.R. No.": "24004243",
+                        "GRN No.": "24000815",
+                        "Balance ID No.": "EQPIPIT PHD1156",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "03",
+                        "Material Code": "PMI- 0985",
+                        "Material Name": "Twist-off post 823 PP inerte 016+ Plus ( TP823.007-AS(Tund- ott post +43pp-IN DIG-TPB:23 . 007",
+                        "UOM": "NOS.",
+                        "Quantity Required": "8366",
+                        "Quantity Issued": "8366 NOS",
+                        "A.R. No.": "2400 1593",
+                        "GRN No.": "24 000 218",
+                        "Balance ID No.": "EQPIPII PRO1143",
+                        "Remark": "42100"
+                    }
+                ],
+                "Authorized by": "Avinash Raval ASR 07-APR-25",
+                "Requested by": "Jayesh Patel -JOBS 07-APR-25",
+                "Issued by": "with Trakker 0107-APR-25 AJAY Rama De 08-APT-25",
+                "Received by": "Avimain Pol var ASD 0-7-91-25 Anil Grami Cy. 08-Apr-25",
+                "Form No.": "PAP-MM-005-F002-002",
+                "Ref. SOP No.": "PAP-MM-005",
+                "Page No.": "01 of 01"
+            }
+        ],
+        "markdown_page": "<!-- PageNumber=\"032\" --> REFERENCE COPY amneal® # Material Requisition Slip Form-II <table> <tr> <th>Slip No.</th> <th>:</th> <th>032</th> <th></th> </tr> <tr> <td colspan=\"2\">Product name:</td> <td>Multiple Electrolytes</td> <td>Injection Type I USP</td> </tr> <tr> <td colspan=\"2\">Department :</td> <td>IM</td> <td></td> </tr> </table> <table> <tr> <td>Date</td> <td>: 07-APR-25</td> </tr> <tr> <td>Batch No</td> <td>.: AH250061</td> </tr> <tr> <td>Reason</td> <td>: For Batch Activity</td> </tr> </table> W10-24012185 <table> <tr> <th>Sr. No.</th> <th>Material Code</th> <th>: Material Name</th> <th>UOM</th> <th>Quantity Required</th> <th>Quantity Issued</th> <th>A.R. No.</th> <th>GRN No.</th> <th>Balance ID No.</th> <th>Remark</th> </tr> <tr> <td>01</td> <td>PMI- 0481</td> <td>Polipropilene double wound flood titer APP 114-5 2:20 AM (width) - 200 um (Thickness)</td> <td>Min. kg.</td> <td>1129 89.191</td> <td>1188.354 MAT 55.93</td> <td>23010951</td> <td>24000059</td> <td>* NA 2 4pt@ll pij LES</td> <td>42100</td> </tr> <tr> <td>NIA</td> <td>NIA</td> <td>- Cporicine APP 14-5-220- 200-F)</td> <td>NIA</td> <td>N/A</td> <td>NA</td> <td>NA</td> <td>NA</td> <td>NA</td> <td>NA</td> </tr> <tr> <td>02</td> <td>PMI- 0996</td> <td>Ano Polypropylène tube APP 107 -$ 8.20 ×6.20</td> <td>121/2. Kg.</td> <td>402 8.442</td> <td>683.304 P+r 14-2kg</td> <td>24004243</td> <td>24000815</td> <td>EQPIPIT PHD1156</td> <td>42100</td> </tr> <tr> <td>03</td> <td>PMI- 0985</td> <td>Twist-off post 823 PP inerte 016+ Plus ( TP823.007-AS(Tund- ott post +43pp-IN DIG-TPB:23 . 007</td> <td>NOS.</td> <td>8366</td> <td>8366 NOS</td> <td>2400 1593</td> <td>24 000 218</td> <td>EQPIPII PRO1143</td> <td>42100</td> </tr> </table> 58\\. 01,02 JDE & BLAS Things done ® Authorized by: Avinash Raval ASR 07-APR-25 <table> <tr> <th>Requested by:</th> <th>Jayesh Patel -JOBS 07-APR-25</th> <th></th> </tr> <tr> <td>Issued by :</td> <td>with Trakker 0107-APR-25 AJAY Rama De 08-APT-25</td> <td></td> </tr> </table> 07-APT-25 Received by: Avimain Pol var ASD 0-7-91-25 Anil Grami Cy. 08-Apr-25 Form No .: PAP-MM-005-F002-002 Ref. SOP No .: PAP-MM-005 Page No. 01 of 01 \\* NA done by mistake as hence corrected. 07-Apr-25 SR NO: 13 3OF + BLIPS Entry Done. A OS-APT-25"
+    },
+    {
+        "page": 5,
+        "page_content": [
+            {
+                "section_title": "Material Requisition Slip Form-II",
+                "Slip No.": "033",
+                "Date": "07-Apr-25",
+                "Product name": "Multiple Electrolytes Injection Type 1 USP",
+                "Batch No.": "AH250061",
+                "Department": "Sim",
+                "Reason": "For Batch Activity",
+                "records": [
+                    {
+                        "Sr. No.": "04",
+                        "Material Code": "MME. 0368",
+                        "Material Name": "Thermal transfer print ribbon 53 MMX 450 Mt Black CFC",
+                        "UOM": "Fg PAZ",
+                        "Quantity Required": "0- 1172 293",
+                        "Quantity Issued": "NIA",
+                        "A.R. No.": "N/A",
+                        "GRN No.": "NIA",
+                        "Balance ID No.": "N/A",
+                        "Remark": "N/A"
+                    },
+                    {
+                        "Sr. No.": "05",
+                        "Material Code": "MMI-0359",
+                        "Material Name": "Hot stamping toil 135 mm",
+                        "UOM": "Mtr. kg.",
+                        "Quantity Required": "1422 4.266",
+                        "Quantity Issued": "1565.666 Mtr 4.25 Kg",
+                        "A.R. No.": "24008570",
+                        "GRN No.": "24001488",
+                        "Balance ID No.": "EQPIPI) DRD1156",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "06",
+                        "Material Code": "MMI-0353",
+                        "Material Name": "140 mm (2) ×610 m (L) BS603AB black hat stamping fail",
+                        "UOM": "MM. kg.",
+                        "Quantity Required": "1422 4.266",
+                        "Quantity Issued": "N/A",
+                        "A.R. No.": "N/A",
+                        "GRN No.": "NIA",
+                        "Balance ID No.": "N/A",
+                        "Remark": "NIA"
+                    },
+                    {
+                        "Sr. No.": "NIA",
+                        "Material Code": "NIA",
+                        "Material Name": "2011 CB5603 AB Pharma Schwanz)",
+                        "UOM": "NIA",
+                        "Quantity Required": "NIA",
+                        "Quantity Issued": "NIA",
+                        "A.R. No.": "N/A",
+                        "GRN No.": "NIA",
+                        "Balance ID No.": "N/A",
+                        "Remark": "NIA"
+                    }
+                ],
+                "Requested by": "ojeras 07-Apr-25",
+                "Authorized by": "Avinash Raval ASQ 07-APS-25",
+                "Issued by": "Nilesh Thakkor",
+                "Received by": "Avinash Raval ASQ 07-A01-25",
+                "Form No.": "PAP-MM-005-F002-002",
+                "Ref. SOP No.": "PAP-MM-005"
+            }
+        ],
+        "markdown_page": "<!-- PageNumber=\"033\" --> REFERENCE COPY amneal® # Material Requisition Slip Form-II <table> <tr> <td>Slip No.</td> <td>: 033</td> </tr> <tr> <td colspan=\"2\">Product name: Multiple Electrolytes Injection Type 1 USP Department : Sim</td> </tr> </table> <table> <tr> <td>Date :</td> <td>07-Apr-25</td> </tr> <tr> <td>Batch No .:</td> <td>AH250061</td> </tr> <tr> <td>Reason :</td> <td>For Batch Activity</td> </tr> </table> 010-24012185 <table> <tr> <th>Sr. No.</th> <th>Material Code</th> <th>Material Name</th> <th>UOM</th> <th>Quantity Required</th> <th>Quantity Issued</th> <th>A.R. No.</th> <th>GRN No.</th> <th>Balance ID No.</th> <th>Remark</th> </tr> <tr> <td>04</td> <td>MME. 0368</td> <td>Thermal transfer print ribbon 53 MMX 450 Mt Black CFC</td> <td>Fg PAZ</td> <td>0- 1172 293</td> <td>NIA</td> <td>N/A</td> <td>NIA</td> <td>N/A</td> <td>N/A</td> </tr> <tr> <td>05</td> <td>AMI-0359</td> <td>Hot stamping toil 135 mm</td> <td>mir kg.</td> <td>1422 4.266</td> <td>1565-666 MAY 4.25 Kg</td> <td>24008570</td> <td>24001488</td> <td>EQPIPI) DRD1156</td> <td>42100</td> </tr> <tr> <td>06</td> <td>MMI-0353</td> <td>140 mm (2) ×610 m (L) BS603AB black hat stamping fail</td> <td>MM. kg.</td> <td>1422 4.266</td> <td>N/A</td> <td>N/A</td> <td>NIA</td> <td>N/A</td> <td>NIA</td> </tr> <tr> <td>NIA</td> <td>NIA</td> <td>2011 CB5603 AB Pharma Schwanz)</td> <td>NIA</td> <td>NIA</td> <td>NIA</td> <td>N/A</td> <td>NIA</td> <td>N/A</td> <td>NIA</td> </tr> </table> <table> <tr> <th colspan=\"2\">Jayesh Patel Requested by: ojeras 07-Apr-25</th> </tr> <tr> <td>Issued by :</td> <td>Nilesh Thakkor</td> </tr> <tr> <td colspan=\"2\">07-APR-25</td> </tr> </table> Page No. 01 of 01 JPETBCPS Entry alone Authorized by: Avinash Raval ASQ 07-APS-25 0 Received by: Avinash Raval ASQ 07-A01-25 07-APR-25 Form No .: PAP-MM-005-F002-002 Ref. SOP No .: PAP-MM-005"
+    }
+]
