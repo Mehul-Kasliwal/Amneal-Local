@@ -1,0 +1,899 @@
+Loaded 149 pages from /home/softsensor/Desktop/Amneal/complete_data_61 1.json
+Running Check 26 – Potency Calculation Validator ...
+
+[
+  {
+    "page": 1,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 2,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 3,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 4,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 5,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 6,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 7,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 8,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 9,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 10,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 11,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 12,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 13,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 14,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 15,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 16,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 17,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 18,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 19,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 1
+  },
+  {
+    "page": 20,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 21,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 22,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 23,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 24,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 25,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 1
+  },
+  {
+    "page": 26,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 27,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 28,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 29,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 30,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 31,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 32,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 33,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 34,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 35,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 36,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 37,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 38,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 39,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 40,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 41,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 42,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 43,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 44,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 45,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 46,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 47,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 48,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 49,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 50,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 51,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 52,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 53,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 54,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 55,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 56,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 57,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 58,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 59,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 60,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 61,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 62,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 63,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 64,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 65,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 66,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 67,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 68,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 69,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 70,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 71,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 72,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 73,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 74,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 75,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 76,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 77,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 78,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 79,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 80,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 81,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 82,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 83,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 84,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 85,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 86,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 87,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 88,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 89,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 90,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 91,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 92,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 93,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 94,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 95,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 96,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 97,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 98,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 99,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 100,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 101,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 102,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 103,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 104,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 105,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 106,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 107,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 108,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 109,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 110,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 111,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 112,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 113,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 114,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 115,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 116,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 117,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 118,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 119,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 120,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 121,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 122,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 123,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 124,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 125,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 126,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 127,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 128,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 129,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 130,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 131,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 132,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 133,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 134,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 135,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 136,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 137,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 138,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 139,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 140,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 141,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 142,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 143,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 144,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 145,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 146,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 147,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 148,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  },
+  {
+    "page": 149,
+    "section_name": "Equipment & Materials",
+    "check_name": "RM_formula_checks",
+    "anomaly_status": 0
+  }
+]

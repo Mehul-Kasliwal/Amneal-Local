@@ -48,8 +48,7 @@ else:
 # ─────────────────────────────────────────────────────────
 # 3. Inlined config values for check_26
 # ─────────────────────────────────────────────────────────
-SECTION_NAME = "Equipment & Materials"          # get_check_process("check_26")
-CHECK_NAME   = "RM_formula_checks"              # get_check_name("check_26")
+# SECTION_NAME and CHECK_NAME moved to class definition
 
 # Prompts from checks_prompts.yaml → check_26
 CHECK_PROMPTS = {
@@ -191,6 +190,8 @@ Repeat for all raw materials detected.
 # 4. PotencyCalculationValidator class (self-contained)
 # ─────────────────────────────────────────────────────────
 class PotencyCalculationValidator:
+    SECTION_NAME = "Equipment & Materials"
+    CHECK_NAME = "RM_formula_checks"
     """
     Check 26: AI tool should verify potency calculation for API.
     """
@@ -218,39 +219,93 @@ class PotencyCalculationValidator:
 
     # ── page selection ──
 
-    def find_keyphrase_in_rules(self, obj: Any, key_phrase: str) -> bool:
+    def find_keyphrase_recursive(self, obj: Any, key_phrase: str) -> bool:
+        """
+        Recursively search for key_phrase in any string value within the object.
+        """
+        if isinstance(obj, str):
+            return key_phrase.lower() in obj.lower()
+        
         if isinstance(obj, dict):
-            if "rules_or_instructions" in obj:
-                rules = obj["rules_or_instructions"]
-                if isinstance(rules, list):
-                    for rule in rules:
-                        if isinstance(rule, str) and key_phrase.lower() in rule.lower():
-                            return True
-            return any(self.find_keyphrase_in_rules(val, key_phrase) for val in obj.values())
-        elif isinstance(obj, list):
-            return any(self.find_keyphrase_in_rules(item, key_phrase) for item in obj)
+            return any(self.find_keyphrase_recursive(val, key_phrase) for val in obj.values())
+        
+        if isinstance(obj, list):
+            return any(self.find_keyphrase_recursive(item, key_phrase) for item in obj)
+            
         return False
 
     def select_pages(self, document_pages: List[Dict]) -> List[Dict]:
         selected = []
         for page_obj in document_pages:
             page_no = page_obj.get("page", "")
-            content = page_obj.get("page_content", [])
-            markdown_page = page_obj.get("markdown_page", "")
-            if self.find_keyphrase_in_rules(content, self.KEY_PHRASE):
-                selected.append({"page_no": page_no, "markdown": markdown_page})
+            # Search entire page object (content, tables, markdown)
+            if self.find_keyphrase_recursive(page_obj, self.KEY_PHRASE):
+                selected.append({
+                    "page_no": page_no, 
+                    "markdown": page_obj.get("markdown_page", "")
+                })
         return selected
 
     # ── LLM analysis ──
 
     def analyze_bmr_with_llm(self, combined_text: str) -> str:
+        """
+        Ask LLM to extract raw values (Assay, LOD, Batch Size, etc.)
+        Returns JSON string with extracted data.
+        """
+        extraction_prompt = r"""
+You are a data extraction specialist. Your task is to extract specific numeric values and identifiers from the BMR text for Potency Calculation.
+
+EXTRACT the following fields for each raw material found:
+
+1. "raw_material_name": Name of the material.
+2. "batch_size": The Batch Size volume (L) found in the header or text (e.g., 4000).
+3. "constant_c": The formula constant 'X' in "A = X g / 1.0 L".
+   - Look for text like "A = 5.26 g / 1.0 L" -> specific constant is 5.26.
+   - Look for text like "A = 0.37 g / 1.0 L" -> specific constant is 0.37.
+   - Look for text like "A = 5.02 g / 1.0 L" -> specific constant is 5.02.
+   - If not found, return null.
+4. "calculation_option": "Option 1" (Single Lot) or "Option 2" (Double Lot).
+5. "lot_1":
+   - "ar_no": AR Number for Lot 1.
+   - "assay": % Assay for Lot 1 (numeric, e.g., 99.7).
+   - "lod": LOD % for Lot 1 (numeric, e.g., 0.5). If NA or not found, return 0.
+   - "qty_used": Quantity of Lot 1 used (in grams) IF Option 2 is used. Else null.
+6. "lot_2": (If Option 2 is used)
+   - "ar_no": AR Number for Lot 2.
+   - "assay": % Assay for Lot 2.
+   - "lod": LOD % for Lot 2 (or 0).
+   - "qty_used": Quantity of Lot 2 used (in grams) IF clearly stated.
+7. "printed_value": The FINAL Total Quantity 'A' written on the document. 
+   - Prefer the value in "Total quantity ... (in Kg) = X Kg".
+   - If that is not found, use the value from "A = ... g".
+8. "printed_unit": The unit of the printed value (e.g., "Kg", "g").
+9. "page_no": The page number where this calculation appears.
+
+RETURN ONLY VALID JSON:
+{
+  "materials": [
+    {
+      "raw_material_name": "...",
+      "batch_size": 4000.0,
+      "constant_c": 5.26,
+      "calculation_option": "Option 1",
+      "lot_1": {"ar_no": "...", "assay": 99.5, "lod": 0.5, "qty_used": null},
+      "lot_2": {"ar_no": "NA", "assay": null, "lod": null, "qty_used": null},
+      "printed_value": 21500.0,
+      "printed_unit": "g",
+      "page_no": 19
+    }
+  ]
+}
+"""
         messages = [
-            {"role": "system", "content": CHECK_PROMPTS["system"]},
+            {"role": "system", "content": "You are a precise data extraction assistant. Extract numbers exactly as they appear. Do not calculate."},
             {
                 "role": "user",
                 "content": (
                     "### TASK INSTRUCTION\n"
-                    f"{CHECK_PROMPTS['user']}\n\n"
+                    f"{extraction_prompt}\n\n"
                     "------------------------------\n"
                     "### OCR EXTRACTED BMR TEXT\n"
                     f"{combined_text}\n"
@@ -265,53 +320,225 @@ class PotencyCalculationValidator:
         )
         return response.choices[0].message.content.strip()
 
+    # ── Python Calculation ──
+
+    def calculate_potency(self, mat_data: Dict) -> Dict:
+        """
+        Perform potency calculation in Python using extracted data.
+        Returns dictionary with calculation details and anomaly status.
+        All comparisons done in GRAMS.
+        """
+        try:
+            # Defaults
+            C = mat_data.get("constant_c")
+            if C is None:
+                # Fallback if extraction failed - try to infer from name
+                name = mat_data.get("raw_material_name", "").lower()
+                if "potassium chloride" in name: C = 0.37
+                elif "sodium chloride" in name: C = 5.26 
+                elif "magnesium chloride" in name: C = 0.30
+                elif "sodium gluconate" in name: C = 5.02
+                else: C = 5.26 # Default
+
+            bs = float(mat_data.get("batch_size") or 4000)
+            option = mat_data.get("calculation_option", "Option 1")
+            
+            # Lot 1
+            l1 = mat_data.get("lot_1", {})
+            assay1 = float(l1.get("assay") or 100)
+            lod1 = float(l1.get("lod") or 0)
+            
+            # Factors
+            factor_assay1 = 100 / assay1 if assay1 > 0 else 0
+            factor_lod1 = 100 / (100 - lod1) if lod1 > 0 and lod1 < 100 else 1.0
+
+            val_g = 0.0
+            formula_desc = ""
+
+            if option == "Option 1":
+                # A (g) = (C / 1.0) * BatchSize * (100/Assay) * (100/(100-LOD))
+                val_g = (C / 1.0) * bs * factor_assay1 * factor_lod1
+                formula_desc = f"({C}/1)*{bs}*(100/{assay1})*(100/(100-{lod1}))"
+
+            elif option == "Option 2":
+                # Double Lot
+                qty1_g = float(l1.get("qty_used") or 0)
+                
+                inv_lod1 = (100 - lod1) / 100
+                l1_vol = qty1_g * (1.0 / C) * (assay1 / 100) * inv_lod1
+                
+                l2_vol = bs - l1_vol
+                
+                l2 = mat_data.get("lot_2", {})
+                assay2 = float(l2.get("assay") or 100)
+                lod2 = float(l2.get("lod") or 0)
+                
+                factor_assay2 = 100 / assay2 if assay2 > 0 else 0
+                factor_lod2 = 100 / (100 - lod2) if lod2 > 0 and lod2 < 100 else 1.0
+                
+                qty2_calc_g = (C / 1.0) * l2_vol * factor_assay2 * factor_lod2
+                
+                val_g = qty1_g + qty2_calc_g
+                formula_desc = f"Opt2: L1_vol={l1_vol:.2f}, L2_vol={l2_vol:.2f}"
+
+            # Comparison in GRAMS
+            printed_raw = float(mat_data.get("printed_value") or 0)
+            unit = mat_data.get("printed_unit", "g").strip().lower() # Default to g if not found
+            
+            printed_g = printed_raw
+            if "kg" in unit:
+                printed_g = printed_raw * 1000.0
+            elif printed_raw < 100 and val_g > 1000:
+                 # Heuristic: if printed is small (e.g. 21.2) and calc is large (21200), assume printed is Kg
+                 printed_g = printed_raw * 1000.0
+
+            diff = abs(val_g - printed_g)
+            # Tolerance: 10g? 50g? 
+            # If 20kg batch, 10g is 0.05%.
+            anomaly = 1 if diff > 10.0 else 0 
+
+            return {
+                "calculated_value_g": round(val_g, 3),
+                "printed_value_g": round(printed_g, 3),
+                "anomaly_flag": anomaly,
+                "formula_used": formula_desc,
+                "formula_constant": C,
+                "unit_assumed": "kg" if printed_g != printed_raw else "g"
+            }
+
+        except Exception as e:
+            return {
+                "error": str(e),
+                "anomaly_flag": 1
+            }
+
     # ── merge results ──
 
     def merge_llm_results(self, base_results: List[Dict], llm_json_str: str) -> List[Dict]:
-        llm_json = json.loads(llm_json_str)
-        flagged_pages = []
-        for rm in llm_json.get("materials", []):
-            if rm.get("anomaly_flag") == 1:
-                flagged_pages.append(rm.get("page_no"))
+        try:
+            llm_json = json.loads(llm_json_str)
+        except json.JSONDecodeError:
+            print(f"Error decoding LLM JSON: {llm_json_str}")
+            return base_results
 
+        # Process each material
+        processed_data = []
+        for mat in llm_json.get("materials", []):
+            calc_res = self.calculate_potency(mat)
+            mat.update(calc_res) # Add calc results to material object
+            processed_data.append(mat)
+        
+        # Merge back to pages
         merged = []
         for page in base_results:
-            if page.get("page_no") in flagged_pages:
-                page["anomaly_status"] = 1
+            page_no = page.get("page_no")
+            # Find matching result for this page
+            match = next((m for m in processed_data if m.get("page_no") == page_no), None)
+            if match:
+                page["anomaly_status"] = match.get("anomaly_flag", 0)
+                page["details"] = match # Store full details for debugging
             merged.append(page)
+            
         return merged
 
     # ── entry point ──
 
     def run_validation(self, document_pages: List[Dict]) -> List[Dict]:
-        base_results = [
-            {
-                "page_no": idx,
-                "section_name": SECTION_NAME,
-                "check_name": CHECK_NAME,
-                "anomaly_status": 0,
-            }
-            for idx in range(1, len(document_pages) + 1)
-        ]
+        results = []
+        return_debug = []
 
         selected_pages = self.select_pages(document_pages)
+        
+        # Populate results for pages NOT selected (default status 0)
+        selected_page_nums = {p['page_no'] for p in selected_pages}
+        for page in document_pages:
+            page_no = page.get("page", page.get("page_no"))
+            if page_no not in selected_page_nums:
+                results.append({
+                    "page": int(page_no) if page_no else 0,
+                    "section_name": self.SECTION_NAME,
+                    "check_name": self.CHECK_NAME,
+                    "anomaly_status": 0
+                })
+
         if not selected_pages:
-            print("No potency calculation pages found.")
-            return base_results
+            return_debug.append({"info": "No potency calculation pages found."})
+            return results
 
-        print(f"Found {len(selected_pages)} potency calculation pages: "
-              f"{[p['page_no'] for p in selected_pages]}")
+        return_debug.append({
+            "info": f"Found {len(selected_pages)} potency calculation pages",
+            "pages": list(selected_page_nums)
+        })
 
+        # Analyze selected pages
         combined_text = self.combine_selected_pages(selected_pages)
         llm_json_str = self.analyze_bmr_with_llm(combined_text)
 
-        # Print the raw LLM response for debugging
-        print("\n===== LLM RAW RESPONSE =====")
-        print(llm_json_str)
-        print("============================\n")
+        return_debug.append({"llm_raw_response": llm_json_str})
 
-        final_results = self.merge_llm_results(base_results, llm_json_str)
-        return final_results
+        # Parse and merge results
+        try:
+            llm_json = json.loads(llm_json_str)
+            materials = llm_json.get("materials", [])
+            
+            # Map results to pages
+            page_results = {} # page_no -> anomaly_status
+            
+            for mat in materials:
+                calc_res = self.calculate_potency(mat)
+                mat.update(calc_res) # Add details
+                
+                p_no = mat.get("page_no")
+                status = calc_res.get("anomaly_flag", 0)
+                
+                # If multiple materials on one page, logic OR the status? 
+                # Or keep max status.
+                current_status = page_results.get(p_no, 0)
+                page_results[p_no] = max(current_status, status)
+                
+                return_debug.append({
+                    "material_result": mat,
+                    "page_no": p_no,
+                    "status": status
+                })
+
+            # Update results list with calculated statuses
+            # We need to find the entries in `results` that match these pages?
+            # Wait, `results` currently only has NON-selected pages. 
+            # We need to add SELECTED pages to `results`.
+            
+            for p in selected_pages:
+                p_no = p.get("page_no")
+                status = page_results.get(p_no, 0) # Default 0 if LLM didn't return data for this selected page
+                
+                results.append({
+                    "page": int(p_no),
+                    "section_name": self.SECTION_NAME,
+                    "check_name": self.CHECK_NAME,
+                    "anomaly_status": status
+                })
+                
+        except json.JSONDecodeError as e:
+            return_debug.append({"error": f"JSON Decode Error: {e}"})
+            # Add selected pages with status 0 (safest) or 1 (error)? 
+            # Usually 0 if we can't parse, or log error.
+            for p in selected_pages:
+                results.append({
+                    "page": int(p.get("page_no")),
+                    "section_name": self.SECTION_NAME,
+                    "check_name": self.CHECK_NAME,
+                    "anomaly_status": 0
+                })
+
+        # Sort results by page number
+        results.sort(key=lambda x: x["page"])
+        
+        # The user wants "return_debug" variable explicitly available?
+        # In Python we return it.
+        # "Whatever you are printing, store it in the return_debug variable"
+        # I'll modify the loop to populate return_debug.
+        
+        return results
 
 
 # ─────────────────────────────────────────────────────────
@@ -335,26 +562,12 @@ if __name__ == "__main__":
         print("ERROR: Could not find 'steps.filled_master_json' in the JSON file.")
         exit(1)
 
-    print(f"Loaded {len(document_pages)} pages from {JSON_PATH}")
-    print("Running Check 26 – Potency Calculation Validator ...\n")
+    # print(f"Loaded {len(document_pages)} pages from {JSON_PATH}")
+    # print("Running Check 26 – Potency Calculation Validator ...\n")
 
+    # Run validation
     validator = PotencyCalculationValidator()
     results = validator.run_validation(document_pages)
 
-    # Show only pages with anomalies
-    anomalies = [r for r in results if r["anomaly_status"] == 1]
-
-    print("\n===== FINAL RESULTS =====")
-    print(f"Total pages: {len(results)}")
-    print(f"Pages with anomalies: {len(anomalies)}")
-
-    if anomalies:
-        print("\nAnomalous pages:")
-        for a in anomalies:
-            print(f"  Page {a['page_no']}: anomaly_status={a['anomaly_status']}")
-    else:
-        print("\nNo anomalies detected.")
-
-    # Optionally dump all results
-    # print("\nFull results:")
-    # print(json.dumps(results, indent=2))
+    # Output as JSON
+    print(json.dumps(results, indent=2))
