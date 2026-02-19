@@ -236,10 +236,20 @@ class PotencyCalculationValidator:
 
     def select_pages(self, document_pages: List[Dict]) -> List[Dict]:
         selected = []
+        # Keywords that indicate an index / table-of-contents page
+        index_keywords = ["Sr. No.", "Index"]
+
         for page_obj in document_pages:
             page_no = page_obj.get("page", "")
             # Search entire page object (content, tables, markdown)
             if self.find_keyphrase_recursive(page_obj, self.KEY_PHRASE):
+                # Skip index / TOC pages
+                is_index = all(
+                    self.find_keyphrase_recursive(page_obj, kw)
+                    for kw in index_keywords
+                )
+                if is_index:
+                    continue
                 selected.append({
                     "page_no": page_no, 
                     "markdown": page_obj.get("markdown_page", "")
@@ -267,14 +277,14 @@ EXTRACT the following fields for each raw material found:
    - If not found, return null.
 4. "calculation_option": "Option 1" (Single Lot) or "Option 2" (Double Lot).
 5. "lot_1":
-   - "ar_no": AR Number for Lot 1.
-   - "assay": % Assay for Lot 1 (numeric, e.g., 99.7).
-   - "lod": LOD % for Lot 1 (numeric, e.g., 0.5). If NA or not found, return 0.
+   - "ar_no": AR Number for Lot 1 (column A1 from the table).
+   - "assay": % Assay for Lot 1 (numeric). IMPORTANT: Extract this ONLY from the structured table that has columns like "Raw material", "A. R. No.", "% Assay (On dried basis)", "LOD/ Water Content". Do NOT use values from the "Space for calculation" or formula lines (e.g. do NOT extract from "× 99.4 / 100 ×").
+   - "lod": LOD % for Lot 1 (numeric). Same rule: extract ONLY from the table, NOT from formula lines. If NA or not found, return 0.
    - "qty_used": Quantity of Lot 1 used (in grams) IF Option 2 is used. Else null.
 6. "lot_2": (If Option 2 is used)
-   - "ar_no": AR Number for Lot 2.
-   - "assay": % Assay for Lot 2.
-   - "lod": LOD % for Lot 2 (or 0).
+   - "ar_no": AR Number for Lot 2 (column A2 from the table).
+   - "assay": % Assay for Lot 2. Extract ONLY from the table, NOT from formula lines.
+   - "lod": LOD % for Lot 2. Extract ONLY from the table. If NA or 0, return 0.
    - "qty_used": Quantity of Lot 2 used (in grams) IF clearly stated.
 7. "printed_value": The FINAL Total Quantity 'A' written on the document. 
    - Prefer the value in "Total quantity ... (in Kg) = X Kg".
@@ -546,6 +556,7 @@ RETURN ONLY VALID JSON:
 # ─────────────────────────────────────────────────────────
 if __name__ == "__main__":
     # ── UPDATE THIS PATH to your BMR JSON file ──
+    # JSON_PATH = "/home/softsensor/Desktop/Amneal/challenge_bmr/05jan_AH250076_50Checks 1.json"
     JSON_PATH = "/home/softsensor/Desktop/Amneal/complete_data_61 1.json"
 
     if not os.path.exists(JSON_PATH):
@@ -562,8 +573,8 @@ if __name__ == "__main__":
         print("ERROR: Could not find 'steps.filled_master_json' in the JSON file.")
         exit(1)
 
-    # print(f"Loaded {len(document_pages)} pages from {JSON_PATH}")
-    # print("Running Check 26 – Potency Calculation Validator ...\n")
+    print(f"Loaded {len(document_pages)} pages from {JSON_PATH}")
+    print("Running Check 26 – Potency Calculation Validator ...\n")
 
     # Run validation
     validator = PotencyCalculationValidator()
