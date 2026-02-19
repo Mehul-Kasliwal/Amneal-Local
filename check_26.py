@@ -194,6 +194,8 @@ class PotencyCalculationValidator:
     CHECK_NAME = "RM_formula_checks"
     """
     Check 26: AI tool should verify potency calculation for API.
+
+    Author: Mehul Kasliwal (19th Feburary 2026)
     """
 
     KEY_PHRASE = "POTENCY CALCULATION FOR API"
