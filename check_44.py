@@ -485,7 +485,7 @@ if __name__ == "__main__":
     sys.path.insert(0, os.path.join(os.path.dirname(__file__), "yog_checks_oops"))
     from extract_data import get_filled_master_json
 
-    complete_data_path = "/home/softsensor/Desktop/Amneal/challenge_bmr/05jan_AH250076_50Checks 1.json"
+    complete_data_path = "/home/softsensor/Desktop/Amneal/all_result_76_20feb.json"
 
     print("Running Check 44 - Reconciliation Formula Check (Python computation)...")
 

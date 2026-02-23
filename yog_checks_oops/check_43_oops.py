@@ -3,6 +3,9 @@ import os
 import re
 from typing import Union, List, Dict, Any
 from openai import AzureOpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Configuration from environment variables
 GPT5_2_ENDPOINT = os.environ.get("AZURE_GPT5_ENDPOINT", "https://amneal-gpt-5.cognitiveservices.azure.com")
@@ -395,7 +398,7 @@ if __name__ == "__main__":
     from extract_data import get_filled_master_json
     
     # Load OCR data from the complete_data JSON file
-    complete_data_path = "/home/softsensor/Desktop/Amneal/challenge_bmr/05jan_AH250076_50Checks 1.json"
+    complete_data_path = "/home/softsensor/Desktop/Amneal/all_result_76_20feb.json"
     
     print("Running Check 43 - Sample Quantity Verification...")
     

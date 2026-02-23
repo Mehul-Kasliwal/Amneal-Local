@@ -1002,8 +1002,8 @@ def load_json_file(path: str) -> Dict[str, Any]:
 # =====================================================
 if __name__ == "__main__":
     # Path to JSON
-    ocr_json_path = "/home/softsensor/Desktop/Amneal/challenge_bmr/05jan_AH250076_50Checks 1.json"
-    json_file_path = "/home/softsensor/Desktop/Amneal/challenge_bmr/05jan_AH250076_50Checks 1.json"
+    ocr_json_path = "/home/softsensor/Desktop/Amneal/all_result_76_20feb.json"
+    json_file_path = "/home/softsensor/Desktop/Amneal/all_result_76_20feb.json"
 
     print("=" * 70)
     print("Running Check 24 - AR Number Verification")

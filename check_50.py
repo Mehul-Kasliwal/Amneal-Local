@@ -4,7 +4,10 @@ import ast
 import os
 import operator
 from typing import List, Dict, Any, Optional, Tuple
+from dotenv import load_dotenv
 from openai import AzureOpenAI
+
+load_dotenv()
 
 # Configuration
 GPT5_2_ENDPOINT = os.environ.get("AZURE_GPT5_ENDPOINT", "https://amneal-gpt-5.cognitiveservices.azure.com")
@@ -449,7 +452,7 @@ if __name__ == "__main__":
     from extract_data import get_filled_master_json
     
     # Load OCR data from the complete_data JSON file
-    complete_data_path = "/home/softsensor/Desktop/Amneal/challenge_bmr/05jan_AH250076_50Checks 1.json"
+    complete_data_path = "/home/softsensor/Desktop/Amneal/all_result_76_20feb.json"
     
     print("Running Check 50 - BMR Yield Value Verification (Python computation)...")
     
