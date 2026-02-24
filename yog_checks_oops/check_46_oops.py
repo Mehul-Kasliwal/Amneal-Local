@@ -23,6 +23,8 @@ class ProcessFrequencyValidator:
     3. Validate that timestamps between consecutive records fall within allowed gaps
     4. Report anomalies where frequency violations occur
     ---
+    Note: Use page number for continuation of table in future
+    ---
     Type: Python-based
     ---
     Attachment Required: NO
@@ -301,16 +303,16 @@ class ProcessFrequencyValidator:
             # Extract table keys for this page
             records = self._flatten_records(page.get("records", []))
             current_keys = set()
-            for rec in records[:1]:
+            for rec in records[:3]:
                 if isinstance(rec, dict):
-                    current_keys = set(str(key).lower() for key in rec.keys())
+                    current_keys.update(str(key).lower().replace(" ", "") for key in rec.keys())
             
             # Determine if this page is a continuation based on robust table signature 
-            # (>80% overlap to handle OCR noise) and strict sequential page numbering
+            # (>=75% overlap to handle OCR noise) and strict sequential page numbering
             is_continuation_by_table = False
             if state.has_frequency and current_keys and state.table_keys:
-                overlap = len(current_keys & state.table_keys) / max(1, len(state.table_keys))
-                if overlap > 0.80:
+                overlap = len(current_keys & state.table_keys) / max(1, min(len(current_keys), len(state.table_keys)))
+                if overlap >= 0.75:
                     # Table matches closely. Check if it's strictly sequential.
                     if p_int is not None and state.last_freq_page_no is not None:
                         if p_int == state.last_freq_page_no + 1:
@@ -340,25 +342,34 @@ class ProcessFrequencyValidator:
             if freqs:
                 # This page explicitly defines frequency - lock it for the section
                 state.has_frequency = True
+                
+                # If this page has the exactly same frequency rules (e.g. repeated table header) 
+                # AND is structurally a perfect sequential continuation, treat it as a CONTINUATION page
+                # rather than a completely new frequency section (which disrupts cross-page validation)
+                if is_continuation_by_table and freqs == state.frequency_info:
+                    defines_own_freq[k] = False
+                else:
+                    defines_own_freq[k] = True
+
                 state.frequency_info = freqs
                 state.table_keys = current_keys
                 state.last_freq_page_no = p_int
                 is_freq_page[k] = True
                 freq_info[k] = freqs
-                defines_own_freq[k] = True
                 continue
 
             # 3) Section-based carry-forward
-            if state.has_frequency and (is_continuation_by_table or self._looks_like_frequency_log(page)):
-                
-                # If we're carrying forward solely based on `looks_like_frequency_log` (e.g. no explicit table keys yet),
-                # we also require strict sequential pages to prevent unbounded bleeding across sections.
-                is_valid_continuation = is_continuation_by_table
-                
-                if not is_valid_continuation and self._looks_like_frequency_log(page):
-                    if p_int is not None and state.last_freq_page_no is not None:
-                        if p_int == state.last_freq_page_no + 1:
-                            is_valid_continuation = True
+            is_valid_continuation = False
+            if state.has_frequency:
+                if current_keys and state.table_keys:
+                    # Both pages have tables, they MUST overlap to be a continuation
+                    is_valid_continuation = is_continuation_by_table
+                else:
+                    # Fallback to textual hints only if one of the pages failed to extract table keys
+                    if self._looks_like_frequency_log(page):
+                        if p_int is not None and state.last_freq_page_no is not None:
+                            if p_int == state.last_freq_page_no + 1:
+                                is_valid_continuation = True
                 
                 if is_valid_continuation:
                     is_freq_page[k] = True
@@ -802,17 +813,38 @@ def print_debug_report(return_debug: List[Dict[str, Any]]) -> None:
 
 
 if __name__ == "__main__":
-    # Load the BMR JSON file
-    ocr_json_path = "/home/softsensor/Desktop/Amneal/all_result_76_20feb.json"
+    import sys
+    import os
     
-    print("Running Check 46 - Process Frequency Check...")
+    # Load the BMR JSON file (default or via args)
+    if len(sys.argv) > 1:
+        ocr_json_path = sys.argv[1]
+    else:
+        ocr_json_path = "/home/softsensor/Desktop/Amneal/BMR_76_filled_final_local_chandra.json"
+        
+    if not os.path.exists(ocr_json_path):
+        print(f"Error: JSON file not found at {ocr_json_path}")
+        sys.exit(1)
+        
+    print(f"Running Check 46 - Process Frequency Check on {os.path.basename(ocr_json_path)}...")
     
     # Load the full JSON
     full_data = load_json_file(ocr_json_path)
     
-    # Extract filled_master_json from steps and convert to expected format
-    steps = full_data.get("steps", {})
-    filled_master_json = steps.get("filled_master_json", [])
+    # Dynamically extract filled_master_json based on the JSON structure
+    if isinstance(full_data, list):
+        filled_master_json = full_data
+    elif isinstance(full_data, dict):
+        if "steps" in full_data and "filled_master_json" in full_data["steps"]:
+            filled_master_json = full_data["steps"]["filled_master_json"]
+        elif "filled_master_json" in full_data:
+            filled_master_json = full_data["filled_master_json"]
+        else:
+            print("Error: Could not find 'filled_master_json' in dict.")
+            sys.exit(1)
+    else:
+        print("Error: Unknown JSON root type.")
+        sys.exit(1)
     
     bmr_pages = {}
     for page_obj in filled_master_json:
