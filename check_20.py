@@ -47,10 +47,10 @@ PM_QUICK_RE = re.compile(r'±|\+/?-')
 #   "Temperature of Solution: 22.00. (Limit: 25°C±5°C)"
 PARAM_PM_RE = re.compile(
     r'([A-Za-z][A-Za-z\s/().]{2,60}?)'   # group 1: parameter name (starts with letter)
-    r':\s*'                                # colon separator
+    r'(?::\s*|\s+)'                        # optional colon separator or space
     r'(\d+\.?\d*)'                         # group 2: observed value (number)
     r'[^(]*?'                              # skip units/text until "("
-    r'\(Limit:\s*'                         # "(Limit:" prefix
+    r'\(Limit(?:[:\s]*)\s*'                # "(Limit:" or "(Limit " prefix
     r'(\d+\.?\d*)'                         # group 3: target value
     r'\s*(?:°?[A-Za-z%]*\s*)?'             # optional unit between target and ±
     r'(?:±|\+/?-)\s*'                      # ± or +/- symbol
@@ -331,16 +331,15 @@ if __name__ == "__main__":
     import os
 
     # json_path = "/home/softsensor/Desktop/Amneal/challenge_bmr/05jan_AH250076_50Checks 1.json"
-    json_path = "/home/softsensor/Desktop/Amneal/complete_data_61 1.json"
-
-    # Import extract_data to load the proper data format
-    sys.path.insert(0, os.path.join(os.path.dirname(__file__), "yog_checks_oops"))
-    from extract_data import get_filled_master_json
+    # json_path = "/home/softsensor/Desktop/Amneal/complete_data_61 1.json"
+    json_path = "/home/softsensor/Desktop/Amneal/New_BMRs/Emulsion_line_AH240074_filled_master_data.json"
 
     print("Running Check 20 - Actual vs Observed ± Range (Pure Python)...")
 
     try:
-        document_pages = get_filled_master_json(json_path)
+        # This JSON already contains the filled_master_json directly (list of page dicts)
+        with open(json_path, "r", encoding="utf-8") as f:
+            document_pages = json.load(f)
         print(f"Loaded {len(document_pages)} pages\n")
 
         checker = ActVsObsPlusMinusChecker()

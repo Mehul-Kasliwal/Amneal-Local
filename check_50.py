@@ -448,16 +448,17 @@ Rules:
 if __name__ == "__main__":
     import sys, os
     from pprint import pprint as pp
-    sys.path.insert(0, os.path.join(os.path.dirname(__file__), "yog_checks_oops"))
-    from extract_data import get_filled_master_json
     
     # Load OCR data from the complete_data JSON file
-    complete_data_path = "/home/softsensor/Desktop/Amneal/all_result_76_20feb.json"
+    # complete_data_path = "/home/softsensor/Desktop/Amneal/all_result_76_20feb.json"
+    complete_data_path = "/home/softsensor/Desktop/Amneal/New_BMRs/Emulsion_line_AH240074_filled_master_data.json"
     
     print("Running Check 50 - BMR Yield Value Verification (Python computation)...")
     
     try:
-        filled_master_json = get_filled_master_json(complete_data_path)
+        # This JSON already contains the filled_master_json directly (list of page dicts)
+        with open(complete_data_path, "r", encoding="utf-8") as f:
+            filled_master_json = json.load(f)
         print(f"Loaded {len(filled_master_json)} pages from filled_master_json")
         
         validator = BMR_Yield_Reconciliation()

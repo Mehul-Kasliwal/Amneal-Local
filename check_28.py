@@ -220,12 +220,15 @@ def load_json_file(filepath: str) -> dict:
         return json.load(f)
 
 
-def extract_bmr_data(json_data: dict) -> dict:
+def extract_bmr_data(json_data: dict | list) -> dict:
     """
     Extract BMR data from the JSON structure.
     Converts the filled_master_json array into a page-keyed dictionary.
     """
-    filled_master_json = json_data.get("steps", {}).get("filled_master_json", [])
+    if isinstance(json_data, list):
+        filled_master_json = json_data
+    else:
+        filled_master_json = json_data.get("steps", {}).get("filled_master_json", [])
     
     if not filled_master_json:
         print("Warning: No filled_master_json found in the JSON data.")
@@ -283,7 +286,7 @@ if __name__ == "__main__":
     # Path to the JSON file
     json_file = os.path.join(
         os.path.dirname(os.path.abspath(__file__)),
-        "challenge_bmr/05jan_AH250076_50Checks 1.json"
+        "New_BMRs/Emulsion_line_AH240074_filled_master_data.json"
     )
     
     print(f"Loading JSON file: {json_file}")
