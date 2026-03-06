@@ -477,15 +477,82 @@ class QuantityVarianceValidator:
 
         return anomalies
 
+    # ===================== BOUNDING REGION LOOKUP =====================
+
+    def lookup_bounding_regions(
+        self,
+        grounded_pages: Dict[int, Any],
+        page_no: str,
+        obs_col: Optional[str],
+        req_col: Optional[str]
+    ) -> Dict[str, Any]:
+        """
+        Look up bounding regions for obs_col and req_col from the grounded output.
+
+        Args:
+            grounded_pages: Dict keyed by page number (int) -> page object from grounded JSON.
+            page_no: The page number string to look up.
+            obs_col: The observed quantity column name (e.g. 'Issued Qty').
+            req_col: The required quantity column name (e.g. 'Quantity Req.').
+
+        Returns:
+            Dict with 'obs_col_bounding_regions' and 'req_col_bounding_regions' lists.
+        """
+        result = {
+            "obs_col_bounding_regions": [],
+            "req_col_bounding_regions": []
+        }
+
+        try:
+            page_key = int(page_no)
+        except (ValueError, TypeError):
+            return result
+
+        page_obj = grounded_pages.get(page_key)
+        if not page_obj:
+            return result
+
+        obs_br_key = f"{obs_col}_bounding_region" if obs_col else None
+        req_br_key = f"{req_col}_bounding_region" if req_col else None
+
+        for content_item in page_obj.get("page_content", []):
+            if content_item.get("type") != "table":
+                continue
+
+            table_json = content_item.get("table_json", {})
+            if not isinstance(table_json, dict):
+                continue
+
+            # Check inside records list
+            records = table_json.get("records", [])
+            for record in records:
+                if not isinstance(record, dict):
+                    continue
+                if obs_br_key and obs_br_key in record:
+                    result["obs_col_bounding_regions"].extend(record[obs_br_key])
+                if req_br_key and req_br_key in record:
+                    result["req_col_bounding_regions"].extend(record[req_br_key])
+
+            # Also check top-level table_json keys (non-records tables)
+            if obs_br_key and obs_br_key in table_json:
+                result["obs_col_bounding_regions"].extend(table_json[obs_br_key])
+            if req_br_key and req_br_key in table_json:
+                result["req_col_bounding_regions"].extend(table_json[req_br_key])
+
+        return result
+
     # ===================== ENTRY POINT =====================
 
-    def run_validation(self, bmr_data: Dict[str, Any]) -> List[Dict[str, Any]]:
+    def run_validation(self, bmr_data: Dict[str, Any], grounded_data: Optional[list] = None) -> List[Dict[str, Any]]:
         """
         Main entry point for quantity variance validation.
         
         Args:
             bmr_data: Dictionary with page numbers as keys, page content as values.
                       Each page should have a "records" key with the table data.
+            grounded_data: Optional list of page objects from the grounded output JSON.
+                           When provided, bounding regions for obs_col/req_col are
+                           included in anomaly results.
         
         Returns:
             List of result dicts, one per page:
@@ -500,6 +567,14 @@ class QuantityVarianceValidator:
         self.debug_results = []  # Store debug information
         trolley_spec = None
         trolley_spec_next_page_allowed = False
+
+        # Build page-keyed lookup from grounded data
+        grounded_pages: Dict[int, Any] = {}
+        if grounded_data:
+            for pg in grounded_data:
+                pn = pg.get("page")
+                if pn is not None:
+                    grounded_pages[int(pn)] = pg
 
         for page_no, page in bmr_data.items():
             # Check for skip condition: skip pages that check_28 runs on (based on page heading)
@@ -588,14 +663,31 @@ class QuantityVarianceValidator:
 
                 # -------- STEP 3: Build result --------
                 if anomalies:
-                    self.debug_results.append({
+                    debug_entry = {
                         "page_no": page_no,
                         "section_name": self.SECTION_NAME,
                         "check_name": self.CHECK_NAME,
                         "anomaly_status": 1,
                         "columns_found": {"req_col": req_col, "obs_col": obs_col, "has_trolley": has_trolley},
                         "anomalies": anomalies
-                    })
+                    }
+                    result_entry = {
+                        "page_no": page_no,
+                        "section_name": self.SECTION_NAME,
+                        "check_name": self.CHECK_NAME,
+                        "anomaly_status": 1
+                    }
+
+                    # Lookup bounding regions from grounded output
+                    if grounded_pages:
+                        bounding = self.lookup_bounding_regions(
+                            grounded_pages, page_no, obs_col, req_col
+                        )
+                        debug_entry["bounding_regions"] = bounding
+                        result_entry["bounding_regions"] = bounding
+
+                    self.debug_results.append(debug_entry)
+                    results.append(result_entry)
                 else:
                     self.debug_results.append({
                         "page_no": page_no,
@@ -605,13 +697,12 @@ class QuantityVarianceValidator:
                         "columns_found": {"req_col": req_col, "obs_col": obs_col, "has_trolley": has_trolley},
                         "skip_reason": "No anomalies found (quantities matched)"
                     })
-                
-                results.append({
-                    "page_no": page_no,
-                    "section_name": self.SECTION_NAME,
-                    "check_name": self.CHECK_NAME,
-                    "anomaly_status": 1 if anomalies else 0
-                })
+                    results.append({
+                        "page_no": page_no,
+                        "section_name": self.SECTION_NAME,
+                        "check_name": self.CHECK_NAME,
+                        "anomaly_status": 0
+                    })
 
             except Exception as e:
                 self.debug_results.append({
@@ -718,12 +809,27 @@ if __name__ == "__main__":
 
     json_file = os.path.join(
         os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-        "New_BMRs/TS_line_(BMR-PA-040-10)_filled_master_data.json"
+        "New_BMRs/0078_OCR.json"
+    )
+
+    # Path to the grounded output JSON file
+    grounded_file = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        "New_BMRs/grounded_output_AH250078.json"
     )
     
     print(f"Loading JSON file: {json_file}")
     json_data = load_json_file(json_file)
     print(f"JSON loaded successfully.")
+
+    # Load grounded output (optional)
+    grounded_data = "/home/softsensor/Desktop/Amneal/Amneal-Local/New_BMRs/grounded_output_AH250078.json"
+    if os.path.exists(grounded_file):
+        print(f"Loading grounded output: {grounded_file}")
+        grounded_data = load_json_file(grounded_file)
+        print(f"Grounded output loaded successfully ({len(grounded_data)} pages).")
+    else:
+        print(f"Grounded output file not found: {grounded_file}")
     
     bmr_data = extract_bmr_data(json_data)
     print(f"Extracted {len(bmr_data)} pages from the BMR data.")
@@ -733,7 +839,7 @@ if __name__ == "__main__":
     print("\nRunning Quantity Variance Validation...")
     print("=" * 60)
     
-    results = validator.run_validation(bmr_data)
+    results = validator.run_validation(bmr_data, grounded_data=grounded_data)
     
     print(f"\nValidation completed. Total pages processed: {len(results)}")
     print("=" * 60)
@@ -750,6 +856,12 @@ if __name__ == "__main__":
         for result in anomaly_pages:
             print(f"  - Page {result['page_no']}: {result['check_name']}")
     
+    # Print PRODUCTION results (what the API returns)
+    print("\n" + "=" * 60)
+    print("PRODUCTION RESULTS (all pages):")
+    print("=" * 60)
+    pp(results)
+
     # Print all debug results
     print("\n" + "=" * 60)
     print("DEBUG RESULTS (all pages):")
