@@ -64,6 +64,8 @@ class MaterialRequisitionValidator:
         "Qty. Issued",
         "Actual issued Qty.",  # Page 34 variation
         "Issued Qty",          # Page 36 variation
+        "Net Wt.",             # Page 31 variation
+        "Net. Wt. / Nos.",     # Attachment variation
     ]
 
     # Tolerance for quantity matching
@@ -73,6 +75,23 @@ class MaterialRequisitionValidator:
     BLANK_VALUES = {"", "na", "na.", "n/a", "n/a.", "n.a", "n.a.", "*", "-"}
 
     # ===================== HELPER METHODS =====================
+
+    def _get_ci(self, d: Dict, *keys, default=""):
+        """Case-insensitive dict get. Tries each key against dict keys ignoring case."""
+        if not isinstance(d, dict):
+            return default
+        lower_map = {k.lower(): k for k in d}
+        for key in keys:
+            actual = lower_map.get(key.lower())
+            if actual is not None:
+                return d[actual]
+        return default
+
+    def _has_ci(self, d: Dict, key: str) -> bool:
+        """Case-insensitive check if key exists in dict."""
+        if not isinstance(d, dict):
+            return False
+        return key.lower() in {k.lower() for k in d}
 
     def is_blank_or_na(self, v: Any) -> bool:
         """Check if a value is blank or represents N/A."""
@@ -288,8 +307,8 @@ class MaterialRequisitionValidator:
             for content in page_content:
                 if isinstance(content, dict):
                     # Check if it's a single record (has Material Code directly)
-                    if "Material Code" in content:
-                        code = self.normalize_material_code(content.get("Material Code", ""))
+                    if self._has_ci(content, "Material Code"):
+                        code = self.normalize_material_code(self._get_ci(content, "Material Code", "Material code"))
                         if code:
                             if code not in index:
                                 index[code] = []
@@ -298,7 +317,7 @@ class MaterialRequisitionValidator:
                     # Check for nested records
                     if "records" in content:
                         for record in self.iter_dict_rows(content["records"]):
-                            code = self.normalize_material_code(record.get("Material Code", ""))
+                            code = self.normalize_material_code(self._get_ci(record, "Material Code", "Material code"))
                             if code:
                                 if code not in index:
                                     index[code] = []
@@ -348,15 +367,18 @@ class MaterialRequisitionValidator:
         # If multiple attachment records exist for same material, sum the quantities per unit
         for att_record in attachment_records:
             # UOM Context (unit of measurement)
-            uom = att_record.get("UOM", "")
+            uom = self._get_ci(att_record, "UOM")
 
             # Qty Req
-            q_req = self.extract_quantities(att_record.get("Quantity Required", ""), uom)
+            q_req = self.extract_quantities(self._get_ci(att_record, "Quantity Required", "Quantity required"), uom)
             for u, v in q_req.items():
                 att_qty_req_map_agg[u] = att_qty_req_map_agg.get(u, Decimal(0)) + v
 
             # Qty Issued
-            q_iss = self.extract_quantities(att_record.get("Quantity Issued", att_record.get("Net. Wt. / Nos.", "")), uom)
+            q_iss_text = self._get_ci(att_record, "Quantity Issued", "Quantity issued")
+            if not q_iss_text:
+                q_iss_text = self._get_ci(att_record, "Net. Wt. / Nos.")
+            q_iss = self.extract_quantities(q_iss_text, uom)
             for u, v in q_iss.items():
                 att_qty_disp_map_agg[u] = att_qty_disp_map_agg.get(u, Decimal(0)) + v
 
@@ -556,6 +578,7 @@ class MaterialRequisitionValidator:
                     "anomaly_status": 0
                 })
 
+        self.debug_results = return_debug
         return results
 
 
@@ -567,8 +590,8 @@ if __name__ == "__main__":
     import os
 
     # File paths
-    bmr_filepath = '/home/softsensor/Desktop/Amneal/all_result_76_20feb.json'
-    attachment_filepath = '/home/softsensor/Desktop/Amneal/challenge_bmr/Attachment 9.json'
+    bmr_filepath = '/home/softsensor/Desktop/Amneal/Amneal-Local/New_BMRs/Emulsion_line_AH240074_filled_master_data.json'
+    attachment_filepath = '/home/softsensor/Desktop/Amneal/Amneal-Local/New_BMRs/Attachment-29_landing_ai_ocr_bmr_61 1.json'
 
     # Load data
     with open(bmr_filepath, "r", encoding="utf-8") as f:
@@ -593,7 +616,16 @@ if __name__ == "__main__":
     validator = MaterialRequisitionValidator()
     results = validator.run_validation(bmr_data, attachment_data)
 
+    # Output debug information
+    print("\n" + "="*60)
+    print("DEBUG INFORMATION")
+    print("="*60)
+    print(json.dumps(validator.debug_results, indent=2, default=str))
+
     # Output as JSON (results are already in the final format)
+    print("\n" + "="*60)
+    print("FINAL RESULTS")
+    print("="*60)
     print(json.dumps(results, indent=2))
 
 

@@ -1,0 +1,292 @@
+[
+ {
+  "page": 1,
+  "page_content": [
+   {
+    "section_title": "Material Requisition Slip",
+    "Slip No.": "018",
+    "Product name": "Potussium Phosphates Invection usp, Phosphorus 3mmorime und potassium 4.4 MEQ/Me (15 me)",
+    "Department": "SM",
+    "Date": "24-Jun-25",
+    "Batch No.": "AH250014",
+    "Reason": "For Butch Activita",
+    "records": [
+     {
+      "Sr. No.": "01",
+      "Material Code": "RMI-0244",
+      "Material Name": "monobusic potassium Phosphate, USP - NF",
+      "UOM": "KUT",
+      "Quantity Required": "112.0",
+      "Quantity Issued": "13,996 kg 24.894kg 73.518kg",
+      "A.R. No.": "24010611 24010733 24011444",
+      "GRN No.": "24001649 24001663 240017434 24011486",
+      "Balance ID No.": "EQPIPIT PRD/146",
+      "Remark": "42100"
+     },
+     {
+      "Sr. No.": "02",
+      "Material Code": "RMI-0245",
+      "Material Name": "Dibusic Potassium Phosphate USP",
+      "UOM": "KUT",
+      "Quantity Required": "118.0",
+      "Quantity Issued": "12.400 kg 74.900 ky 31.420 kg",
+      "A.R. No.": "24010725 24010813 24013636",
+      "GRN No.": "24001662 24001673 24001809",
+      "Balance ID No.": "EQPIPIT PRD1146",
+      "Remark": "42100"
+     },
+     {
+      "Sr. No.": "",
+      "Material Code": "",
+      "Material Name": "",
+      "UOM": "",
+      "Quantity Required": "",
+      "Quantity Issued": "",
+      "A.R. No.": "",
+      "GRN No.": "",
+      "Balance ID No.": "",
+      "Remark": ""
+     },
+     {
+      "Sr. No.": "",
+      "Material Code": "",
+      "Material Name": "",
+      "UOM": "",
+      "Quantity Required": "",
+      "Quantity Issued": "",
+      "A.R. No.": "NA",
+      "GRN No.": "",
+      "Balance ID No.": "",
+      "Remark": ""
+     }
+    ],
+    "Authorized by": "(A) 31-Jun-25 Anilhami (M) 24-Jun-25",
+    "Received by": "(M) 31-Jun-25 Mohit Mukrizu",
+    "Requested by": "(m) 24-Jun-25 mohit mukdizu",
+    "Issued by": "Ajay Rana A 31-Jan-25",
+    "JDE 7 BLPS Entry Done": "A 31-Jan-25",
+    "Form No.": "PAP-MM-005-F002-002",
+    "Ref. SOP No.": "PAP-MM-005",
+    "Page No.": "01 of 01",
+    "Note": "* By mistake wrong KAN NO written hence corrected. X 31-Jan-25"
+   }
+  ],
+  "markdown_page": "<a id='b47c24da-8cde-4591-a465-fce552cad128'></a> <::logo: Amneal Amneal Material Requisition Slip Form-II A stylized black 'A' forms the initial letter of 'Amneal' with a registered trademark symbol, followed by the text 'Material Requisition Slip Form-II'.::> <a id='8ca0ef8c-6dd7-4fff-ac7a-4de84e598197'></a> <::attestation: Official stamp Stamped REFERENCE COPY A rectangular, green-ink stamp with the text \"REFERENCE COPY\" in uppercase, positioned centrally on a white background. The stamp is slightly angled upwards to the right.::> <a id='e743e49c-2bc4-4e61-a8f6-6a775bab19a9'></a> 018 <a id='e1e1ea5e-01ea-4624-994f-120650bd09b8'></a> Slip No. : 018 Product name: Potussium Phosphates Invection usp, Phosphorus 3mmorime und potassium 4.4 MEQ/Me (15 me) Department : SM Date : 24-Jun-25 Batch No.: AH250014 Reason : For Butch Activita <a id='bd272e68-b2e2-432a-80db-0fced960b020'></a> Department: S01 <table id=\"0-1\"> <tr><td id=\"0-2\">Sr. No.</td><td id=\"0-3\">Material Code</td><td id=\"0-4\">Material Name</td><td id=\"0-5\">UOM</td><td id=\"0-6\">Quantity Required</td><td id=\"0-7\">Quantity Issued</td><td id=\"0-8\">A.R. No.</td><td id=\"0-9\">GRN No.</td><td id=\"0-a\">Balance ID No.</td><td id=\"0-b\">Remark</td></tr> <tr><td id=\"0-c\">01</td><td id=\"0-d\">RMI-0244</td><td id=\"0-e\">monobusic potassium Phosphate, USP - NF</td><td id=\"0-f\">KUT</td><td id=\"0-g\">112.0</td><td id=\"0-h\">13,996 kg 24.894kg 73.518kg</td><td id=\"0-i\">24010611 24010733 24011444</td><td id=\"0-j\">24001649 24001663 240017434 24011486</td><td id=\"0-k\">EQPIPIT PRD/146</td><td id=\"0-l\">42100</td></tr> <tr><td id=\"0-m\">02</td><td id=\"0-n\">RMI-0245</td><td id=\"0-o\">Dibusic Potassium Phosphate USP</td><td id=\"0-p\">KUT</td><td id=\"0-q\">118.0</td><td id=\"0-r\">12.400 kg 74.900 ky 31.420 kg</td><td id=\"0-s\">24010725 24010813 24013636</td><td id=\"0-t\">24001662 24001673 24001809</td><td id=\"0-u\">EQPIPIT PRD1146</td><td id=\"0-v\">42100</td></tr> <tr><td id=\"0-w\"></td><td id=\"0-x\"></td><td id=\"0-y\"></td><td id=\"0-z\"></td><td id=\"0-A\"></td><td id=\"0-B\"></td><td id=\"0-C\"></td><td id=\"0-D\"></td><td id=\"0-E\"></td><td id=\"0-F\"></td></tr> <tr><td id=\"0-G\"></td><td id=\"0-H\"></td><td id=\"0-I\"></td><td id=\"0-J\"></td><td id=\"0-K\"></td><td id=\"0-L\"></td><td id=\"0-M\">NA</td><td id=\"0-N\"></td><td id=\"0-O\"></td><td id=\"0-P\"></td></tr> </table> <a id='062e7475-d058-44a3-8676-3216e357c957'></a> Authorized by: (A) 31-Jun-25 Anilhami (M) 24-Jun-25 Received by : (M) 31-Jun-25 Mohit Mukrizu <a id='97c51086-c3a0-4be5-9159-6a6ee761cc50'></a> Requested by: (m) 24-Jun-25 mohit mukdizu Issued by : Ajay Rana A 31-Jan-25 <a id='eaab3919-2e6c-42ac-92ac-bdcced8725e8'></a> JDE 7 BLPS Entry Done A 31-Jan-25 <a id='838e72b9-7493-4019-b677-196d786d76e9'></a> Form No.: PAP-MM-005-F002-002 Ref. SOP No.: PAP-MM-005 <a id='175ebf31-c6d1-48c6-bba5-8d637d1461aa'></a> Page No. 01 of 01 * By mistake wrong KAN NO written hence corrected. X 31-Jan-25"
+ },
+ {
+  "page": 2,
+  "page_content": [
+   {
+    "section_title": "Material Requisition Slip",
+    "Slip No.": "016",
+    "Date": "24-Jun-25",
+    "Product name": "Potassium Phosphates Injection USP, Phosphorus 3mmol/ml and Potassium 4.4 mEq/ml (15mL)",
+    "Batch No.": "AH250014",
+    "Department": "SM",
+    "Reason": "For Butch *Actividt Activiは",
+    "records": [
+     {
+      "Sr. No.": "01",
+      "Material Code": "MMI-0162",
+      "Material Name": "OPTICUP XL10 CUPSULE DURUPO-re cut No. KVUTIA 10 HHI",
+      "UOM": "NOS",
+      "Quantity Required": "01",
+      "Quantity Issued": "01",
+      "A.R. No.": "23021767",
+      "GRN No.": "23003066 2400 (circled)",
+      "Balance ID No.": "NA",
+      "Remark": "42100"
+     },
+     {
+      "Sr. No.": "02",
+      "Material Code": "MMI-0357",
+      "Material Name": "DURUPORLE CARTRIDGE FILTER 10 INCH 0.22 UM (CATALOGUE NUMBER:- CVTL71 TP3)",
+      "UOM": "NOS",
+      "Quantity Required": "01",
+      "Quantity Issued": "NA",
+      "A.R. No.": "NA",
+      "GRN No.": "NA",
+      "Balance ID No.": "NA",
+      "Remark": "NA"
+     },
+     {
+      "Sr. No.": "03",
+      "Material Code": "MMI-0080",
+      "Material Name": "POLZAAD CN10 INCH CARTRIDGES 1.2N cat No. CN1271E06",
+      "UOM": "NOS",
+      "Quantity Required": "01",
+      "Quantity Issued": "01",
+      "A.R. No.": "24000964",
+      "GRN No.": "24000182",
+      "Balance ID No.": "NA",
+      "Remark": "42100"
+     },
+     {
+      "Sr. No.": "04",
+      "Material Code": "MMI-0371",
+      "Material Name": "TU-SILICONE TUBE-4.8(ID) x 8(OD) AMI",
+      "UOM": "FT",
+      "Quantity Required": "27.0",
+      "Quantity Issued": "27",
+      "A.R. No.": "23009897",
+      "GRN No.": "23002153",
+      "Balance ID No.": "NA",
+      "Remark": "42100"
+     }
+    ],
+    "Requested by": "Ⓜ 24-Jun-25 mohit muladiya",
+    "Authorized by": "A4, 31-Jan-25, Ansi Gami",
+    "Issued by": "Nilesh [illegible signature] Thekkur 31-Jan-25",
+    "Received by": "M (circled), 31-Jun-25, Mohit munduza",
+    "Form No.": "PAP-MM-005-F002-002",
+    "Ref. SOP No.": "PAP-MM-005",
+    "Page No.": "01 of 01"
+   }
+  ],
+  "markdown_page": "<a id='4dc9d8d2-14bb-4032-803b-168c3f050387'></a> <::attestation: Official Stamp Stamped: yes Readable Text: REFERENCE COPY A rectangular stamp with \"REFERENCE COPY\" in green, capital letters, enclosed in a thin border, and tilted slightly upwards to the right, centered in the image. ::> <a id='d3fb0ff0-da7e-4416-a23b-937260370188'></a> <::logo: Amneal Amneal Material Requisition Slip Form-II Black text logo with an abstract, stylized 'A' symbol above the company name.::> <a id='e209d06f-8cce-4b03-88fb-ff190f07b367'></a> 016 <a id='5afa52ff-4fd6-4cc9-b359-5b3f98e9bb5a'></a> Slip No. : 016 Product name: Potassium Phosphates Injection USP, Phosphorus 3mmol/ml and Potassium 4.4 mEq/ml (15mL) Department : SM <a id='ca47f3e8-07b9-4d3a-a668-5067b59fe680'></a> Date : 24-Jun-25 Batch No.: AH250014 Reason : For Butch *Actividt Activiは <a id='db8e5342-d7db-4cc4-ab89-fe402382fff4'></a> <table id=\"0-1\"> <tr><td id=\"0-2\">Sr. No.</td><td id=\"0-3\">Material Code</td><td id=\"0-4\">Material Name</td><td id=\"0-5\">UOM</td><td id=\"0-6\">Quantity Required</td><td id=\"0-7\">Quantity Issued</td><td id=\"0-8\">A.R. No.</td><td id=\"0-9\">GRN No.</td><td id=\"0-a\">Balance ID No.</td><td id=\"0-b\">Remark</td></tr> <tr><td id=\"0-c\">01</td><td id=\"0-d\">MMI-0162</td><td id=\"0-e\">OPTICUP XL10 CUPSULE DURUPO-re cut No. KVUTIA 10 HHI</td><td id=\"0-f\">NOS</td><td id=\"0-g\">01</td><td id=\"0-h\">01</td><td id=\"0-i\">23021767</td><td id=\"0-j\">23003066 2400 (circled)</td><td id=\"0-k\">NA</td><td id=\"0-l\">42100</td></tr> <tr><td id=\"0-m\">02</td><td id=\"0-n\">MMI-0357</td><td id=\"0-o\">DURUPORLE CARTRIDGE FILTER 10 INCH 0.22 UM (CATALOGUE NUMBER:- CVTL71 TP3)</td><td id=\"0-p\">NOS</td><td id=\"0-q\">01</td><td id=\"0-r\">NA</td><td id=\"0-s\">NA</td><td id=\"0-t\">NA</td><td id=\"0-u\">NA</td><td id=\"0-v\">NA</td></tr> <tr><td id=\"0-w\">03</td><td id=\"0-x\">MMI-0080</td><td id=\"0-y\">POLZAAD CN10 INCH CARTRIDGES 1.2N cat No. CN1271E06</td><td id=\"0-z\">NOS</td><td id=\"0-A\">01</td><td id=\"0-B\">01</td><td id=\"0-C\">24000964</td><td id=\"0-D\">24000182</td><td id=\"0-E\">NA</td><td id=\"0-F\">42100</td></tr> <tr><td id=\"0-G\">04</td><td id=\"0-H\">MMI-0371</td><td id=\"0-I\">TU-SILICONE TUBE-4.8(ID) x 8(OD) AMI</td><td id=\"0-J\">FT</td><td id=\"0-K\">27.0</td><td id=\"0-L\">27</td><td id=\"0-M\">23009897</td><td id=\"0-N\">23002153</td><td id=\"0-O\">NA</td><td id=\"0-P\">42100</td></tr> </table> <a id='d59d4f01-9f00-4923-b542-5703ef7a06f6'></a> Requested by: Ⓜ 24-Jun-25 mohit muladiya Issued by : Nilesh [illegible signature] Thekkur 31-Jan-25 <a id='5a072da6-a95b-43e8-8876-9bbcc9aedf9d'></a> * ENTRY ERROR @ 24-Jun-25 @ writing error @ 31-Jan-25 <a id='fd50ffe9-f0ff-428a-a4b9-83ad700995c2'></a> <::attestation: Authorization and Receipt Authorized by: A4, 31-Jan-25, Ansi Gami Received by: M (circled), 31-Jun-25, Mohit munduza Handwritten entries for authorization and receipt, including initials, dates, and names, presented in two lines, centrally positioned on a white background.::> <a id='839052ed-7f65-41ec-b46f-e4e543586926'></a> Page No. 01 of 01 <a id='1c1ed80e-96db-4e2d-bebb-e8605300873d'></a> Form No.: PAP-MM-005-F002-002 Ref. SOP No.: PAP-MM-005"
+ },
+ {
+  "page": 3,
+  "page_content": [
+   {
+    "section_title": "Material Requisition Slip Form-II",
+    "Slip No.": "017",
+    "Date": "24-Jun-25",
+    "Product name": "Potussium Phosphutes Insection usp, Phosphorus 3mmolime und Potussium 4.4MEQ/ML(15ML)",
+    "Batch No.": "AH250014",
+    "Department": "Sm",
+    "Reason": "For Batch Activity",
+    "records": [
+     {
+      "Sr. No.": "01",
+      "Material Code": "MMI-0399",
+      "Material Name": "TU-SILICONE TUBE-6-4CID)x 9.6 COD) AMI",
+      "UOM": "FT",
+      "Quantity Required": "23.0",
+      "Quantity Issued": "23.0",
+      "A.R. No.": "22017505",
+      "GRN No.": "22003170",
+      "Balance ID No.": "NA",
+      "Remark": "42100"
+     },
+     {
+      "Sr. No.": "02",
+      "Material Code": "MMI-0362",
+      "Material Name": "Imupure-peutinum-cured Tubing (8.0MMIDX 12.8 mm OD) catul ogue No. 901-140B-60",
+      "UOM": "Mtr",
+      "Quantity Required": "3.0",
+      "Quantity Issued": "3.0",
+      "A.R. No.": "23023673",
+      "GRN No.": "23003500",
+      "Balance ID No.": "NA",
+      "Remark": "42100"
+     },
+     {
+      "Sr. No.": "03",
+      "Material Code": "MMI-0362",
+      "Material Name": "Imupure-poutinum-cured Tubing (8.0mmZD 12.8mm OD)",
+      "UOM": "mter",
+      "Quantity Required": "1.0",
+      "Quantity Issued": "1.0",
+      "A.R. No.": "23023673",
+      "GRN No.": "23003500",
+      "Balance ID No.": "NA",
+      "Remark": "42100"
+     },
+     {
+      "Sr. No.": "NA",
+      "Material Code": "NA",
+      "Material Name": "Cutuloque No.901-140B-60",
+      "UOM": "NA",
+      "Quantity Required": "NA",
+      "Quantity Issued": "NA",
+      "A.R. No.": "NA",
+      "GRN No.": "NA",
+      "Balance ID No.": "NA",
+      "Remark": "NA"
+     }
+    ],
+    "Requested by": "24-Jun-25 mohit muldizu",
+    "Authorized by": "31-Jun-25 Anil Gam",
+    "Issued by": "Nilesh Thakker 31-Jun-25",
+    "Received by": "31-Jun-25 Mohit Murdi",
+    "Form No.": "PAP-MM-005-F002-002",
+    "Ref. SOP No.": "PAP-MM-005",
+    "Page No.": "01 of 01"
+   }
+  ],
+  "markdown_page": "<a id='8351ce31-df18-4733-8222-dce1c229ba3b'></a> <::attestation: official stamp stamped REFERENCE COPY A rectangular stamp with the text \"REFERENCE COPY\" in a teal/green color, slightly angled upwards from left to right, centered in the image. ::> <a id='a3d3b3a2-693a-4780-8d6d-51928d077280'></a> <::logo: Amneal Amneal Material Requisition Slip Form-II Black stylized text with a registered trademark symbol, featuring a prominent 'A' resembling a soaring bird or an abstract arrow shape.::> <a id='d779a553-98f8-41cd-a76a-b292de76b935'></a> 017 <a id='a25e83af-ccb5-4f7b-baf0-443ab22776f5'></a> Slip No. : 017 Product name: Potussium Phosphutes Insection usp, Phosphorus 3mmolime und Potussium 4.4MEQ/ML(15ML) Department : Sm <a id='f256d7c3-a868-40ee-9c50-8373914e27b0'></a> Date: 24-Jun-25 Batch No.: AH250014 Reason: For Batch Activity <a id='00966298-7118-4670-9490-c417b2a0a340'></a> <table id=\"0-1\"> <tr><td id=\"0-2\">Sr. No.</td><td id=\"0-3\">Material Code</td><td id=\"0-4\">Material Name</td><td id=\"0-5\">UOM</td><td id=\"0-6\">Quantity Required</td><td id=\"0-7\">Quantity Issued</td><td id=\"0-8\">A.R. No.</td><td id=\"0-9\">GRN No.</td><td id=\"0-a\">Balance ID No.</td><td id=\"0-b\">Remark</td></tr> <tr><td id=\"0-c\">01</td><td id=\"0-d\">MMI-0399</td><td id=\"0-e\">TU-SILICONE TUBE-6-4CID)x 9.6 COD) AMI</td><td id=\"0-f\">FT</td><td id=\"0-g\">23.0</td><td id=\"0-h\">23.0</td><td id=\"0-i\">22017505</td><td id=\"0-j\">22003170</td><td id=\"0-k\">NA</td><td id=\"0-l\">42100</td></tr> <tr><td id=\"0-m\">02</td><td id=\"0-n\">MMI-0362</td><td id=\"0-o\">Imupure-peutinum-cured Tubing (8.0MMIDX 12.8 mm OD) catul ogue No. 901-140B-60</td><td id=\"0-p\">Mtr</td><td id=\"0-q\">3.0</td><td id=\"0-r\">3.0</td><td id=\"0-s\">23023673</td><td id=\"0-t\">23003500</td><td id=\"0-u\">NA</td><td id=\"0-v\">42100</td></tr> <tr><td id=\"0-w\">03</td><td id=\"0-x\">MMI-0362</td><td id=\"0-y\">Imupure-poutinum-cured Tubing (8.0mmZD 12.8mm OD)</td><td id=\"0-z\">mter</td><td id=\"0-A\">1.0</td><td id=\"0-B\">1.0</td><td id=\"0-C\">23023673</td><td id=\"0-D\">23003500</td><td id=\"0-E\">NA</td><td id=\"0-F\">42100</td></tr> <tr><td id=\"0-G\">NA</td><td id=\"0-H\">NA</td><td id=\"0-I\">Cutuloque No.901-140B-60</td><td id=\"0-J\">NA</td><td id=\"0-K\">NA</td><td id=\"0-L\">NA</td><td id=\"0-M\">NA</td><td id=\"0-N\">NA</td><td id=\"0-O\">NA</td><td id=\"0-P\">NA</td></tr> </table> <a id='4ca1658e-14e9-4db1-84cb-f7d741a40489'></a> <::attestation: Signature/Issuance Attestation Status: Signed/Issued Signature (Requested by): illegible (appears as an initial/mark) Signature (Issued by): illegible (appears as an initial/mark) Readable Text: Requested by: 24-Jun-25 mohit muldizu Issued by: Nilesh Thakker 31-Jun-25 Short description of visual elements and positioning: Two lines with labels 'Requested by:' and 'Issued by:', followed by handwritten names, dates, and what appear to be initials or signatures, all underlined or associated with lines.::> <a id='df11ba2b-518f-4b9e-9795-ec50a0be3b5c'></a> <::attestation: Type of attestation: Authorization and Receipt Status indicators: Initialed/Signed Signature: legible Readable Text: Authorized by: (A) 31-Jun-25 Anil Gam Received by: (M) 31-Jun-25 Mohit Murdi Short description of visual elements and positioning: Two lines of text, each with a label, an initial circled, a date, and a handwritten name, appearing horizontally on the page.::> <a id='020963ab-7b8a-4bcf-ba3b-1a138e4820e0'></a> Form No.: PAP-MM-005-F002-002 Ref. SOP No.: PAP-MM-005 <a id='afdfd4dd-9a96-46ba-84b0-df17e0b7679a'></a> Page No. 01 of 01"
+ },
+ {
+  "page": 4,
+  "page_content": [
+   {
+    "section_title": "Material Requisition Slip",
+    "Slip No.": "014",
+    "Date": "24-Jun-25",
+    "Product name": "Potassium Phosphates Injection usp, Phosphorus 3mmol/me and Potassium 4.4 MEQ/ML (15ML)",
+    "Batch No.": "AM 250014",
+    "Department": "sm",
+    "Reason": "For Butch Activita",
+    "records": [
+     {
+      "Sr. No.": "01",
+      "Material Code": "PMI-0834",
+      "Material Name": "20ML 20mm sterile PP Vial with Lidcrome vial, Borealis in Trud's Irradiated, 18375 T51)",
+      "UOM": "NOS",
+      "Quantity Required": "34375",
+      "Quantity Issued": "22776 11648",
+      "A.R. No.": "24003917 24012206",
+      "GRN No.": "24000804 24001765",
+      "Balance ID No.": "NA",
+      "Remark": "42100"
+     },
+     {
+      "Sr. No.": "02",
+      "Material Code": "PMI-0444",
+      "Material Name": "20mm Rubber Stopper 5-12714432 Isocrred westur RS sil 1",
+      "UOM": "NOS",
+      "Quantity Required": "34375",
+      "Quantity Issued": "17500 17500",
+      "A.R. No.": "24004032 24004067",
+      "GRN No.": "24000826 24000833",
+      "Balance ID No.": "NA",
+      "Remark": "42100"
+     },
+     {
+      "Sr. No.": "03",
+      "Material Code": "PMI-1853",
+      "Material Name": "20mm Feip top green grain Fenish Aluminium seal (PP20F+161)",
+      "UOM": "NOS",
+      "Quantity Required": "34375",
+      "Quantity Issued": "34375",
+      "A.R. No.": "24007962",
+      "GRN No.": "24001430",
+      "Balance ID No.": "EQP1P1 PRD1146",
+      "Remark": "42100"
+     },
+     {
+      "Sr. No.": "WA",
+      "Material Code": "WA",
+      "Material Name": "CDUAL Side Lacquered)",
+      "UOM": "NA",
+      "Quantity Required": "NA",
+      "Quantity Issued": "NA",
+      "A.R. No.": "NA",
+      "GRN No.": "NA",
+      "Balance ID No.": "NA",
+      "Remark": "NA"
+     }
+    ],
+    "Requested by": "(M) 24-Jun-25 Mohit muldiza",
+    "Authorized by": "A. 31-Jan-25 Anil Gami",
+    "Issued by": "Nilesh Thakker 01-Feb-25 31-Jan-25",
+    "Received by": "31-Jan-25 Mohit Mukhdija 01-Feb-25 Mohit Mukhdija",
+    "Form No.": "PAP-MM-005-F002-002",
+    "Ref. SOP No.": "PAP-MM-005",
+    "Page No.": "01 of 01"
+   }
+  ],
+  "markdown_page": "<a id='82ed6317-d3af-4d7f-9ebd-fb271f82e401'></a> <::logo: Amneal Amneal Material Requisition Slip Form-II Black text logo with a stylized 'A' resembling a swoosh::> <a id='297a8792-7b0a-4c07-9085-8995f91c642c'></a> <::attestation: Official Stamp Stamped REFERENCE COPY A rectangular, turquoise-colored stamp with the text \"REFERENCE COPY\" in uppercase, slightly rotated counter-clockwise, centrally located on the document. ::> <a id='4a2b46be-40d7-4a0e-ad0a-bea20cfdc290'></a> 014 <a id='69e6e98c-730f-4fc6-8b03-ddd6d4e7df82'></a> Slip No.: 014 Product name: Potassium Phosphates Injection usp, Phosphorus 3mmol/me and Potassium 4.4 MEQ/ML (15ML) WIO 24010148 Department: sm <a id='2da473f0-d4a2-4655-96f3-01d7cfb9640f'></a> Date : 24-Jun-25 Batch No.: AM 250014 Reason : For Butch Activita <a id='6db7230e-d1cc-4087-9445-cb5eea9d5e9a'></a> Reason : F84 /A1.1. <table id=\"0-1\"> <tr><td id=\"0-2\">Sr. No.</td><td id=\"0-3\">Material Code</td><td id=\"0-4\">Material Name</td><td id=\"0-5\">UOM</td><td id=\"0-6\">Quantity Required</td><td id=\"0-7\">Quantity Issued</td><td id=\"0-8\">A.R. No.</td><td id=\"0-9\">GRN No.</td><td id=\"0-a\">Balance ID No.</td><td id=\"0-b\">Remark</td></tr> <tr><td id=\"0-c\">01</td><td id=\"0-d\">PMI-0834</td><td id=\"0-e\">20ML 20mm sterile PP Vial with Lidcrome vial, Borealis in Trud&#x27;s Irradiated, 18375 T51)</td><td id=\"0-f\">NOS</td><td id=\"0-g\">34375</td><td id=\"0-h\">22776 11648</td><td id=\"0-i\">24003917 24012206</td><td id=\"0-j\">24000804 24001765</td><td id=\"0-k\">NA</td><td id=\"0-l\">42100</td></tr> <tr><td id=\"0-m\">02</td><td id=\"0-n\">PMI-0444</td><td id=\"0-o\">20mm Rubber Stopper 5-12714432 Isocrred westur RS sil 1</td><td id=\"0-p\">NOS</td><td id=\"0-q\">34375</td><td id=\"0-r\">17500 17500</td><td id=\"0-s\">24004032 24004067</td><td id=\"0-t\">24000826 24000833</td><td id=\"0-u\">NA</td><td id=\"0-v\">42100</td></tr> <tr><td id=\"0-w\">03</td><td id=\"0-x\">PMI-1853</td><td id=\"0-y\">20mm Feip top green grain Fenish Aluminium seal (PP20F+161)</td><td id=\"0-z\">NOS</td><td id=\"0-A\">34375</td><td id=\"0-B\">34375</td><td id=\"0-C\">24007962</td><td id=\"0-D\">24001430</td><td id=\"0-E\">EQP1P1 PRD1146</td><td id=\"0-F\">42100</td></tr> <tr><td id=\"0-G\">WA</td><td id=\"0-H\">WA</td><td id=\"0-I\">CDUAL Side Lacquered)</td><td id=\"0-J\">NA</td><td id=\"0-K\">NA</td><td id=\"0-L\">NA</td><td id=\"0-M\">NA</td><td id=\"0-N\">NA</td><td id=\"0-O\">NA</td><td id=\"0-P\">NA</td></tr> </table> <a id='a72343a0-f772-42b7-8f7a-c3093648bebe'></a> Requested by: (M) 24-Jun-25 Mohit muldiza Issued by : Nilesh Thakker 01-Feb-25 31-Jan-25 <a id='175f1bbd-9223-4c6b-98af-dd29249b4a5c'></a> Authorized by: A. 31-Jan-25 Anil Gami Feb-25 Sr.01, 02,03 JDE & BLDS Entry done Sr.03 JDE entry done 31-Jan-25 Feb-25 Received by : 31-Jan-25 Mohit Mukhdija 01-Feb-25 Mohit Mukhdija Form No.: PAP-MM-005-F002-002 Ref. SOP No.: PAP-MM-005 <a id='bfc9c8cd-23bd-41bd-bc5d-b893532d7c9b'></a> Page No. 01 of 01"
+ }
+]

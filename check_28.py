@@ -41,6 +41,14 @@ class AccessQtyVerified:
     # Values considered as blank or NA
     BLANK_VALUES = {"", "na", "na.", "n/a", "n/a.", "n.a", "n.a."}
 
+    # Conversion factors to a common base unit for cross-unit comparison
+    UNIT_TO_BASE = {
+        'kg':  ('MASS', Decimal('1000')),     # 1 KG = 1000 G
+        'g':   ('MASS', Decimal('1')),         # base unit for mass
+        'l':   ('VOLUME', Decimal('1000')),    # 1 L = 1000 ML
+        'ml':  ('VOLUME', Decimal('1')),       # base unit for volume
+    }
+
     # ===================== HELPER METHODS =====================
 
     def is_blank_or_na(self, v: Any) -> bool:
@@ -61,11 +69,25 @@ class AccessQtyVerified:
 
     def normalize_unit(self, unit: str) -> str:
         u = unit.lower().strip().rstrip('.')
-        if u in ['kg', 'kgs']: return 'kg'
-        if u in ['g', 'gm', 'gms']: return 'g'
+        if u in ['kg', 'kgs', 'kz']: return 'kg'
+        if u in ['g', 'gm', 'gms', 'gr', 'gram', 'grams']: return 'g'
         if u in ['mtr', 'mtrs', 'meter', 'meters']: return 'mtr'
         if u in ['nos', 'no']: return 'nos'
+        if u in ['l', 'ltr', 'liters', 'litres']: return 'l'
+        if u in ['ml', 'milliliters']: return 'ml'
         return u
+
+    def convert_to_base_unit(self, value: Decimal, unit: str) -> Optional[tuple]:
+        """
+        Convert a value to its base unit.
+        Returns (dimension, base_value) or None if unit has no conversion.
+        E.g. (0.020, 'kg') -> ('MASS', Decimal('20'))
+        """
+        info = self.UNIT_TO_BASE.get(unit)
+        if info:
+            dimension, factor = info
+            return (dimension, value * factor)
+        return None
 
     def parse_quantities_by_unit(self, s: Any) -> Dict[str, Decimal]:
         """
@@ -92,16 +114,18 @@ class AccessQtyVerified:
             except InvalidOperation:
                 continue
                 
-        # Fallback: if no units found but there is a number, treat as dimensionless/unknown unit
+        # Fallback: if no units found, sum ALL numbers (handles "17500 7500" -> 25000)
         if not found_any:
-             fallback_pattern = r'(\d[\d,]*\.?\d*)'
-             m = re.search(fallback_pattern, s.strip())
-             if m:
-                 try:
-                     val = Decimal(m.group(1).replace(',', ''))
-                     results['__no_unit__'] = val
-                 except InvalidOperation:
-                     pass
+             all_numbers = re.findall(r'(\d[\d,]*\.?\d*)', s.strip())
+             if all_numbers:
+                 total = Decimal(0)
+                 for n in all_numbers:
+                     try:
+                         total += Decimal(n.replace(',', ''))
+                     except InvalidOperation:
+                         continue
+                 if total > 0:
+                     results['__no_unit__'] = total
 
         return results
 
@@ -149,13 +173,28 @@ class AccessQtyVerified:
                          material_name = row.get("Material", row.get("Item", "Unknown Material"))
                          anomalies.append({
                             "parameter": f"Issued Qty vs Required Qty - {material_name}",
-                            "observed_value": float(obs_qty),
-                            "standard_range": f">= {float(req_qty)}"
+                            "observed_value": f"{float(obs_qty)} {unit}".replace(' __no_unit__', ''),
+                            "standard_range": f">= {float(req_qty)} {unit}".replace(' __no_unit__', '')
                          })
                          break # One failure per row is enough
                 else:
-                    # Unit mismatch or conversion needed (e.g. Mtr vs Kg)
-                    pass
+                    # Try cross-unit conversion (e.g. kg vs g, L vs mL)
+                    obs_base = self.convert_to_base_unit(obs_qty, unit)
+                    for req_unit, req_qty in req_map.items():
+                        req_base = self.convert_to_base_unit(req_qty, req_unit)
+                        if obs_base and req_base and obs_base[0] == req_base[0]:
+                            # Same dimension — compare in base units
+                            converted_match = True
+                            if obs_base[1] < req_base[1]:
+                                material_name = row.get("Material", row.get("Item", "Unknown Material"))
+                                anomalies.append({
+                                    "parameter": f"Issued Qty vs Required Qty - {material_name}",
+                                    "observed_value": f"{float(obs_qty)} {unit}",
+                                    "standard_range": f">= {float(req_qty)} {req_unit}"
+                                })
+                            break
+                    if converted_match:
+                        break
             
             # Special case: Handling no units
             if not converted_match and '__no_unit__' in obs_map and '__no_unit__' in req_map:

@@ -1001,122 +1001,43 @@ def load_json_file(path: str) -> Dict[str, Any]:
 # ---------------- MAIN RUNNER ------------------------
 # =====================================================
 if __name__ == "__main__":
-    # Path to JSON
-    ocr_json_path = "/home/softsensor/Desktop/Amneal/all_result_76_20feb.json"
-    json_file_path = "/home/softsensor/Desktop/Amneal/all_result_76_20feb.json"
+    bmr_path = "/home/softsensor/Desktop/Amneal/Amneal-Local/New_BMRs/Emulsion_line_AH240074_filled_master_data.json"
+    att1_path = "/home/softsensor/Desktop/Amneal/Amneal-Local/New_BMRs/Attachment 21_landing_ai_ocr_bmr_61 1.json"
+    att2_path = "/home/softsensor/Desktop/Amneal/Amneal-Local/New_BMRs/Attachment-25_landing_ai_ocr_bmr_61.json"
 
     print("=" * 70)
     print("Running Check 24 - AR Number Verification")
     print("=" * 70)
 
+    # Load the new JSON files
+    bmr_data = load_json_file(bmr_path)
+    attachment_1 = load_json_file(att1_path)
+    attachment_2 = load_json_file(att2_path)
     
-    # Load the main JSON
-    data = load_json_file(json_file_path)
-    steps = data.get("steps", {})
+    print(f"Loaded {len(bmr_data)} pages from BMR")
+    print(f"Loaded {len(attachment_1)} pages from Attachment 21")
+    print(f"Loaded {len(attachment_2)} pages from Attachment 25")
 
-    # ---- Extract filled_master_json (BMR data) ----
-    filled_master_json = steps.get("filled_master_json", [])
-    print(f"Loaded {len(filled_master_json)} pages from filled_master_json")
+    # Initialize Validator
+    validator = ARNumberValidator()
 
-    # Build BMR pages as list (for Check24ARNoVerifyResults and ARNumberValidator)
-    bmr_pages_list = []
-    for page_obj in filled_master_json:
-        page_no = page_obj.get("page", "unknown")
-        page_data = {
-            "page": page_no,
-            "page_content": page_obj.get("page_content", []),
-            "markdown_page": page_obj.get("markdown_page", ""),
-            "additional_keys": page_obj.get("additional_keys", []),
-            "rules_or_instructions": [],
-            "records": []
-        }
-
-        # Extract records and rules from page_content
-        for content in page_obj.get("page_content", []):
-            content_type = content.get("type", "")
-
-            if content_type == "table":
-                table_json = content.get("table_json", {})
-                if "records" in table_json:
-                    page_data["records"].extend(table_json["records"])
-
-            elif content_type == "kv_text_block":
-                kv_data = content.get("extracted_kv_text_block", {})
-                if isinstance(kv_data, list):
-                    for kv in kv_data:
-                        if isinstance(kv, dict):
-                            rules = kv.get("rules_or_instructions", [])
-                            if rules:
-                                page_data["rules_or_instructions"].extend(rules)
-                elif isinstance(kv_data, dict):
-                    rules = kv_data.get("rules_or_instructions", [])
-                    if rules:
-                        page_data["rules_or_instructions"].extend(rules)
-
-        bmr_pages_list.append(page_data)
-
-    # ---- Extract attachment data ----
-    attachment_result = steps.get("attachment_result", {})
-
-    # Attachment 2 (CoA of API) - used by Check24ARNoVerifyResults
-    attachment_2_raw = attachment_result.get("24", {})
-    attachment_2_data = []
-    for att_key, att_pages in attachment_2_raw.items():
-        if isinstance(att_pages, list):
-            attachment_2_data.extend(att_pages)
-    print(f"Attachment 2 (CoA): {len(attachment_2_data)} pages")
-
-    # Attachment 3 (Dispensing tables) - used by ARNumberValidator
-    attachment_3_data = []
-    attachment_3_path = "/home/softsensor/Desktop/Amneal/challenge_bmr/Attachment 3.json"
-    
-    if os.path.exists(attachment_3_path):
-        print(f"DEBUG: Found Attachment 3 at {attachment_3_path}")
-        attachment_3_data = load_json_file(attachment_3_path)
-        print(f"DEBUG: Loaded {len(attachment_3_data)} pages from Attachment 3")
-    else:
-        print("DEBUG: Attachment 3.json not found, falling back to embedded attachments")
-        # Try multiple possible attachment keys for dispensing data
-        for att_key in attachment_result:
-            att_section = attachment_result[att_key]
-            if isinstance(att_section, dict):
-                for sub_key, sub_pages in att_section.items():
-                    if isinstance(sub_pages, list):
-                        attachment_3_data.extend(sub_pages)
-    
-    print(f"All attachments flattened: {len(attachment_3_data)} pages")
-
-    # Attachment 4 (fallback for ARNumberValidator when material code not found in Attachment 3)
-    attachment_4_data = []
-    attachment_4_path = "/home/softsensor/Desktop/Amneal/challenge_bmr/Attachment 9.json"
-    
-    if os.path.exists(attachment_4_path):
-        print(f"DEBUG: Found Attachment 4 at {attachment_4_path}")
-        attachment_4_data = load_json_file(attachment_4_path)
-        print(f"DEBUG: Loaded {len(attachment_4_data)} pages from Attachment 4")
-    else:
-        print("DEBUG: Attachment 4.json not found, ARNumberValidator will use only Attachment 3")
-
-    # ================================================================
-    # Run CombinedARValidator
-    # ================================================================
+    # Run Validator
     print("\n" + "=" * 70)
-    print("Combined: CombinedARValidator (OR logic)")
+    print("Running ARNumberValidator")
     print("=" * 70)
 
-    combined_results = CombinedARValidator.run_validation(
-        filtered_json_data=bmr_pages_list,
-        master_json_data=bmr_pages_list,
-        attachment_2_data=attachment_2_data,
-        attachment_3_data=attachment_3_data,
-        attachment_4_data=attachment_4_data if attachment_4_data else None
+    results = validator.run_validation(
+        bmr_data=bmr_data,
+        attachment_1=attachment_1,
+        attachment_2=attachment_2
     )
-    print(f"\nCombined results ({len(combined_results)} pages):")
-    anomaly_pages_c = [r for r in combined_results if r["anomaly_status"] == 1]
-    print(f"  Pages with anomalies: {len(anomaly_pages_c)}")
-    for r in anomaly_pages_c:
+
+    print(f"\nResults ({len(results)} pages):")
+    anomaly_pages = [r for r in results if r["anomaly_status"] == 1]
+    print(f"  Pages with anomalies: {len(anomaly_pages)}")
+    for r in anomaly_pages:
         print(f"    Page {r['page']}: anomaly_status={r['anomaly_status']}")
-    if not anomaly_pages_c:
+    if not anomaly_pages:
         print("  No anomalies detected.")
 
     # ================================================================
@@ -1125,4 +1046,4 @@ if __name__ == "__main__":
     print("\n" + "=" * 70)
     print("Full Results (JSON)")
     print("=" * 70)
-    print(json.dumps(combined_results, indent=2))
+    print(json.dumps(results, indent=2))

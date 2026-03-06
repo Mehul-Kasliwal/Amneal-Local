@@ -368,15 +368,24 @@ OCR TEXT:
 # ---------------- MAIN RUNNER ------------------------
 # =====================================================
 if __name__ == "__main__":
-    from extract_data import get_filled_master_json
+    import os
+    import sys
 
-    # Load OCR data from the complete_data JSON file
-    complete_data_path = "/home/softsensor/Des ktop/Amneal/yog_checks/complete_data_61 1.json"
+    if len(sys.argv) > 1:
+        json_file = sys.argv[1]
+    else:
+        json_file = os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            "New_BMRs/TS_line_(BMR-PA-040-10)_filled_master_data.json"
+        )
 
     print("Running Check 42 - Sample Quantity Calculation (Optimized: Python-first)...")
 
-    # Extract the filled_master_json from the complete data
-    filled_master_json = get_filled_master_json(complete_data_path)
+    print(f"Loading JSON file: {json_file}")
+    with open(json_file, "r", encoding="utf-8") as f:
+        filled_master_json = json.load(f)
+    print("JSON loaded successfully.")
+        
     print(f"Loaded {len(filled_master_json)} pages from filled_master_json")
 
     # Run the sample quantity check

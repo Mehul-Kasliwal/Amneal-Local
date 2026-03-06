@@ -332,7 +332,8 @@ if __name__ == "__main__":
 
     # json_path = "/home/softsensor/Desktop/Amneal/challenge_bmr/05jan_AH250076_50Checks 1.json"
     # json_path = "/home/softsensor/Desktop/Amneal/complete_data_61 1.json"
-    json_path = "/home/softsensor/Desktop/Amneal/New_BMRs/Emulsion_line_AH240074_filled_master_data.json"
+    # json_path = "/home/softsensor/Desktop/Amneal/New_BMRs/Emulsion_line_AH240074_filled_master_data.json"
+    json_path = "/home/softsensor/Desktop/Amneal/Amneal-Local/New_BMRs/TS_line_(BMR-PA-040-10)_filled_master_data.json"
 
     print("Running Check 20 - Actual vs Observed ± Range (Pure Python)...")
 

@@ -30,7 +30,9 @@ class QuantityVarianceValidator:
         'Qty. Required', 
         'Quantity Req.', 
         'Quantity Required', 
-        'Std. Qty.'
+        'Std. Qty.',
+        'Std. Qty. (Nos.)',
+        'Std. Qty. (Nos.) #'
     ]
     
     # Column name synonyms for observed/dispensed quantity
@@ -39,7 +41,9 @@ class QuantityVarianceValidator:
         'Issued Qty', 
         'Quantity Dispensed', 
         'Actual issued Qty.',
-        'Net Wt.'
+        'Net Wt.',
+        'Qty. Issued',
+        'Qty. Issued (Nos.)'
     ]
     
     # Trolley specification field names
@@ -64,6 +68,12 @@ class QuantityVarianceValidator:
     
     # Values considered as blank or NA
     BLANK_VALUES = {"", "na", "na.", "n/a", "n/a.", "n.a", "n.a."}
+
+    # Page headings that check_28 (AccessQtyVerified) runs on — skip these pages
+    CHECK_28_HEADINGS = [
+        "PRIMARY PACKING MATERIAL ISSUANCE AND DISPENSING",
+        "PRIMARY PACKING MATERIALS:",
+    ]
 
     # ===================== HELPER METHODS =====================
 
@@ -130,6 +140,117 @@ class QuantityVarianceValidator:
                 pass
         
         return None
+
+    def normalize_unit(self, unit: str) -> str:
+        """Normalize unit strings to standard uppercase keys."""
+        if not unit:
+            return ""
+        u = unit.strip().upper().replace('.', '')
+        if u in ['KGS', 'KG', 'KZ']:
+            return 'KG'
+        if u in ['G', 'GM', 'GMS', 'GR', 'GRAM', 'GRAMS']:
+            return 'GM'
+        if u in ['MTR', 'MTS', 'METER', 'METERS']:
+            return 'MTR'
+        if u in ['NO', 'NOS']:
+            return 'NOS'
+        if u in ['L', 'LTR', 'LITERS', 'LITRES']:
+            return 'L'
+        if u in ['ML', 'MILLILITERS']:
+            return 'ML'
+        return u
+
+    # Conversion factors to a common base unit
+    UNIT_TO_BASE = {
+        'KG': ('MASS', Decimal('1000')),     # 1 KG = 1000 GM
+        'GM': ('MASS', Decimal('1')),         # base unit for mass
+        'L':  ('VOLUME', Decimal('1000')),    # 1 L = 1000 ML
+        'ML': ('VOLUME', Decimal('1')),       # base unit for volume
+    }
+
+    def parse_quantity_with_unit(self, s: Any) -> Optional[tuple]:
+        """
+        Parse a quantity string and return (total_value, normalized_unit).
+        Sums multiple values with the same unit in a single field.
+        Returns None if no quantity can be parsed.
+        
+        Examples:
+            "0.020 Kg"        -> (Decimal('0.020'), 'KG')
+            "20.000 gm"       -> (Decimal('20.000'), 'GM')
+            "46840 NOS"       -> (Decimal('46840'), 'NOS')
+            "17500 7500"      -> (Decimal('25000'), '')       # summed unitless
+            "17500 NOS 7500"  -> (Decimal('25000'), 'NOS')    # summed with unit
+            "4.7 kg 15.426 Kg"-> (Decimal('20.126'), 'KG')    # summed same unit
+            "48791"           -> (Decimal('48791'), '')
+        """
+        if not isinstance(s, str) or self.is_blank_or_na(s) or 'line' in s.lower():
+            return None
+
+        valid_units = ('KG', 'GM', 'NOS', 'L', 'ML', 'MTR')
+
+        # Strategy 1: Find explicit Number + Unit pairs and sum by unit
+        unit_pattern = r'(\d[\d,]*\.?\d*)\s*([A-Za-z]+)'
+        matches = re.findall(unit_pattern, s)
+        unit_totals = {}  # {normalized_unit: Decimal total}
+
+        if matches:
+            for val_str, unit_str in matches:
+                norm_unit = self.normalize_unit(unit_str)
+                # Skip date-like tokens (e.g. "Jul", "APR")
+                if norm_unit in valid_units:
+                    try:
+                        val = Decimal(val_str.replace(',', ''))
+                        unit_totals[norm_unit] = unit_totals.get(norm_unit, Decimal(0)) + val
+                    except InvalidOperation:
+                        continue
+
+        if unit_totals:
+            # Return the first (or only) unit with its summed total
+            unit = next(iter(unit_totals))
+            return (unit_totals[unit], unit)
+
+        # Strategy 2: Unitless fallback — sum all numbers in the string
+        all_numbers = re.findall(r'(\d[\d,]*\.?\d*)', s)
+        if all_numbers:
+            total = Decimal(0)
+            for n in all_numbers:
+                try:
+                    total += Decimal(n.replace(',', ''))
+                except InvalidOperation:
+                    continue
+            if total > 0:
+                return (total, '')
+
+        return None
+
+    def quantities_match(self, std_val: Decimal, std_unit: str, obs_val: Decimal, obs_unit: str, tolerance: Decimal = Decimal('0')) -> bool:
+        """
+        Compare two quantities with unit awareness.
+        Converts to a common base unit if both belong to the same dimension (mass, volume).
+        
+        Examples:
+            0.020 KG vs 20.000 GM  -> True  (both = 20 GM)
+            48791 NOS vs 46840 NOS -> False
+        """
+        # If same unit (or both unitless), direct compare
+        if std_unit == obs_unit:
+            return abs(std_val - obs_val) <= tolerance
+
+        # Try unit conversion
+        std_base_info = self.UNIT_TO_BASE.get(std_unit)
+        obs_base_info = self.UNIT_TO_BASE.get(obs_unit)
+
+        if std_base_info and obs_base_info:
+            std_dimension, std_factor = std_base_info
+            obs_dimension, obs_factor = obs_base_info
+            if std_dimension == obs_dimension:
+                # Convert both to base unit and compare
+                std_base = std_val * std_factor
+                obs_base = obs_val * obs_factor
+                return abs(std_base - obs_base) <= (tolerance * max(std_factor, obs_factor))
+
+        # Different/unknown dimensions — fall back to raw number comparison
+        return abs(std_val - obs_val) <= tolerance
 
     def find_col(self, records: List[Dict], synonyms: List[str]) -> Optional[str]:
         """Find which column name variant exists in the records."""
@@ -212,7 +333,9 @@ class QuantityVarianceValidator:
             if qty < min_load or qty > max_load:
                 anomalies.append({
                     "parameter": f"Trolley Load — {trolley_name}",
+                    "issue": f"Trolley load ({float(qty)} Bags) is out of expected bounds ({float(min_load)} to {float(max_load)} Bags).",
                     "observed_value": float(qty),
+                    "expected_range": f"{float(min_load)} - {float(max_load)} Bags",
                     "standard_range": f"{float(min_load)} to {float(max_load)} Bags"
                 })
 
@@ -238,51 +361,79 @@ class QuantityVarianceValidator:
         anomalies = []
 
         for row in records:
-            std = self.parse_quantity(row.get(req_col))
-            obs = self.parse_quantity(row.get(obs_col))
+            # Try all synonym variants for each row to handle mixed-table pages
+            std_parsed = None
+            std_raw_col = None
+            for syn in self.REQUIRED_QTY_SYNONYMS:
+                if syn in row:
+                    std_parsed = self.parse_quantity_with_unit(row.get(syn))
+                    if std_parsed is not None:
+                        std_raw_col = syn
+                        break
             
-            if std is None or obs is None:
+            obs_parsed = None
+            obs_raw_col = None
+            for syn in self.OBSERVED_QTY_SYNONYMS:
+                if syn in row:
+                    obs_parsed = self.parse_quantity_with_unit(row.get(syn))
+                    if obs_parsed is not None:
+                        obs_raw_col = syn
+                        break
+            
+            if std_parsed is None or obs_parsed is None:
                 continue
+
+            std_val, std_unit = std_parsed
+            obs_val, obs_unit = obs_parsed
 
             item = str(row.get("Item", ""))
 
             # Rule 1: Twist-off port
             if "twist-off port" in item.lower():
-                if std != obs:
+                if not self.quantities_match(std_val, std_unit, obs_val, obs_unit):
                     anomalies.append({
                         "parameter": f"Quantity Dispensed — {row.get('Item', 'N/A')}",
-                        "observed_value": int(obs),
-                        "standard_range": f"== {int(std)} Nos."
+                        "issue": f"Dispensed quantity ({int(obs_val)} {obs_unit}) does not match standard required quantity ({int(std_val)} {std_unit}).",
+                        "observed_value": f"{int(obs_val)} {obs_unit}".strip(),
+                        "expected_value": f"{int(std_val)} {std_unit}".strip(),
+                        "standard_range": f"== {int(std_val)} {std_unit}".strip()
                     })
                 continue
 
             # Rule 2: Material column exists
             if "Material" in row:
-                if std != obs:
+                if not self.quantities_match(std_val, std_unit, obs_val, obs_unit):
                     anomalies.append({
                         "parameter": f"Issued Qty — {row.get('Material', 'N/A')}",
-                        "observed_value": float(obs),
-                        "standard_range": f"== {float(std)}"
+                        "issue": f"Issued quantity ({float(obs_val)} {obs_unit}) does not match required standard quantity ({float(std_val)} {std_unit}).",
+                        "observed_value": f"{float(obs_val)} {obs_unit}".strip(),
+                        "expected_value": f"{float(std_val)} {std_unit}".strip(),
+                        "standard_range": f"== {float(std_val)} {std_unit}".strip()
                     })
                 continue
 
             # Rule 3: Ingredients column exists
             if "Ingredients" in row:
-                if abs(std - obs) > self.TOLERANCE:
+                if not self.quantities_match(std_val, std_unit, obs_val, obs_unit, self.TOLERANCE):
                     anomalies.append({
                         "parameter": f"Quantity Dispensed — {row.get('Ingredients', 'N/A')}",
-                        "observed_value": float(obs),
-                        "standard_range": f"== {float(std)} (±{float(self.TOLERANCE)})"
+                        "issue": f"Quantity dispensed ({float(obs_val)} {obs_unit}) is outside the tolerance of ±{float(self.TOLERANCE)} from standard ({float(std_val)} {std_unit}).",
+                        "observed_value": f"{float(obs_val)} {obs_unit}".strip(),
+                        "expected_value": f"{float(std_val)} {std_unit}".strip(),
+                        "tolerance_allowed": float(self.TOLERANCE),
+                        "standard_range": f"== {float(std_val)} {std_unit} (±{float(self.TOLERANCE)})".strip()
                     })
                 continue
 
-            # Fallback: exact match
-            if std != obs:
-                label = row.get('Item') or row.get('Material') or row.get('Ingredients') or 'N/A'
+            # Fallback: exact match (unit-aware)
+            if not self.quantities_match(std_val, std_unit, obs_val, obs_unit):
+                label = row.get('Item') or row.get('Material') or row.get('Materials') or row.get('Ingredients') or 'N/A'
                 anomalies.append({
                     "parameter": f"Quantity Dispensed — {label}",
-                    "observed_value": float(obs),
-                    "standard_range": f"== {float(std)}"
+                    "issue": f"Dispensed quantity ({float(obs_val)} {obs_unit}) does not match standard required quantity ({float(std_val)} {std_unit}).",
+                    "observed_value": f"{float(obs_val)} {obs_unit}".strip(),
+                    "expected_value": f"{float(std_val)} {std_unit}".strip(),
+                    "standard_range": f"== {float(std_val)} {std_unit}".strip()
                 })
 
         return anomalies
@@ -351,18 +502,23 @@ class QuantityVarianceValidator:
         trolley_spec_next_page_allowed = False
 
         for page_no, page in bmr_data.items():
-            # Check for skip condition: if specific rules exist, skip validation
+            # Check for skip condition: skip pages that check_28 runs on (based on page heading)
+            headings = [str(h).strip().upper() for h in page.get("headings", [])]
             rules = [str(r).strip().upper() for r in page.get("rules_or_instructions", [])]
-            skip_cond_1 = any("PRIMARY PACKING MATERIAL ISSUANCE AND DISPENSING" in r for r in rules)
-            skip_cond_2 = any("PRIMARY PACKING MATERIALS:" in r for r in rules)
+            all_page_text = headings + rules
 
-            if skip_cond_1 and skip_cond_2:
+            is_check_28_page = all(
+                any(chk_heading in text for text in all_page_text)
+                for chk_heading in self.CHECK_28_HEADINGS
+            )
+
+            if is_check_28_page:
                 self.debug_results.append({
                     "page_no": page_no,
                     "section_name": self.SECTION_NAME,
                     "check_name": self.CHECK_NAME,
                     "anomaly_status": 0,
-                    "skip_reason": "Skipped due to PRIMARY PACKING MATERIAL rules"
+                    "skip_reason": "Skipped — page heading belongs to check_28 (PRIMARY PACKING MATERIAL)"
                 })
                 results.append({
                     "page_no": page_no,
@@ -506,6 +662,7 @@ def extract_bmr_data(json_data: dict | list) -> dict:
         page_content = page_obj.get("page_content", [])
         records = []
         rules_or_instructions = []
+        headings = []
         
         for content_item in page_content:
             if content_item.get("type") == "table":
@@ -529,15 +686,22 @@ def extract_bmr_data(json_data: dict | list) -> dict:
             if content_item.get("type") == "kv_text_block":
                 kv_block = content_item.get("extracted_kv_text_block", {})
                 if isinstance(kv_block, list) and kv_block:
+                    heading = kv_block[0].get("heading")
+                    if heading:
+                        headings.append(heading)
                     rules = kv_block[0].get("rules_or_instructions", [])
                     rules_or_instructions.extend(rules)
                 elif isinstance(kv_block, dict):
+                    heading = kv_block.get("heading")
+                    if heading:
+                        headings.append(heading)
                     rules = kv_block.get("rules_or_instructions", [])
                     rules_or_instructions.extend(rules)
         
         bmr_data[page_no] = {
             "records": records,
-            "rules_or_instructions": rules_or_instructions
+            "rules_or_instructions": rules_or_instructions,
+            "headings": headings
         }
     
     return bmr_data
@@ -547,9 +711,14 @@ if __name__ == "__main__":
     import os
     
     # Path to the JSON file
+    # json_file = os.path.join(
+    #     os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    #     "New_BMRs/Emulsion_line_AH240074_filled_master_data.json"
+    # )
+
     json_file = os.path.join(
         os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-        "New_BMRs/Emulsion_line_AH240074_filled_master_data.json"
+        "New_BMRs/TS_line_(BMR-PA-040-10)_filled_master_data.json"
     )
     
     print(f"Loading JSON file: {json_file}")

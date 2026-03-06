@@ -132,7 +132,7 @@ Rules:
                         records = table_json.get("records")
                     if records:
                         for row in records:
-                            stage = str(row.get("Stage", "")).lower()
+                            stage = str(row.get("Stage", row.get("Details", ""))).lower()
                             if "yield" in stage or "reconciliation" in stage:
                                 return True
 
@@ -163,7 +163,7 @@ Rules:
         Heuristic check for reconciliation tables.
         """
         for row in records:
-            stage = str(row.get("Stage", "")).upper()
+            stage = str(row.get("Stage", row.get("Details", ""))).upper()
             if "YIELD" in stage or "RECONCILIATION" in stage:
                 return True
         return False
@@ -207,7 +207,7 @@ Rules:
 
         for r in records:
             cleaned.append({
-                "Stage": find_value(r, ["stage"]),
+                "Stage": find_value(r, ["stage", "details"]),
                 "Qty": find_value(r, ["qty", "quantity", "bags", "units"]),
                 "Remarks": find_value(r, ["remark", "comment"]),
                 "Page No": find_value(r, ["page"])
@@ -451,7 +451,8 @@ if __name__ == "__main__":
     
     # Load OCR data from the complete_data JSON file
     # complete_data_path = "/home/softsensor/Desktop/Amneal/all_result_76_20feb.json"
-    complete_data_path = "/home/softsensor/Desktop/Amneal/New_BMRs/Emulsion_line_AH240074_filled_master_data.json"
+    # complete_data_path = "/home/softsensor/Desktop/Amneal/Amneal-Local/New_BMRs/Emulsion_line_AH240074_filled_master_data.json"
+    complete_data_path = "/home/softsensor/Desktop/Amneal/Amneal-Local/New_BMRs/TS_line_(BMR-PA-040-10)_filled_master_data.json"
     
     print("Running Check 50 - BMR Yield Value Verification (Python computation)...")
     

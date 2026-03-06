@@ -1,0 +1,378 @@
+[
+    {
+        "page": 1,
+        "page_content": [
+            {
+                "section_title": "Material Requisition Slip",
+                "Slip No.": "012",
+                "Date": "03-JUL-24",
+                "Product name": "Propofol Injection IPC1H. WIV) with MCT-LOT (MCT- Propol) 20m2",
+                "Department": "SM",
+                "w.o.NO": "24003336",
+                "Batch No.": "AH240074",
+                "Reason": "for Batch Activity",
+                "records": [
+                    {
+                        "Sr. No.": "01",
+                        "Material code": "RMI-0396",
+                        "Material name": "Propofol PH. EURIH",
+                        "UOM": "Kg",
+                        "Quantity required": "10.000",
+                        "Quantity issued": "10.082 Kg",
+                        "A.R. No.": "22009252",
+                        "GRN No.": "22001371",
+                        "Balance ID No.": "ECP|P1| PRD|152",
+                        "Stock card No.": "069",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "02",
+                        "Material code": "RMI-0409",
+                        "Material name": "Egg lec thin",
+                        "UOM": "Kg",
+                        "Quantity required": "12.000",
+                        "Quantity issued": "12.000 Kg",
+                        "A.R. No.": "22011838",
+                        "GRN No.": "24000011",
+                        "Balance ID No.": "EQP|P1| PRD|152",
+                        "Stock card No.": "051",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "03",
+                        "Material code": "RMI-0375",
+                        "Material name": "Glyceri H",
+                        "UOM": "Kg",
+                        "Quantity required": "22.500",
+                        "Quantity issued": "22.500 Kg",
+                        "A.R. No.": "22009305",
+                        "GRN No.": "22001412",
+                        "Balance ID No.": "EQPIPIS PRD|152",
+                        "Stock card No.": "046",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "04",
+                        "Material code": "RMI-0406",
+                        "Material name": "Sodium oleate",
+                        "UOM": "Kg",
+                        "Quantity required": "0.400",
+                        "Quantity issued": "0.400kg gm",
+                        "A.R. No.": "22011835",
+                        "GRN No.": "23000028",
+                        "Balance ID No.": "# A (EQPI PII PADI) 152",
+                        "Stock card No.": "005",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "05",
+                        "Material code": "RMI-0389",
+                        "Material name": "Sodium If Hydrotide",
+                        "UOM": "Kg",
+                        "Quantity required": "0.020",
+                        "Quantity issued": "0.020kg 20.0000gm",
+                        "A.R. No.": "23009910",
+                        "GRN No.": "23002161",
+                        "Balance ID No.": "EQP/PI/ PRD/154",
+                        "Stock card No.": "082",
+                        "Remark": "42100"
+                    }
+                ],
+                "Requested by": "Pty 03-Jul-24",
+                "Issued by": "(H) 04-Jul-24",
+                "Authorized by": "03-Jul-24",
+                "Received by": "04-Jul-24",
+                "Form No.": "PAP-MM-005-F002-001",
+                "Ref. SOP No.": "PAP-MM-005",
+                "Page No.": "1 of 1"
+            }
+        ],
+        "markdown_page": "<a id='e39745db-3ac7-428b-9f17-0ae14cc781d8'></a> REFERENCE COPY <a id='52a823dc-78ad-49f4-b4d4-b888c3a22a1a'></a> Attachment No. 29 <a id='725aac2c-6659-4a5e-acef-e97886c42fca'></a> <::logo: Amneal Amneal® Black text with a stylized 'A' that resembles a fish or bird::> <a id='d837b993-fe14-4300-a9ed-087a7e006c1a'></a> <::attestation: Stamp REFERENCE COPY Readable Text: REFERENCE COPY A rectangular stamp with the text \"REFERENCE COPY\" in the center of the image.::> <a id='155b92b7-a748-47f7-aee2-1e015bbb267a'></a> 012 <a id='31c05caa-5dc9-4776-aec2-502b79090373'></a> Material Requisition Slip FORM - II <a id='f5d6430f-0e35-42c2-b2ef-da7437fb9594'></a> Slip No. : 012 FORM - II Product name: Propofol Injection IPC1H. WIV) with MCT-LOT (MCT- Propol) 20m2 Department : SM w.o.NO -> 24003336 <a id='23b0592e-b751-46b1-904e-1b63c5c5af20'></a> Date: 03-JUL-24 Batch No.: AH240074 Reason: for Batch Activity <a id='cfccc84f-6fa1-434d-b016-7dd350e2f7b8'></a> <table id=\"0-1\"> <tr><td id=\"0-2\">Sr. No.</td><td id=\"0-3\">Material code</td><td id=\"0-4\">Mate</td><td id=\"0-5\">rial name</td><td id=\"0-6\">UOM</td><td id=\"0-7\">Quantity required</td><td id=\"0-8\">Quantity issued</td><td id=\"0-9\">A.R. No.</td><td id=\"0-a\">GRN No.</td><td id=\"0-b\">Balance ID No.</td><td id=\"0-c\">Stock card No.</td><td id=\"0-d\">Remark</td></tr> <tr><td id=\"0-e\">01</td><td id=\"0-f\">RMI-0396</td><td id=\"0-g\">Propofol</td><td id=\"0-h\">PH. EURIH</td><td id=\"0-i\">Kg</td><td id=\"0-j\">10.000</td><td id=\"0-k\">10.082 Kg</td><td id=\"0-l\">22009252</td><td id=\"0-m\">22001371</td><td id=\"0-n\">ECP|P1| PRD|152</td><td id=\"0-o\">069</td><td id=\"0-p\">42100</td></tr> <tr><td id=\"0-q\">02</td><td id=\"0-r\">RMI-0409</td><td id=\"0-s\">Egg lec</td><td id=\"0-t\">thin</td><td id=\"0-u\">Kg</td><td id=\"0-v\">12.000</td><td id=\"0-w\">12.000 Kg</td><td id=\"0-x\">22011838</td><td id=\"0-y\">24000011</td><td id=\"0-z\">EQP|P1| PRD|152</td><td id=\"0-A\">051</td><td id=\"0-B\">42100</td></tr> <tr><td id=\"0-C\">03</td><td id=\"0-D\">RMI-0375</td><td id=\"0-E\">Glyceri</td><td id=\"0-F\">H</td><td id=\"0-G\">Kg</td><td id=\"0-H\">22.500</td><td id=\"0-I\">22.500 Kg</td><td id=\"0-J\">22009305</td><td id=\"0-K\">22001412</td><td id=\"0-L\">EQPIPIS PRD|152</td><td id=\"0-M\">046</td><td id=\"0-N\">42100</td></tr> <tr><td id=\"0-O\">04</td><td id=\"0-P\">RMI-0406</td><td id=\"0-Q\">Sodium</td><td id=\"0-R\">oleate</td><td id=\"0-S\">Kg</td><td id=\"0-T\">0.400</td><td id=\"0-U\">0.400kg gm</td><td id=\"0-V\">22011835</td><td id=\"0-W\">23000028</td><td id=\"0-X\"># A (EQPI PII PADI) 152</td><td id=\"0-Y\">005</td><td id=\"0-Z\">42100</td></tr> <tr><td id=\"0-10\">05</td><td id=\"0-11\">RMI-0389</td><td id=\"0-12\">Sodium If</td><td id=\"0-13\">Hydrotide</td><td id=\"0-14\">Kg</td><td id=\"0-15\">0.020</td><td id=\"0-16\">0.020kg 20.0000gm</td><td id=\"0-17\">23009910</td><td id=\"0-18\">23002161</td><td id=\"0-19\">EQP/PI/ PRD/154</td><td id=\"0-1a\">082</td><td id=\"0-1b\">42100</td></tr> </table> <a id='1bea0305-cf6f-4358-815a-0e42de609072'></a> Requested by: Pty 03-Jul-24 Mayank Dubey Nilesh Issued by : (H) 04-Jul-24 04-Jul-24 Page 1 of Shivam Pandey 04-Jul-24 <a id='4571e67b-3e4a-44ea-8651-a111754d9391'></a> 4 Thikkar Sr. No 02 to 05 JDE BLPS Entry Done 05-Jul-24 # wrong place NA done hence corrected 04-Jul-24 * Entry Error 04-Jul-24 Sr. No 01 JDE & BLPS Entry Done 04-Jul-24 <a id='8ffd55aa-4467-49a9-9156-f929a062f98b'></a> Authorized by: <::attestation: Signature/Initial with Date Status: Authorized Signature: illegible Readable Text: 03-Jul-24 Description: Handwritten initial/signature and date above a line, positioned to the right of 'Authorized by'.::> Received by: <::attestation: Signature/Initial with Date Status: Received Signature: illegible Readable Text: 04-Jul-24 Description: Handwritten initial/signature and date above a line, positioned to the right of 'Received by'. An additional illegible signature/initial and date '04-Jul-24' are present to the right.::> Form No.: PAP-MM-005-F002-001 Ref. SOP No.: PAP-MM-005 <a id='27814603-a1c6-4750-ac00-68068a40295c'></a> <::attestation: signature signed Signature: illegible Readable Text: 10-Jul-24 A black, handwritten signature with a date below it, centrally located on a white background.::>"
+    },
+    {
+        "page": 2,
+        "page_content": [
+            {
+                "section_title": "Material Requisition Slip",
+                "Slip No.": "013",
+                "Date": "03-JUL-24",
+                "Product name": "Propofol Injection If Cit. WIV) with MCT-LCT CMC",
+                "Batch No.": "BH 240074",
+                "Department": "sm",
+                "Reason": "for Batch Activity",
+                "records": [
+                    {
+                        "Sr. No.": "01",
+                        "Material code": "RMI-0407",
+                        "Material name": "Soyabean oil IP",
+                        "UOM": "Kg",
+                        "Quantity required": "50.00",
+                        "Quantity issued": "12.5 kg 37.5 kg",
+                        "A.R. No.": "22007768 24003366",
+                        "GRN No.": "22001120 24000644",
+                        "Balance ID No.": "NA",
+                        "Stock card No.": "098 075",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "02",
+                        "Material code": "RM1-0437",
+                        "Material name": "Medium chain Triglycerid ES, PH, EUR",
+                        "UOM": "Kg",
+                        "Quantity required": "50.00",
+                        "Quantity issued": "50.0 kg",
+                        "A.R. No.": "24003365",
+                        "GRN No.": "24000643",
+                        "Balance ID No.": "NA",
+                        "Stock card No.": "076",
+                        "Remark": "42100"
+                    }
+                ],
+                "Requested by": "Pte 03-Jul-24",
+                "Issued by": "Cave 04-Jul-24",
+                "Authorized by": "10m² 03-Jul-24",
+                "Received by": "Pis 04-Jul-24",
+                "Form No.": "PAP-MM-005-F002-001",
+                "Ref. SOP No.": "PAP-MM-005",
+                "Page No.": "1 of 1"
+            }
+        ],
+        "markdown_page": "<a id='70c64f72-e0f5-40bd-9576-66ffbb37149c'></a> REFERENCE COPY <a id='4dbc718a-9ba4-497c-ab5f-fdd084102ab0'></a> <::attestation: Official stamp Stamped REFERENCE COPY A light grey, rectangular stamp with the text \"REFERENCE COPY\" is diagonally oriented, slightly tilted upwards to the right, and centered in the lower half of the image. ::> <a id='da2f19d1-34f6-46bc-81cb-a86016c382f4'></a> <::logo: Amneal Amneal Material Requisition Slip FORM - II The logo features a stylized black 'A' or similar abstract shape integrated into the word \"Amneal\" followed by text below.::> <a id='f8690025-33ac-45f6-8926-7b87b7324b85'></a> 013 <a id='eafe04b5-bcb6-4846-a7ad-9d1b0ace2cee'></a> ip No. : 013 FORM - II oduct name: Propofol Injection If Cit. WIV) with MCT-LCT CMC epartment : sm <a id='778c0624-0881-456a-b150-3d53dfe9d92b'></a> Date: 03-JUL-24 Batch No.: BH 240074 Reason: for Batch Activity <a id='171453be-2069-4bef-926b-f4ead4c65d34'></a> <table id=\"0-1\"> <tr><td id=\"0-2\">Sr. No.</td><td id=\"0-3\">Material code</td><td id=\"0-4\">Material name</td><td id=\"0-5\">UOM</td><td id=\"0-6\">Quantity required</td><td id=\"0-7\">Quantity issued</td><td id=\"0-8\">A.R. No.</td><td id=\"0-9\"></td><td id=\"0-a\">GRN No.</td><td id=\"0-b\">Balance ID No.</td><td id=\"0-c\">Stock card No.</td><td id=\"0-d\">Remark</td></tr> <tr><td id=\"0-e\">01</td><td id=\"0-f\">RMI-0407</td><td id=\"0-g\">Soyabean oil IP</td><td id=\"0-h\">Kg</td><td id=\"0-i\">50.00</td><td id=\"0-j\">12.5 kg 37.5 kg</td><td id=\"0-k\" colspan=\"2\">22007768 24003366</td><td id=\"0-l\">22001120 24000644</td><td id=\"0-m\">NA</td><td id=\"0-n\">098 075</td><td id=\"0-o\">42100</td></tr> <tr><td id=\"0-p\">02</td><td id=\"0-q\">RM1-0437</td><td id=\"0-r\">Medium chain Triglycerid ES, PH, EUR</td><td id=\"0-s\">Kg</td><td id=\"0-t\">50.00</td><td id=\"0-u\">50.0 kg</td><td id=\"0-v\">24003365</td><td id=\"0-w\"></td><td id=\"0-x\">24000643</td><td id=\"0-y\">NA</td><td id=\"0-z\">076</td><td id=\"0-A\">42100</td></tr> <tr><td id=\"0-B\">signature (visual only)</td><td id=\"0-C\">horizontal line (visual only)</td><td id=\"0-D\"></td><td id=\"0-E\"></td><td id=\"0-F\"></td><td id=\"0-G\"></td><td id=\"0-H\"></td><td id=\"0-I\"></td><td id=\"0-J\"></td><td id=\"0-K\"></td><td id=\"0-L\"></td><td id=\"0-M\"></td></tr> <tr><td id=\"0-N\"></td><td id=\"0-O\"></td><td id=\"0-P\"></td><td id=\"0-Q\"></td><td id=\"0-R\"></td><td id=\"0-S\"></td><td id=\"0-T\"></td><td id=\"0-U\"></td><td id=\"0-V\">NA (handwritten)</td><td id=\"0-W\"></td><td id=\"0-X\">(handwritten line)</td><td id=\"0-Y\"></td></tr> <tr><td id=\"0-Z\"></td><td id=\"0-10\"></td><td id=\"0-11\"></td><td id=\"0-12\"></td><td id=\"0-13\"></td><td id=\"0-14\"></td><td id=\"0-15\"></td><td id=\"0-16\"></td><td id=\"0-17\">Jou-Ju</td><td id=\"0-18\">4-24</td><td id=\"0-19\">line graph</td><td id=\"0-1a\">line graph</td></tr> </table> <a id='d68a0ab2-b95d-4c75-8c22-123379abcf04'></a> BLDS & JOE Entry Done <a id='3d419e20-c138-4f4c-9176-c0fd02253f8b'></a> <::attestation: Signatures and dates Status: Signed Requested by Signature: legible (stylized initials with date) Issued by Signature: legible (name and another signature line with date) Readable Text: Requested by: Pte 03-Jul-24, Umesh Dubri, Issued by: Cave 04-Jul-24 Description: Two distinct sections for 'Requested by' and 'Issued by', each containing a handwritten signature and a date.::> <a id='96fa27ab-8db9-4c19-bba8-7ab8b29122f1'></a> Page 1 of 1 <a id='6d37906e-db8c-404d-88c2-a2dcf9ca52f3'></a> <::attestation: Signature Signed Signature: illegible Readable Text: 10-Jul-24 A black ink signature with a handwritten date \"10-Jul-24\" below it, centrally positioned in the image.::> <a id='7e5f2248-fc3e-4896-9b86-f49b274feb8c'></a> <::attestation: Type of attestation: Authorization and Receipt Status indicators: Authorized, Received Authorized by: Signature: legible (10m²) Authorized Date: 03-Jul-24 Received by: Signature: legible (Pis) Received Date: 04-Jul-24 Readable Text: Form No.: PAP-MM-005-F002-001 Ref. SOP No.: PAP-MM-005 Short description of visual elements and positioning: Handwritten initials/signatures and dates appear next to 'Authorized by' and 'Received by' labels, followed by form and SOP reference numbers below.::> <a id='a133b81c-d56d-4a27-a013-137e336953df'></a> Slip Pro Dej"
+    },
+    {
+        "page": 3,
+        "page_content": [
+            {
+                "section_title": "Material Requisition Slip",
+                "Slip No.": "020",
+                "Date": "03-Jul-24",
+                "Product name": "Propofol Injection IP (1% w/v) with MCT-LCT (MCT-PROFOL) 20ML",
+                "Batch No.": "AH240074",
+                "Department": "SM",
+                "Reason": "For Batch Activity",
+                "records": [
+                    {
+                        "Sr. No.": "01",
+                        "Material code": "PMI-0465",
+                        "Material name": "20ML ISO - Moulded Vial - SGD",
+                        "UOM": "Nos.",
+                        "Quantity required": "48791",
+                        "Quantity issued": "48840",
+                        "A.R. No.": "22008147",
+                        "GRN No.": "23000013",
+                        "Balance ID No.": "NA",
+                        "Stock card No.": "047",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "02",
+                        "Material code": "PMI-0994",
+                        "Material name": "Rubber Stopper - Gray Bromo RES FM45710 20mm",
+                        "UOM": "Nos.",
+                        "Quantity required": "48791",
+                        "Quantity issued": "50000",
+                        "A.R. No.": "23007275",
+                        "GRN No.": "23001472",
+                        "Balance ID No.": "NA",
+                        "Stock card No.": "009",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "03",
+                        "Material code": "PMI-1014",
+                        "Material name": "Fiip Off Seal 20MM white",
+                        "UOM": "Nos.",
+                        "Quantity required": "48791",
+                        "Quantity issued": "48791",
+                        "A.R. No.": "22008477",
+                        "GRN No.": "22001232",
+                        "Balance ID No.": "EQPIPIJ PRATIST",
+                        "Stock card No.": "036",
+                        "Remark": "42100"
+                    }
+                ],
+                "Requested by": "Hardik Raval 03-Jul-24",
+                "Issued by": "Alkeish Patel 04-Jul-24",
+                "Received by": "Suivam Pandey 05-Jul-24",
+                "Form No.": "PAP-MM-005-F002-001",
+                "Ref. SOP No.": "PAP-MM-005",
+                "Page No.": "1 of 1"
+            }
+        ],
+        "markdown_page": "<a id='33d4b05e-ae79-466d-bbb8-f6d57e39bf54'></a> REFERENCE COPY <a id='ff190dbd-81f9-430c-8522-ec8e7c60ea01'></a> <::attestation: [Official Stamp] [Status: reference copy] [Readable Text: REFERENCE COPY] [A rectangular, textured stamp with the text \"REFERENCE COPY\" is prominently displayed horizontally in the center of the image.]::> <a id='70e24e1c-a5e1-417b-a8ea-69b036cde548'></a> <::logo: Amneal Amneal Material Requisition Slip FORM - II Black stylized \"A\" with a swoosh on top, followed by the company name in black lowercase letters.::> <a id='31c436ce-206d-40c0-9a56-06baa4e3ce74'></a> 020 <a id='efba3eca-e0e7-4ba3-826d-65fcf81c03d1'></a> Date: 03-Jul-24 Batch No.: AH240074 Reason: For Batch Activity <a id='e98b01fd-43bf-4dbd-8aed-044c70b62208'></a> FORM - 11 Slip No. : 020 Product name: Propofol Injection IP (1% w/v) with MCT-LCT (MCT-PROFOL) 20ML Department : SM 6.2.0-7.400.3326 <a id='60d2294a-d4d7-4f8d-a9c8-a3851c07a494'></a> <table id=\"0-1\"> <tr><td id=\"0-2\">Sr. No.</td><td id=\"0-3\">Material code</td><td id=\"0-4\">Material name</td><td id=\"0-5\">UOM</td><td id=\"0-6\">Quantity required</td><td id=\"0-7\">Quantity issued</td><td id=\"0-8\">A.R. No.</td><td id=\"0-9\"></td><td id=\"0-a\">GRN No.</td><td id=\"0-b\">Balance ID No.</td><td id=\"0-c\">Stock card No.</td><td id=\"0-d\">Remark</td></tr> <tr><td id=\"0-e\">01</td><td id=\"0-f\">PMI-0465</td><td id=\"0-g\">20ML ISO - Moulded Vial - SGD</td><td id=\"0-h\">Nos.</td><td id=\"0-i\">48791</td><td id=\"0-j\">46640</td><td id=\"0-k\">220081</td><td id=\"0-l\">T</td><td id=\"0-m\">23000013</td><td id=\"0-n\">NA</td><td id=\"0-o\">047</td><td id=\"0-p\">42100</td></tr> <tr><td id=\"0-q\">02</td><td id=\"0-r\">PMI-0994</td><td id=\"0-s\">Rubber Stopper - Gray Bromo RES FM45710 20mm</td><td id=\"0-t\">Nos.</td><td id=\"0-u\">48791</td><td id=\"0-v\">50000</td><td id=\"0-w\">2300721</td><td id=\"0-x\">S</td><td id=\"0-y\">23001472</td><td id=\"0-z\">NA</td><td id=\"0-A\">009</td><td id=\"0-B\">42100</td></tr> <tr><td id=\"0-C\">03</td><td id=\"0-D\">PMI-1014</td><td id=\"0-E\">Fiip Off Seal 20MM white</td><td id=\"0-F\">Nos.</td><td id=\"0-G\">48791</td><td id=\"0-H\">48791</td><td id=\"0-I\">220084</td><td id=\"0-J\">7</td><td id=\"0-K\">22001232</td><td id=\"0-L\">EQPIPIJ PRATIST</td><td id=\"0-M\">036</td><td id=\"0-N\">42100</td></tr> <tr><td id=\"0-O\">(handwritten line)</td><td id=\"0-P\">(handwritten line)</td><td id=\"0-Q\">(handwritten line)</td><td id=\"0-R\"></td><td id=\"0-S\">(handwritten line)</td><td id=\"0-T\"></td><td id=\"0-U\"></td><td id=\"0-V\"></td><td id=\"0-W\"></td><td id=\"0-X\"></td><td id=\"0-Y\"></td><td id=\"0-Z\"></td></tr> <tr><td id=\"0-10\"></td><td id=\"0-11\"></td><td id=\"0-12\"></td><td id=\"0-13\"></td><td id=\"0-14\"></td><td id=\"0-15\"></td><td id=\"0-16\">03-J</td><td id=\"0-17\">241-</td><td id=\"0-18\">24</td><td id=\"0-19\"></td><td id=\"0-1a\">black diagonal line</td><td id=\"0-1b\">black diagonal line</td></tr> </table> <a id='4b727787-506a-47e9-90a0-f42cafb258e9'></a> <::attestation: Record of Request and Issuance [Status indicators - recorded] Requested by: [Signature: legible, 'F'] 03-Jul-24 (Hardik Raval) Issued by: [Signature: legible, 'P'] 04-Jul-24 (Alkeish Patel) Suivam Pandey [Signature: legible] 05-Jul-24 Page 1 of 1 [Short description of visual elements and positioning: Text fields with handwritten entries and signatures/initials, including dates and names, arranged vertically on the page.]::> <a id='215741e2-29a4-4764-9823-e97c69ea3ca4'></a> <::attestation: Signature/Initials and Date Status indicators - Entry Done Signature: illegible Readable Text: Sr. No. 01,02 JDE & BUPS Entry done. CH. 04-Jul-24 Au Sr. No 03 JDE & BLOS Entry Done Re Short description of visual elements and positioning: Handwritten text with a signature/initials and date on the right side, indicating completion of tasks.::> <a id='a51e012a-a51e-4279-b7e7-87420b352ea5'></a> -24 One (krushnakant) Authorized by: 03-Jul-24 Jul 04-Jul-24 Bhasikoos Received by : 05-Jul-24 Kheurner (Ashok Patel) Form No.: PAP-MM-005-F002-001 Ref. SOP No.: PAP-MM-005 # wrong date corrected @p05-Jul-24 <a id='e5b5d96f-6a8b-400f-849b-6efef1c9357d'></a> <::attestation: Signature Signed Signature: illegible 10-Jul-24 A black, handwritten signature with the date \"10-Jul-24\" written below it, positioned centrally. ::> <a id='cad8708f-832e-4507-bb8d-c5435a31cc5d'></a> <::attestation: Signature Signature: illegible A central, illegible handwritten signature.::>"
+    },
+    {
+        "page": 4,
+        "page_content": [
+            {
+                "section_title": "Material Requisition Slip",
+                "Slip No.": "021",
+                "Date": "03-Jul-24",
+                "Product name": "Propofol Injection IP (1% w/v) with MCT-LCT (MCT- PROFOL) 20mL",
+                "Batch No.": "AH240074",
+                "Department": "SM",
+                "Reason": "for Batch Activity",
+                "records": [
+                    {
+                        "Sr. No.": "01",
+                        "Material code": "MMI-0369",
+                        "Material name": "Silicon Tube-4.8(ID)X 9.6(OD) Imuparo",
+                        "UOM": "Mtr",
+                        "Quantity required": "08",
+                        "Quantity issued": "08",
+                        "A.R. No.": "22002945",
+                        "GRN No.": "22000407",
+                        "Balance ID No.": "NA",
+                        "Stock card No.": "074",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "02",
+                        "Material code": "MMI-0365",
+                        "Material name": "Solution Cartridge Filter-82-5\"",
+                        "UOM": "Nos.",
+                        "Quantity required": "01",
+                        "Quantity issued": "01",
+                        "A.R. No.": "APM20200117",
+                        "GRN No.": "5000008985",
+                        "Balance ID No.": "NA",
+                        "Stock card No.": "001",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "03",
+                        "Material code": "MMI-0371",
+                        "Material name": "Tubing Silicon Tube - 4.8(ID)X8(OD) ami",
+                        "UOM": "Feet",
+                        "Quantity required": "10",
+                        "Quantity issued": "10",
+                        "A.R. No.": "22003631",
+                        "GRN No.": "22000506",
+                        "Balance ID No.": "NA",
+                        "Stock card No.": "099",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "04",
+                        "Material code": "MMI-0399",
+                        "Material name": "TU-silicone Tube- 6.4(ID) x 9.6 (OD) Ami",
+                        "UOM": "Mtr",
+                        "Quantity required": "1",
+                        "Quantity issued": "01",
+                        "A.R. No.": "22017505",
+                        "GRN No.": "22003170",
+                        "Balance ID No.": "NA",
+                        "Stock card No.": "098",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "05",
+                        "Material code": "MMI-0385",
+                        "Material name": "Tubing - silicon Tube 12.7(7D) x 22.2 (002",
+                        "UOM": "Mtr",
+                        "Quantity required": "6",
+                        "Quantity issued": "06",
+                        "A.R. No.": "22008483",
+                        "GRN No.": "22001233",
+                        "Balance ID No.": "NA",
+                        "Stock card No.": "097",
+                        "Remark": "42100"
+                    }
+                ],
+                "Requested by": "(Hardik Ravel) 03-Jul-24",
+                "Issued by": "Alceish Patel 04-Jul-24",
+                "Authorized by": "(Krishnakant) 03-Jul-24",
+                "Received by": "Bhaskar Kheurner 03-Jul-24",
+                "Form No.": "PAP-MM-005-F002-001",
+                "Ref. SOP No.": "PAP-MM-005",
+                "Page No.": "1 of 1"
+            }
+        ],
+        "markdown_page": "<a id='1d7fa01b-9d1e-4dcf-bdfd-c14090218a74'></a> REFERENCE COPY <a id='154b536f-ce9e-4721-9d5b-3b8ea9daab55'></a> <::attestation: Official stamp Stamped REFERENCE COPY A light gray, rectangular stamp with the text \"REFERENCE COPY\" is diagonally placed across the center of the document.::> <a id='28c8295f-fb58-4397-92e8-c7de2911f2fc'></a> <::logo: Amneal Amneal Material Requisition Slip FORM - II The logo features the word \"Amneal\" in black, with the initial \"A\" stylized as a black, curved, abstract shape.::> <a id='3b22ddf9-f648-4508-afa9-e26c0932c9ba'></a> 021 <a id='6f3a77d8-04df-4983-aca7-4dca70fadd2b'></a> FORM - II Slip No. : 021 Product name: Propofol Injection IP (1% w/v) with MCT-LCT (MCT- PROFOL) 20mL Department : SM For Q-71300000 <a id='31790cb2-09fc-47b8-9067-a324b8b5444e'></a> Date: 03-Jul-24 Batch No.: AH240074 Reason: for Batch Activity <a id='4119d887-5e1c-4f42-80e0-adb6c591146f'></a> <table id=\"0-1\"> <tr><td id=\"0-2\">Sr. No.</td><td id=\"0-3\">Material code</td><td id=\"0-4\">Material name</td><td id=\"0-5\">UOM</td><td id=\"0-6\">Quantity required</td><td id=\"0-7\">Quantity issued</td><td id=\"0-8\">A.R. 1</td><td id=\"0-9\">No.</td><td id=\"0-a\">GRN No.</td><td id=\"0-b\">Balance ID No.</td><td id=\"0-c\">Stock card No.</td><td id=\"0-d\">Remark</td></tr> <tr><td id=\"0-e\">01</td><td id=\"0-f\">MMI-0369</td><td id=\"0-g\">Silicon Tube-4.8(ID)X 9.6(OD) Imuparo</td><td id=\"0-h\">Mtr</td><td id=\"0-i\">08</td><td id=\"0-j\">08</td><td id=\"0-k\">22002</td><td id=\"0-l\">945</td><td id=\"0-m\">22000407</td><td id=\"0-n\">NA</td><td id=\"0-o\">074</td><td id=\"0-p\">42100</td></tr> <tr><td id=\"0-q\">02</td><td id=\"0-r\">MMI-0365</td><td id=\"0-s\">Solution Cartridge Filter-82-5&quot;</td><td id=\"0-t\">Nos.</td><td id=\"0-u\">01</td><td id=\"0-v\">01</td><td id=\"0-w\">APM20</td><td id=\"0-x\">200117</td><td id=\"0-y\">5000008985</td><td id=\"0-z\">NA</td><td id=\"0-A\">001</td><td id=\"0-B\">42100</td></tr> <tr><td id=\"0-C\">03</td><td id=\"0-D\">MMI-0371</td><td id=\"0-E\">Tubing Silicon Tube - 4.8(ID)X8(OD) ami</td><td id=\"0-F\">Feet</td><td id=\"0-G\">10</td><td id=\"0-H\">10</td><td id=\"0-I\">22003</td><td id=\"0-J\">631</td><td id=\"0-K\">22000506</td><td id=\"0-L\">NA</td><td id=\"0-M\">099</td><td id=\"0-N\">42100</td></tr> <tr><td id=\"0-O\">04</td><td id=\"0-P\">MMI-0399</td><td id=\"0-Q\">TU-silicone Tube- 6.4(ID) x 9.6 (OD) Ami</td><td id=\"0-R\">Mtr</td><td id=\"0-S\">1</td><td id=\"0-T\">01</td><td id=\"0-U\">22017</td><td id=\"0-V\">505</td><td id=\"0-W\">22003170</td><td id=\"0-X\">NA</td><td id=\"0-Y\">098</td><td id=\"0-Z\">42100</td></tr> <tr><td id=\"0-10\">05</td><td id=\"0-11\">MMI-0385</td><td id=\"0-12\">Tubing - silicon Tube 12.7(7D) x 22.2 (002</td><td id=\"0-13\">Mtr</td><td id=\"0-14\">6</td><td id=\"0-15\">06</td><td id=\"0-16\">22009</td><td id=\"0-17\">483</td><td id=\"0-18\">22001233</td><td id=\"0-19\">NA</td><td id=\"0-1a\">097</td><td id=\"0-1b\">42100</td></tr> </table> <a id='d6adc706-ff5d-4a1a-9be3-a35b1e3c3061'></a> <::attestation: Signatures and associated details Status indicators - signed Requested by: Signature: illegible (stylized 'P' or similar) on 03-Jul-24 by (Hardik Ravel) Issued by: Signature: illegible (stylized 'A' or similar) on 04-Jul-24 by Alceish Patel Short description of visual elements and positioning: Two lines with 'Requested by' and 'Issued by' labels, each followed by a signature, a date, and a printed name.::> <a id='70d5151c-6de5-4409-aba5-8d8414581815'></a> JDE & BLPS Emtry dome. <a id='2c512b1d-0543-4966-a8fe-cde4f95b2b61'></a> <::attestation: Signature with date Status indicators - signed Signature: illegible Readable Text: 04-Jul-24 Illegible handwritten initials/signature with a handwritten date below it, centrally located.::> <a id='ef1f7730-5481-44e0-999a-276862aded9e'></a> <::attestation: Signatures/Approvals Status indicators - signed Authorized by Signature: legible Received by Signature: legible Authorized by: (Krishnakant) 03-Jul-24 Received by: Bhaskar Kheurner 03-Jul-24 Short description of visual elements and positioning: Two lines of handwritten text and signatures on a white background, indicating authorization and receipt.::> <a id='a120dd62-95b8-4481-9a57-10345566590f'></a> <::attestation: signature signed Signature: illegible Readable Text: 10-Jul-24 A black, handwritten signature with the date \"10-Jul-24\" written below it, centrally located in the image. ::> <a id='b5d59859-4a53-47b9-a1b3-64e89a61757f'></a> Page 1 of 1 <a id='376870c4-3cf5-4e07-930b-0366f2074e1f'></a> Form No.: PAP-MM-005-F002-001 Ref. SOP No.: PAP-MM-005"
+    },
+    {
+        "page": 5,
+        "page_content": [
+            {
+                "section_title": "Material Requisition Slip",
+                "Slip No.": "022",
+                "Date": "05-Jul-24",
+                "Product name": "Propofol Injection IP (1% w/v) with MCT-LCT (MCT-PROFOL) 20ML",
+                "Batch No.": "AHZA0074",
+                "Reason": "for Batch Activity",
+                "Department": "SM W10. 24003325",
+                "records": [
+                    {
+                        "Sr. No.": "01",
+                        "Material code": "PMI-0994",
+                        "Material name": "Rubber stopper-may BAMO RFS FMAS7/020mm",
+                        "UOM": "N0S",
+                        "Quantity required": "25000",
+                        "Quantity issued": "17500 7500",
+                        "A.R. No.": "23007275 23001472",
+                        "GRN No.": "23007278 23001473",
+                        "Balance ID No.": "NA",
+                        "Stock card No.": "009 011",
+                        "Remark": "42100"
+                    },
+                    {
+                        "Sr. No.": "(handwritten mark)",
+                        "Material code": "(horizontal line)",
+                        "Material name": "(horizontal line)",
+                        "UOM": "(horizontal line)",
+                        "Quantity required": "(horizontal line)",
+                        "Quantity issued": "",
+                        "A.R. No. GRN No.": "(a faint, narrow, vertical line)",
+                        "Balance ID No.": "",
+                        "Stock card No.": "",
+                        "Remark": ""
+                    },
+                    {
+                        "Sr. No.": "",
+                        "Material code": "",
+                        "Material name": "",
+                        "UOM": "",
+                        "Quantity required": "",
+                        "Quantity issued": "(diagonal line)",
+                        "A.R. No. GRN No.": "2A (handwritten)",
+                        "Balance ID No.": "(diagonal line)",
+                        "Stock card No.": "",
+                        "Remark": ""
+                    },
+                    {
+                        "Sr. No.": "",
+                        "Material code": "",
+                        "Material name": "",
+                        "UOM": "",
+                        "Quantity required": "",
+                        "Quantity issued": "",
+                        "A.R. No. GRN No.": "(diagonal line, dotted line)",
+                        "Balance ID No.": "",
+                        "Stock card No.": "(diagonal line)",
+                        "Remark": ""
+                    },
+                    {
+                        "Sr. No.": "",
+                        "Material code": "",
+                        "Material name": "",
+                        "UOM": "",
+                        "Quantity required": "",
+                        "Quantity issued": "",
+                        "A.R. No. GRN No.": "",
+                        "Balance ID No.": "",
+                        "Stock card No.": "diagonal line",
+                        "Remark": "05-JUL-24 (handwritten date)"
+                    }
+                ],
+                "Requested by": "Ramesh Kumar",
+                "Authorized by": "[illegible signature] 05-Jul-24 Jagdish S.",
+                "Issued by": "Urvil Desai 05-JU-24",
+                "Received by": "[illegible signature] 05-Jul-24 Bhaskar Khairnar",
+                "Form No.": "PAP-MM-005-F002-001",
+                "Ref. SOP No.": "PAP-MM-005",
+                "Page No.": "1 of 1"
+            }
+        ],
+        "markdown_page": "<a id='12c5f333-bfe5-48b0-b6c1-024d71bdb428'></a> REFERENCE COPY <a id='7895f625-f4ed-4d63-aaad-3d6459a211ab'></a> <::attestation: Official stamp Stamped REFERENCE COPY A light gray, rectangular stamp with \"REFERENCE COPY\" text, slightly angled, positioned centrally in the image. ::> <a id='4b38731f-14f1-4853-b317-932b646f3738'></a> <::logo: Amneal Amneal Material Requisition Slip FORM - II A black stylized 'A' with a swoosh forms the logo, followed by the company name in black lowercase letters.::> <a id='a57d2283-c1da-4917-b52e-7d0447ec1934'></a> 022 <a id='ecbd0fcb-95a5-4b16-bea2-221d08e84412'></a> Material Requisition Slip FORM - II 022 njection 2p (11. w/v) with MCT-LCT (MCT-PROFOL): <a id='9846b2e1-d6ba-40f8-9274-b1bf805d3ad1'></a> Date: OS-Jul-24 Batch No.: AHZA0074 Reason: for Batch Activity <a id='06132e7a-d924-4985-89db-d63cceb32782'></a> FORM - 11 Slip No. : 022 Product name: Propofol Injection IP (1% w/v) with MCT-LCT (MCT-PROFOL) 20ML Department : SM W10. 24003325 <a id='390231c4-928a-46c4-b087-508d959f3f70'></a> Department - W/o'. 2400336 Reason: <table id=\"0-1\"> <tr><td id=\"0-2\">Sr. No.</td><td id=\"0-3\">Material code</td><td id=\"0-4\">Material name</td><td id=\"0-5\">UOM</td><td id=\"0-6\">Quantity required</td><td id=\"0-7\">Quantity issued</td><td id=\"0-8\" colspan=\"2\">A.R. No. GRN No.</td><td id=\"0-9\">Balance ID No.</td><td id=\"0-a\">Stock card No.</td><td id=\"0-b\">Remark</td></tr> <tr><td id=\"0-c\">この</td><td id=\"0-d\">PMI-0994 PMI-0165</td><td id=\"0-e\">Rubber stopper-may BAMO RFS FMAS7/020mm</td><td id=\"0-f\">N0J</td><td id=\"0-g\">25000</td><td id=\"0-h\">17500 7500</td><td id=\"0-i\" colspan=\"2\">23007275 23001472 23007278 23001473</td><td id=\"0-j\">NA</td><td id=\"0-k\">009 011</td><td id=\"0-l\">42100</td></tr> <tr><td id=\"0-m\">(handwritten mark)</td><td id=\"0-n\">(horizontal line)</td><td id=\"0-o\">(horizontal line)</td><td id=\"0-p\">(horizontal line)</td><td id=\"0-q\">(horizontal line)</td><td id=\"0-r\"></td><td id=\"0-s\" colspan=\"2\">(a faint, narrow, vertical line)</td><td id=\"0-t\"></td><td id=\"0-u\"></td><td id=\"0-v\"></td></tr> <tr><td id=\"0-w\"></td><td id=\"0-x\"></td><td id=\"0-y\"></td><td id=\"0-z\"></td><td id=\"0-A\"></td><td id=\"0-B\">(diagonal line)</td><td id=\"0-C\" colspan=\"2\">2A (handwritten)</td><td id=\"0-D\">(diagonal line)</td><td id=\"0-E\"></td><td id=\"0-F\"></td></tr> <tr><td id=\"0-G\"></td><td id=\"0-H\"></td><td id=\"0-I\"></td><td id=\"0-J\"></td><td id=\"0-K\"></td><td id=\"0-L\"></td><td id=\"0-M\" colspan=\"2\">(diagonal line, dotted line)</td><td id=\"0-N\"></td><td id=\"0-O\">(diagonal line)</td><td id=\"0-P\"></td></tr> <tr><td id=\"0-Q\"></td><td id=\"0-R\"></td><td id=\"0-S\"></td><td id=\"0-T\"></td><td id=\"0-U\"></td><td id=\"0-V\"></td><td id=\"0-W\"></td><td id=\"0-X\"></td><td id=\"0-Y\"></td><td id=\"0-Z\">diagonal line</td><td id=\"0-10\">05-JUL-24 (handwritten date)</td></tr> </table> <a id='76202030-08b8-4d9a-9b88-2a762982aa96'></a> <table><thead><tr><th>Col 1</th><th>Col 2</th><th>Col 3</th><th>Col 4</th></tr></thead><tbody><tr><td>Requested by:</td><td>Ramesh Kumar</td><td></td><td>05-Jul-CA</td></tr><tr><td>Issued by</td><td>:</td><td>Urvil Desai</td><td>05-JU-24</td></tr></tbody></table> <a id='bf04a968-ec08-4756-95f2-bcc8ccd2d3f8'></a> <::attestation: Signature with completion note Status indicators - Done Signature: legible Readable Text: JDE S BLPS Entry Done 10-Jul-24 Handwritten signature and date below a handwritten note, positioned on the left side of the page.::> <a id='2616a15d-c60a-4ba0-8f4b-f5744e8d266c'></a> Authorized by: [illegible signature] 05-Jul-24 Jagdish S. Received by: [illegible signature] 05-Jul-24 Bhaskar Khairnar Form No.: PAP-MM-005-F002-001 Ref. SOP No.: PAP-MM-005 <a id='b81ec30e-f502-466b-bb0e-0b6a34e07bff'></a> Page 1 of 1 x kinong material Code Concated by Ole COL-JIN-TA"
+    }
+]
